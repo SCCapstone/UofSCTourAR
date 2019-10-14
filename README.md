@@ -7,14 +7,8 @@ Group Members: Wade Lewis, Ayla Nickerson, Prithvi Tippabhatla, Colby Hill, Joe 
 *Still work in progress, more to come soon*
 
 
-Version of installs/packages reccommended:
+## Version of installs/packages reccommended:
 
-Unity 
-  Version 2019.2.8f1
-  -iOS Build Support
-  -Mac Build Support
-  
-Packages
-  AR Foundation: 2.1.4
-  AR Subsystems: 2.1.1
-  ARKit XR Plugin: 2.0.1
+Unity :Version 2019.2.8f1, iOS Build Support, Mac Build Support
+
+Packages: AR Foundation: 2.1.4, AR Subsystems: 2.1.1, ARKit XR Plugin: 2.0.1
