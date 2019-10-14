@@ -7,7 +7,7 @@ Group Members: Wade Lewis, Ayla Nickerson, Prithvi Tippabhatla, Colby Hill, Joe 
 *Still work in progress, more to come soon*
 
 
-## Version of installs/packages reccommended:
+## Version of installs/packages recommended:
 
 iOS: 12.1.2 or later
 
