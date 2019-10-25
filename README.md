@@ -3,9 +3,31 @@ noice # UofSCTourAR
 Group Members: Wade Lewis, Ayla Nickerson, Prithvi Tippabhatla, Colby Hill, Joe Basile
 *Still work in progress, more to come soon*</p>
 
+r
+e
+a
+l
+l
+y
 
+n
+e
+e
+d
 
-
+m
+e
+r
+g
+e
+c
+o
+n
+f
+l
+i
+c
+t
 ## Technologies
 
 iOS:
