@@ -4,7 +4,8 @@ This repository contains the files for our Capstone Senior Design project pertai
  
 
 ## Technologies
-
+  - Unity
+  - iOS
 iOS:
   - 12.1.2 or later (*Soon to be iOS 13*)
 
