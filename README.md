@@ -2,6 +2,8 @@
 This repository contains the files for our Capstone Senior Design project pertaining to CSCE 490 & 492.
 *Still work in progress, more to come soon*
 
+AYLA ANGRY AYLA MAKE MERGE CONFLICT 
+
 ## Technologies
 
 iOS:
