@@ -1,9 +1,11 @@
 # UofSCTourAR
 This repository contains the files for our Capstone Senior Design project pertaining to CSCE 490 & 492.
 *Still work in progress, more to come soon*
+ 
 
 ## Technologies
-
+  - Unity
+  - iOS
 iOS:
   - 12.1.2 or later (*Soon to be iOS 13*)
 
@@ -49,4 +51,4 @@ Packages:
 
   Joe Basile - jjbasile@email.sc.edu
 
-.
+
