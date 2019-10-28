@@ -1,8 +1,7 @@
 # UofSCTourAR
 This repository contains the files for our Capstone Senior Design project pertaining to CSCE 490 & 492.
 *Still work in progress, more to come soon*
-
-AYLA ANGRY AYLA MAKE MERGE CONFLICT 
+ 
 
 ## Technologies
 
@@ -50,3 +49,6 @@ Packages:
   Wade Lewis - wclewis@email.sc.edu
 
   Joe Basile - jjbasile@email.sc.edu
+
+
+
