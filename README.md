@@ -1,6 +1,13 @@
 # UofSCTourAR
 This repository contains the files for our Capstone Senior Design project pertaining to CSCE 490 & 492.
 *Still work in progress, more to come soon*
+
+## Build Settings
+ - File > Build Settings > Player Settings 
+ - Make sure Company Name is UofSCTourAR
+ - Update version if needed
+ - Target minimum iOS version: 11.0 
+ - Architecture: ARM64
  
 
 ## Technologies
