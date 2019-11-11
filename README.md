@@ -24,7 +24,7 @@ Unity:
 Packages: 
   - AR Foundation: 2.1.4
   - AR Subsystems: 2.1.1
-  - ARKit XR Plugin: 2.0.1
+  - ARKit XR Plugin: 2.1.2
  
  
 ## Setup
