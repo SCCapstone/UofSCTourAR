@@ -17,7 +17,7 @@ iOS:
   - 12.1.2 or later (*Soon to be iOS 13*)
 
 Unity: 
-  - Version 2019.2.9f1
+  - Version 2019.2.11f1
   - iOS Build Support
   - Mac Build Support
 
