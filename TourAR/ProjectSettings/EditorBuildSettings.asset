@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Achievements.unity
     guid: c7fe35de6ec484c07a2b3138668fab46
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TourHistory.unity
     guid: ebb2d9e6c4c0c454a8e09c85e751b278
   m_configObjects: {}
