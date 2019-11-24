@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 359857860}
   - component: {fileID: 359857859}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Back_Button
   m_TagString: Untagged
   m_Icon: {fileID: 2800000, guid: 68d7687ce814044f2976840cedd06753, type: 3}
   m_NavMeshLayer: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 359857860}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
