@@ -35,3 +35,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 .DS_Store
+TourAR/ProjectSettings/ProjectSettings.asset
+*TourAR/ProjectSettings/ProjectSettings.asset
