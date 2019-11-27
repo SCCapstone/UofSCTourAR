@@ -17,5 +17,12 @@ public class PopUp : MonoBehaviour
             Panel.SetActive(!isActive);
         }
     }
+    public void ClosePopup()
+    {
+        if(Panel != null)
+        {
+            Panel.SetActive(false);
+        }
+    }
     
 }
