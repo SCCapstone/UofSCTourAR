@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TourHistory.unity
     guid: 46e229922e5b04724aed098f10efe20c
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: bc44f2fa8927244fea4ef91610163ccd
   m_configObjects: {}
