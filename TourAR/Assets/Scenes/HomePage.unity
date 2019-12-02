@@ -1054,7 +1054,6 @@ RectTransform:
   - {fileID: 1289043480}
   - {fileID: 1410638259}
   - {fileID: 1041048545}
-  - {fileID: 1264753889}
   - {fileID: 102668848}
   m_Father: {fileID: 689213667}
   m_RootOrder: 0
