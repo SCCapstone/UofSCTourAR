@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARView.unity
     guid: 5695bba614b514cc7aa71fd3aaf31458
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Achievements.unity
     guid: c7fe35de6ec484c07a2b3138668fab46
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TourHistory.unity
     guid: 46e229922e5b04724aed098f10efe20c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: bc44f2fa8927244fea4ef91610163ccd
   m_configObjects: {}
