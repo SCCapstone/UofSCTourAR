@@ -1,23 +1,29 @@
+
 # UofSCTourAR
 This repository contains the files for our Capstone Senior Design project pertaining to CSCE 490 & 492.
 *Still work in progress, more to come soon*
+
+## Build Settings
+ - File > Build Settings > Player Settings 
+ - Make sure Company Name is UofSCTourAR
+ - Update version if needed
+ - Target minimum iOS version: 11.0 
+ - Architecture: ARM64
  
 
 ## Technologies
   - Unity
-  - iOS
-iOS:
-  - 12.1.2 or later (*Soon to be iOS 13*)
+  - iOS: 12.1.2 or later (*Soon to be iOS 13*)
 
 Unity: 
-  - Version 2019.2.9f1
+  - Version 2019.2.11f1
   - iOS Build Support
   - Mac Build Support
 
 Packages: 
   - AR Foundation: 2.1.4
   - AR Subsystems: 2.1.1
-  - ARKit XR Plugin: 2.0.1
+  - ARKit XR Plugin: 2.1.2
  
  
 ## Setup
