@@ -52,6 +52,7 @@ In order to run the Unit Tests for our project you will need to download and ful
  
 ### Behavioral Tests
 To run the UI tests on our project, begin by downloading and configuring the project according to the instructions above. 
+UI Tests are located here: TourAR/Assets/UITests
  1. In the Unity Editor, navigate to the Windows tab>AltUnityTester to open the AltUnityTester Editor. 
  2. Within the Editor, expand the Assembly-CSharp-Editor.dll folder. 
  3. Expand the Unity folder and select the tests you wish to run. 
