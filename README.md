@@ -43,7 +43,12 @@ Packages:
 ## Deployment
  
 ## Testing
- 
+
+### Unit Tests
+In order to run the Unit Tests for our project you will need to download and fully set up the project first. After that:
+ 1. First, in the Unity Editor: Open the Test Runner by Navigating to Window -> General -> Test Runner.
+ 2. From the Test Runner popup window, select the "SceneLoader" test file.
+ 3. Click "Run Selected" inside the Test Runner window.
  
 ## Authors
  
