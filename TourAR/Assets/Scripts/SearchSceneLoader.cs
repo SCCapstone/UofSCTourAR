@@ -21,7 +21,7 @@ public class SearchSceneLoader : MonoBehaviour
         }
     }
 
-    private bool SceneExists(string name)
+    public bool SceneExists(string name)
     {
         List<string> scenesInBuild = new List<string>();
         for (int i = 1; i < SceneManager.sceneCountInBuildSettings; i++)
