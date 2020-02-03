@@ -1,0 +1,1680 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcbb7697f22cd348aafc3b0e2b5b136, type: 3}
+  m_Name: AltUnityTesterEditorSettings
+  m_EditorClassIdentifier: 
+  appendToName: 0
+  OutputPathName: sampleGame/sampleGame.exe
+  AdbPath: /usr/local/bin/adb
+  IProxyPath: /usr/local/bin/iproxy
+  XcrunPath: /usr/bin/xcrun
+  AutomaticallySign: 0
+  SigningTeamId: 
+  BuildNumber: 0
+  MyTests:
+  - _selected: 0
+    _testName: /Users/prithvi/GitHub Repos/Unity/Capstone/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _status: 0
+    _isSuite: 1
+    _parentName: 
+    _testCaseCount: 106
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox
+    _status: 0
+    _isSuite: 1
+    _parentName: /Users/prithvi/GitHub Repos/Unity/Capstone/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 105
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.CheapRulerCs
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.CheapRulerCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.DistanceInMiles
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.DistanceInNauticalMiles
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.FixturesLoaded
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.FromTile
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.Editor
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.FindCommonAncestorsWithinListWorks
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.TestListToTreeThrowsExceptionIfRootIsInvalidDepth
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.TestListToTreeWorks
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.TestTreeToListWorks
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeModelTests
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.Editor
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeModelTests.TestTreeModelCanAddElements
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeModelTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeModelTests.TestTreeModelCanRemoveElements
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeModelTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 91
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs
+    _testCaseCount: 91
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.Average
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.LowPass
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.NoOp
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.Weighted
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest.Deserialize
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest.Serialize
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest.InvalidValues
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest.ToStringTest
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CanonicalTileIdTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CanonicalTileIdTest.ToVector2d
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CanonicalTileIdTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.Corrupt
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.Decompress
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.Empty
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.NotCompressed
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.GetUrl
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.SetInvalidBearings
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.SetInvalidRadiuses_Mismatched
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.SetInvalidRadiuses_TooSmall
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest.SerializesAndDeserializesBasic
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest.SerializesAndDeserializesWithSteps
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.MultipleRequests
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.Request
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.RequestCancel
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.RequestDnsError
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.RequestForbidden
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.WaitWithNoRequests
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest.GetUrl
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest.SetInvalidCountries
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest.SetInvalidTypes
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest.SerializesAndDeserializesForward
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest.SerializesAndDeserializesReverse
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest.Deserialize
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest.Serialize
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 15
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.AllParameters
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.AlternativesWithSteps
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Annotation
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.AsSimpleAsPossible
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.CoordinatesNull
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.InvalidCoordinate
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.LanguageEnglish
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.LanguageGerman
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.NoSegment
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.OverviewFull
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.OverviewSimplified
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Profiles
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Radiuses
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Tidy
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Timestamps
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.ChangeTilesetId
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.RasterHelsinki
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.SetVector2dBoundsZoom
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.TileMax
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.World
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.Zoom
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest.Deserialize
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest.Serialize
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest.TestDecode
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest.TestEncode
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest.GetUrl
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest.SetInvalidTypes
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 7
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.Clear
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.ConcurrentTilesetInsert
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.InsertSameTileForceOverwrite
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.InsertSameTileNoOverwrite
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.Prune
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.ReInit
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.VerifyTilesFromConcurrentInsert
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest.Helsinki
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest.World
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.ConcatenatedVectorTilesets
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.MapboxEmerald
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.MapboxSatellite
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.MapboxStreets
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest.GetUrlClassicRaster
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest.GetUrlRaster
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest.GetUrlVector
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileTest.States
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileTest.TileLoading
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest.RetrieveConfigToken
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest.TokenInvalid
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest.TokenMalformed
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 7
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.CardinalLimits
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.Center
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.Extend
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.Hull
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.IsEmpty
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.SmallBounds
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.World
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest.DC
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest.NullIsland
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest.ParseSuccess
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest.SeveralTiles
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.ProbeExtractorCs
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.ExtractFootTrace
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.ExtractProbes
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.FixturesLoaded
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Unity
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Unity.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.Unity
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Unity.UnitTest.CircularBufferTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.Unity.UnitTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Unity.UnitTest.CircularBufferTest.SettingAndGettingValues
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.Unity.UnitTest.CircularBufferTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 1
+    _testName: TestTH
+    _status: -1
+    _isSuite: 1
+    _parentName: /Users/prithvi/GitHub Repos/Unity/Capstone/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: TestTH.Test
+    _status: -1
+    _isSuite: 0
+    _parentName: TestTH
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
+      refused'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/TestTH.cs
+  Scenes:
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/HomePage.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Scenes/Map.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Scenes/Achievements.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/TourHistory.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Scenes/Search.unity
+    _buildIndex: 0
+  - _toBeBuilt: 0
+    _path: Assets/Scenes/ARView.unity
+    _buildIndex: 0
+  platform: 2
+  standaloneTarget: 5
+  ranInEditor: 0
+  requestSeparator: ;
+  requestEnding: '&'
+  serverPort: 13000
+  scenePathDisplayed: 1
+  inputVisualizer: 0
+  showPopUp: 1
