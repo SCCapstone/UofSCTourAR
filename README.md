@@ -21,9 +21,10 @@ Unity:
   - Mac Build Support
 
 Packages: 
-  - AR Foundation: 2.1.4
-  - AR Subsystems: 2.1.1
-  - ARKit XR Plugin: 2.1.2
+  - AR Foundation: 3.0.1
+  - AR Subsystems: 3.0.0
+  - ARKit XR Plugin: 3.0.1
+  - XR Interaction Tookit: (preview) 0.9.6
  
  
 ## Setup
