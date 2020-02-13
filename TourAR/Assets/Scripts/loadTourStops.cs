@@ -23,6 +23,10 @@ public class loadTourStops : MonoBehaviour
 
     private void loadTheTourStops()
     {
+        /*
+            Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
+            on both desktop runs and mobile. 
+        */
         string filePath = Application.dataPath + "/tourStops.json";
         using (StreamReader r = new StreamReader(filePath))
         {
