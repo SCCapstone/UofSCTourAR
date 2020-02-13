@@ -4,6 +4,7 @@ using UnityEngine;
 using NUnit.Framework;
 using System.IO;
 using System;
+using Newtonsoft.Json;
 
 public class sceneLoaderTest : MonoBehaviour
 {
@@ -95,26 +96,23 @@ public class sceneLoaderTest : MonoBehaviour
     [Test]
     public void testReadJSON()
     {
-        var writePath = Application.dataPath + "/TestWrite.txt";
-        List<string> myFile = new List<string>();
-        myFile.Add("This should work \nalso noice");
-        WriteFile(writePath, myFile);
-    }
-
-    public void LoadJson()
-    {
-        using (StreamReader r = new StreamReader("file.json"))
-        {
-            string json = r.ReadToEnd();
-            List<Item> items = JsonConvert.DeserializeObject<List<Item>>(json);
-        }
+        string readPath = Application.dataPath + "/testjson.json";
+        LoadJson(readPath);
     }
 
     public class TourStop
     {
         public string name;
-        public boolean isVisited;
+        public bool isVisited;
         public string description;
     }
 
+    public void LoadJson(string filePath)
+    {
+        using (StreamReader r = new StreamReader(filePath))
+        {
+            string json = r.ReadToEnd();
+            List<TourStop> items = JsonConvert.DeserializeObject<List<TourStop>>(json);
+        }
+    }
 }
