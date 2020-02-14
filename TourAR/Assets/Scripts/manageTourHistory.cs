@@ -7,7 +7,7 @@ using System.IO;
 public class manageTourHistory : MonoBehaviour
 {
     private List<tourStopVisited> tourHistory;
-
+    private int tourHistoryCap = 10; //Setting as 10 by default
     public manageTourHistory() {
         loadTourHistory();
     }
@@ -17,6 +17,16 @@ public class manageTourHistory : MonoBehaviour
         public string stopID;
 
         public string completionDate;
+    }
+
+    public int getTourHistoryCap() {
+        return tourHistoryCap; 
+    }
+
+    public void setTourHistoryCap(int cap) {
+        if(cap > 0) {
+            tourHistoryCap = cap;
+        }
     }
 
     private void loadTourHistory()
@@ -42,12 +52,17 @@ public class manageTourHistory : MonoBehaviour
 
     public void addStopToHistory(string tourStopID, string date)
     {
-        if(tourHistory.Count < 10) {
-            // If we don't have to worry about there being too many we can just add.
-            tourStopVisited newItem = new tourStopVisited();
-            newItem.stopID = tourStopID;
-            newItem.completionDate = date;
-            tourHistory.Insert(0, newItem);
+        if(tourHistory.Count >= tourHistoryCap) {
+            // we need to remove the last element of the list before adding this one
+            tourHistory.RemoveAt(tourHistoryCap-1);
         }
+        tourStopVisited newItem = new tourStopVisited();
+        newItem.stopID = tourStopID;
+        newItem.completionDate = date;
+        tourHistory.Insert(0, newItem);
+    }
+
+    public void clearTourHistory() {
+        tourHistory.RemoveRange(0, tourHistory.Count-1);
     }
 }

@@ -96,7 +96,13 @@ public class sceneLoaderTest : MonoBehaviour
     public void testManageTourHistory()
     {
         var manageTH = new manageTourHistory();
+        manageTH.clearTourHistory(); //ensure that local data doesn't mess up the test
+        manageTH.setTourHistoryCap(2);
+        manageTH.addStopToHistory("rutledge", "today");
+        manageTH.addStopToHistory("rutledge2", "today");
+        manageTH.addStopToHistory("rutledge3", "today");
         var THobj = manageTH.getTourHistory();
-        Assert.AreEqual(THobj[0].stopID, "horseshoe");
+        Assert.AreEqual(THobj[1].stopID, "rutledge2");
+        Assert.AreEqual(2, THobj.Count);
     }
 }
