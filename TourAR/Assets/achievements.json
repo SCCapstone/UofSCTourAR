@@ -1,0 +1,12 @@
+[
+    {
+        "name": "achievement1",
+        "isCompleted": "false",
+        "description": "n/a yet"
+    },
+    {
+        "name": "achievment2",
+        "isCompleted": "true",
+        "description": "n/a yet"
+    }
+]
