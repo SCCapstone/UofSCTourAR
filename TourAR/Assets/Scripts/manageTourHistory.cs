@@ -8,6 +8,15 @@ public class manageTourHistory : MonoBehaviour
 {
     private List<tourStopVisited> tourHistory;
     private int tourHistoryCap = 10; //Setting as 10 by default
+    public string filePath = Application.dataPath + "/tourHistory.json";
+
+    /*
+        Suggested Workflow:
+          - Create an instance of manageTourHistory, which will load data from the JSON.
+          - To add a stop:
+            - call addStopToHistory() 
+            - IMPORTANT: call saveTourHistory() otherwise this will not update the JSON file.
+    */
     public manageTourHistory() {
         loadTourHistory();
     }
@@ -35,7 +44,6 @@ public class manageTourHistory : MonoBehaviour
             Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
             on both desktop runs and mobile. 
         */
-        string filePath = Application.dataPath + "/tourHistory.json";
 
         using (StreamReader r = new StreamReader(filePath))
         {
@@ -64,5 +72,10 @@ public class manageTourHistory : MonoBehaviour
 
     public void clearTourHistory() {
         tourHistory.RemoveRange(0, tourHistory.Count-1);
+    }
+
+    public void saveTourHistory() {
+        //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
+        File.WriteAllText(filePath, JsonConvert.SerializeObject(tourHistory));
     }
 }
