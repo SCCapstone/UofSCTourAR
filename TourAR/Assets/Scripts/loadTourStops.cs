@@ -8,8 +8,7 @@ public class loadTourStops : MonoBehaviour
 {
     private List<TourStop> tourStops;
 
-    // Start is called before the first frame update
-    void Start()
+    public loadTourStops()
     {
         loadTheTourStops();
     }

@@ -9,8 +9,7 @@ public class manageAchievements : MonoBehaviour
     
     private List<Achievement> achievements;
 
-    // Start is called before the first frame update
-    void Start()
+    public manageAchievements()
     {
         loadAchievements();
     }
