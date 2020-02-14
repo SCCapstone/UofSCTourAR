@@ -17,7 +17,8 @@ public class manageTourHistory : MonoBehaviour
             - call addStopToHistory() 
             - IMPORTANT: call saveTourHistory() otherwise this will not update the JSON file.
     */
-    public manageTourHistory() {
+    public manageTourHistory() 
+    {
         loadTourHistory();
     }
 
@@ -28,12 +29,15 @@ public class manageTourHistory : MonoBehaviour
         public string completionDate;
     }
 
-    public int getTourHistoryCap() {
+    public int getTourHistoryCap() 
+    {
         return tourHistoryCap; 
     }
 
-    public void setTourHistoryCap(int cap) {
-        if(cap > 0) {
+    public void setTourHistoryCap(int cap) 
+    {
+        if(cap > 0) 
+        {
             tourHistoryCap = cap;
         }
     }
@@ -60,7 +64,8 @@ public class manageTourHistory : MonoBehaviour
 
     public void addStopToHistory(string tourStopID, string date)
     {
-        if(tourHistory.Count >= tourHistoryCap) {
+        if(tourHistory.Count >= tourHistoryCap) 
+        {
             // we need to remove the last element of the list before adding this one
             tourHistory.RemoveAt(tourHistoryCap-1);
         }
@@ -70,11 +75,13 @@ public class manageTourHistory : MonoBehaviour
         tourHistory.Insert(0, newItem);
     }
 
-    public void clearTourHistory() {
+    public void clearTourHistory() 
+    {
         tourHistory.RemoveRange(0, tourHistory.Count-1);
     }
 
-    public void saveTourHistory() {
+    public void saveTourHistory() 
+    {
         //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
         File.WriteAllText(filePath, JsonConvert.SerializeObject(tourHistory));
     }
