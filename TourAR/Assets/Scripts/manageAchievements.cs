@@ -10,6 +10,13 @@ public class manageAchievements : MonoBehaviour
     private List<Achievement> achievements;
     public string filePath = Application.dataPath + "/achievements.json";
 
+    /*
+        Suggested Workflow:
+          - Create an instance of manageAchievements, which will load data from the JSON.
+          - To add a manage an achievements status:
+            - call toggleAchievementStatus()
+            - IMPORTANT: call saveAchievements() otherwise any changes will not actually update the JSON file.
+    */
     public manageAchievements()
     {
         loadAchievements();
