@@ -91,4 +91,12 @@ public class sceneLoaderTest : MonoBehaviour
         sReader.Close();
         return toReturn;
     }
+
+    [Test]
+    public void testManageTourHistory()
+    {
+        var manageTH = new manageTourHistory();
+        var THobj = manageTH.getTourHistory();
+        Assert.AreEqual(THobj[0].stopID, "horseshoe");
+    }
 }

@@ -8,15 +8,14 @@ public class manageTourHistory : MonoBehaviour
 {
     private List<tourStopVisited> tourHistory;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public manageTourHistory() {
         loadTourHistory();
     }
 
     public class tourStopVisited
     {
-        public string name;
+        public string stopID;
+
         public string completionDate;
     }
 
@@ -41,8 +40,14 @@ public class manageTourHistory : MonoBehaviour
         return tourHistory;
     }
 
-    public void addStopToHistory(string stopName, string completionDate)
+    public void addStopToHistory(string tourStopID, string date)
     {
-        //TODO add functionality
+        if(tourHistory.Count < 10) {
+            // If we don't have to worry about there being too many we can just add.
+            tourStopVisited newItem = new tourStopVisited();
+            newItem.stopID = tourStopID;
+            newItem.completionDate = date;
+            tourHistory.Insert(0, newItem);
+        }
     }
 }
