@@ -17,8 +17,18 @@ public class loadTourStops : MonoBehaviour
     public class TourStop
     {
         public string name;
-        public bool isVisited;
+
         public string description;
+
+        public string pictureName;
+        
+        public string year;
+
+        public string buildingID;
+
+        public string location;
+
+        public string closestPOI;
     }
 
     private void loadTheTourStops()
