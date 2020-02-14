@@ -2,15 +2,11 @@
     {
         
         "name": "horseshoe",
-        "isVisited": "true",
-        "description": "n/a yet"
-
-    },
-    {
-        
-        "name": "swearingen",
-        "isVisited": "false",
-        "description": "n/a"
-
+        "description": "n/a yet",
+        "pictureName": "",
+        "year": "n/a",
+        "buildingID":"n/a",
+        "location": "n/a",
+        "closestPOI": "n/a"
     }
 ]
