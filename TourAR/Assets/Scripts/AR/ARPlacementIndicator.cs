@@ -43,14 +43,14 @@ public class ARPlacementIndicator : MonoBehaviour
             if(!indicator.activeInHierarchy)
                 indicator.SetActive(true);
 
-            DoubleTap();
+            //DoubleTap();
 
-            /*
+
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         		{
         			PlaceObject();
         		}
-            */
+
         }
       }
 
@@ -58,15 +58,21 @@ public class ARPlacementIndicator : MonoBehaviour
 
     private void PlaceObject()
   	{
-      Debug.Log("****Instantiate Object: ");
+
   		Instantiate(objectToPlace, indicator.transform.position, indicator.transform.rotation);
-      ObjectLocText.text = "Position: "+ indicator.transform.position;
-      objectPlaced = true;
+      Debug.Log("****Instantiate Object: ");
+      //ObjectLocText.text = "Position: "+ indicator.transform.position;
+      //objectPlaced = true;
+
+      //TODO: Rotate Object
       //objectToPlace.transform.rotation.y = Camera.main.transform.rotation.y;
       //Quaternion.Euler(indicator.transform.rotation.x, Camera.main.transform.rotation.y, indicator.transform.rotation.z)
-      if(indicator.activeInHierarchy) { //turn off placement indicator parent
-        indicator.SetActive(false);
-      }
+
+      //if(indicator.activeInHierarchy) { //turn off placement indicator parent
+      gameObject.SetActive(false);
+      Debug.Log("gameObject is off");
+
+      //}
   	}
 
     private void DoubleTap() {

@@ -153,8 +153,8 @@ RectTransform:
   m_Father: {fileID: 441755839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -247,7 +247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &515784418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -518,6 +518,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 959272485013666974, guid: 0e5489c3beaca410a9c398aaaa638c2c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b0b3eb76944214dc0b8597d9d6aebdae, type: 2}
     - target: {fileID: 959272485966779274, guid: 0e5489c3beaca410a9c398aaaa638c2c,
         type: 3}
       propertyPath: m_Name
@@ -834,7 +839,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -957,6 +962,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3083290772963860988, guid: ff6051af738ca447aad1907418d260cc,
+        type: 3}
+      propertyPath: settings.Array.data[0]
+      value: 
+      objectReference: {fileID: 515784417}
+    - target: {fileID: 3912380155673226304, guid: ff6051af738ca447aad1907418d260cc,
+        type: 3}
+      propertyPath: m_Name
+      value: Gear
+      objectReference: {fileID: 0}
     - target: {fileID: 8609179583604692353, guid: ff6051af738ca447aad1907418d260cc,
         type: 3}
       propertyPath: m_Name

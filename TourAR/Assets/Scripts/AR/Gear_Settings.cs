@@ -8,14 +8,16 @@ public class Gear_Settings : MonoBehaviour
     [SerializeField] type objtype;
 
     public static int size = 0;
-    public GameObject[] settings = new GameObject[size];
+    public GameObject[] objects = new GameObject[size];
 
-    [SerializeField] GameObject boxTop;
-    Animator boxTopAnimator;
+    //[SerializeField] GameObject boxTop;
+    [SerializeField] Animator boxTopAnimator;
+    private bool boxStatus = false;
 
     // Start is called before the first frame update
     void Start()
     {
+      boxTopAnimator = GetComponent<Animator>();
 
     }
 
@@ -27,17 +29,34 @@ public class Gear_Settings : MonoBehaviour
 
     public void ToggleSettings() {
 
+      Debug.Log("Toggle");
+
+
       switch(objtype) {
         case type.Button:
-          boxTopAnimator = boxTop.GetComponent<Animator>();
+
+          Debug.Log("Button");
+
+          if (!boxStatus)
+            boxTopAnimator.Play("BoxOpen");
+          else
+            boxTopAnimator.Play("BoxClose");
 
 
+          foreach (GameObject obj in objects) {
+            obj.SetActive(!obj.activeInHierarchy);
+          }
+
+          Debug.Log("Objects Set");
+
+
+          boxStatus = !boxStatus;
 
 
           break;
         case type.Gear:
-          foreach (GameObject set in settings) {
-            set.SetActive(!set.activeInHierarchy);
+          foreach (GameObject obj in objects) {
+            obj.SetActive(!obj.activeInHierarchy);
           }
           break;
 
