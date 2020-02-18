@@ -1406,7 +1406,6 @@ GameObject:
   - component: {fileID: 197943263478091385}
   - component: {fileID: 1678997083876641933}
   - component: {fileID: 4667121523869680875}
-  - component: {fileID: 1846146286599923166}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -1513,18 +1512,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!114 &1846146286599923166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3904963359984265125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc8d637704074e439beaa24c414d181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4453049726642742317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,16 +2438,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Constructed: 1805
+  m_Text: '<b>Constructed:</b> 1805
 
-    Location: Horseshoe
+    <b>Location:</b> Horseshoe
 
-    Description: ...
+    <b>Description:
+    </b>...
 
 
 
-    <
-    TODO: Scroll View >'
+    < TODO: Scroll View >'
 --- !u!1 &6714828033345043975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,7 +2760,6 @@ GameObject:
   - component: {fileID: 8693343338504981757}
   - component: {fileID: 2247053282062090867}
   - component: {fileID: 2556224960654546808}
-  - component: {fileID: 1088874984721519053}
   - component: {fileID: 8613089473770126002}
   m_Layer: 0
   m_Name: Stop_Data Canvas
@@ -2781,7 +2767,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8539639767842179581
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2882,18 +2868,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!114 &1088874984721519053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7012857370243044384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc8d637704074e439beaa24c414d181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &8613089473770126002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2992,7 +2966,6 @@ GameObject:
   - component: {fileID: 4390328543896818772}
   - component: {fileID: 8462406650256722272}
   - component: {fileID: 7885015379466867387}
-  - component: {fileID: 8362243950683750649}
   m_Layer: 0
   m_Name: Back_Button Canvas
   m_TagString: Untagged
@@ -3100,18 +3073,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!114 &8362243950683750649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7157824478769502027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc8d637704074e439beaa24c414d181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7459643613298950540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3671,7 +3632,6 @@ GameObject:
   - component: {fileID: 8826109249522878459}
   - component: {fileID: 9172226715699931886}
   - component: {fileID: 7771945806788418327}
-  - component: {fileID: 1048875182483747406}
   m_Layer: 0
   m_Name: Stop_Photos Canvas
   m_TagString: Untagged
@@ -3780,18 +3740,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!114 &1048875182483747406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9096959869375379657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc8d637704074e439beaa24c414d181, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2553734501596364208
 PrefabInstance:
   m_ObjectHideFlags: 0
