@@ -65,4 +65,22 @@ public class loadTourStops : MonoBehaviour
         }
         return retVal;
     }
+
+    public string[] getAllDataForTourStop(string bID) {
+        string[] retVal = new string[2];
+        for(int i = 0; i < tourStops.Count; i++) 
+        {
+            if(tourStops[i].buildingID.Equals(bID)) 
+            {
+                retVal[0] = tourStops[i].name;
+                retVal[1] = tourStops[i].description;
+                retVal[2] = tourStops[i].pictureName;
+                retVal[3] = tourStops[i].year;
+                retVal[4] = tourStops[i].buildingID;
+                retVal[5] = tourStops[i].location;
+                retVal[6] = tourStops[i].closestPOI;
+            }
+        }
+        return retVal;
+    }
 }
