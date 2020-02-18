@@ -49,4 +49,20 @@ public class loadTourStops : MonoBehaviour
         return tourStops;
     }
 
+    public string getMetadataForTourStop(string bID) {
+        //constructed: 
+        // Location:
+        // description: 
+        string retVal = "";
+        for(int i = 0; i < tourStops.Count; i++) 
+        {
+            if(tourStops[i].buildingID.Equals(bID)) 
+            {
+                retVal += "Contstructed: " + tourStops[i].year;
+                retVal += "\nLocation: " + tourStops[i].location;
+                retVal += "\nDescription: " + tourStops[i].description;
+            }
+        }
+        return retVal;
+    }
 }
