@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class loadDataToAR : MonoBehaviour
 {
     public Text data;
-    public string text;
     loadTourStops tourStops;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +20,8 @@ public class loadDataToAR : MonoBehaviour
 
     }
     private void loadText() {
-      data.text = tourStops.name;
+      Debug.Log("loadText");
+      data.text = tourStops.getMetadataForTourStop("n/a");
     }
 
 }

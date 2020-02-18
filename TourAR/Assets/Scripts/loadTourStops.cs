@@ -20,7 +20,7 @@ public class loadTourStops : MonoBehaviour
         public string description;
 
         public string pictureName;
-        
+
         public string year;
 
         public string buildingID;
@@ -34,7 +34,7 @@ public class loadTourStops : MonoBehaviour
     {
         /*
             Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
-            on both desktop runs and mobile. 
+            on both desktop runs and mobile.
         */
         string filePath = Application.dataPath + "/tourStops.json";
         using (StreamReader r = new StreamReader(filePath))
@@ -50,16 +50,16 @@ public class loadTourStops : MonoBehaviour
     }
 
     public string getMetadataForTourStop(string bID) {
-        //constructed: 
+        //constructed:
         // Location:
-        // description: 
+        // description:
         string retVal = "";
-        for(int i = 0; i < tourStops.Count; i++) 
+        for(int i = 0; i < tourStops.Count; i++)
         {
-            if(tourStops[i].buildingID.Equals(bID)) 
+            if(tourStops[i].buildingID.Equals(bID))
             {
-                retVal += "Contstructed: " + tourStops[i].year;
-                retVal += "\nLocation: " + tourStops[i].location;
+                retVal += "<b>Contstructed: </b>" + tourStops[i].year;
+                retVal += "<br>Location: " + tourStops[i].location;
                 retVal += "\nDescription: " + tourStops[i].description;
             }
         }
