@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 4270071313832442499}
   - component: {fileID: 6465186631068752197}
   - component: {fileID: 1055884245334718229}
+  - component: {fileID: 1842430629}
   m_Layer: 5
   m_Name: Reset Object
   m_TagString: Untagged
@@ -230,7 +231,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6465186631068752197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1842430629}
+        m_MethodName: Delete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1842430629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109111285655111783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1b79117c272417c99a24987c93ba8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plcIndObject: {fileID: 0}
 --- !u!1 &1698180084614663719
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,8 +604,8 @@ GameObject:
   - component: {fileID: 301475717536149752}
   - component: {fileID: 8004946417053535572}
   - component: {fileID: 5666872019224186127}
-  - component: {fileID: 3083290772963860988}
   - component: {fileID: 267592437}
+  - component: {fileID: 694704124090186846}
   m_Layer: 5
   m_Name: Gear
   m_TagString: Untagged
@@ -686,7 +711,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3083290772963860988}
+      - m_Target: {fileID: 694704124090186846}
         m_MethodName: ToggleSettings
         m_Mode: 1
         m_Arguments:
@@ -697,22 +722,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3083290772963860988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3912380155673226304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccb232f49d2684cb39a04ec3e150237a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objtype: 1
-  objects:
-  - {fileID: 8813909931715838925}
-  boxTopAnimator: {fileID: 0}
 --- !u!95 &267592437
 Animator:
   serializedVersion: 3
@@ -732,6 +741,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &694704124090186846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912380155673226304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5e446d9aee44252ac16a932236898b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objtype: 1
+  objects:
+  - {fileID: 8813909931715838925}
+  trueObjects: []
+  falseObjects: []
+  boxTop: {fileID: 0}
 --- !u!1 &4723582069381151070
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,6 +848,7 @@ GameObject:
   - component: {fileID: 7301142692772232627}
   - component: {fileID: 4597308585863804599}
   - component: {fileID: 7788498202005584077}
+  - component: {fileID: 1300473345}
   m_Layer: 5
   m_Name: Plane Detection
   m_TagString: Untagged
@@ -926,7 +954,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4597308585863804599}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1300473345}
+        m_MethodName: TogglePD
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1300473345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062724339469494632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b85037a30b54e41b1c310566c496ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arSessionOrigin: {fileID: 0}
+  buttonText: {fileID: 2297098907468992342}
 --- !u!1 &5419878677636055182
 GameObject:
   m_ObjectHideFlags: 0

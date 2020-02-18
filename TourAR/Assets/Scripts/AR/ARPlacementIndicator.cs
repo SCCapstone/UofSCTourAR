@@ -11,7 +11,7 @@ public class ARPlacementIndicator : MonoBehaviour
     private ARRaycastManager rayManager;
     private GameObject indicator;
     [SerializeField] GameObject objectToPlace;
-    private bool objectPlaced = false;
+    public bool objectPlaced = false;
 
     [SerializeField] Text ObjectLocText;
 
@@ -61,7 +61,7 @@ public class ARPlacementIndicator : MonoBehaviour
   	{
 
   		Instantiate(objectToPlace, indicator.transform.position, indicator.transform.rotation);
-      Debug.Log("****Instantiate Object: ");
+      //Debug.Log("****Instantiate Object: ");
       //ObjectLocText.text = "Position: "+ indicator.transform.position;
       //objectPlaced = true;
 
@@ -71,7 +71,7 @@ public class ARPlacementIndicator : MonoBehaviour
 
       //if(indicator.activeInHierarchy) { //turn off placement indicator parent
       gameObject.SetActive(false);
-      Debug.Log("gameObject is off");
+      //Debug.Log("gameObject is off");
 
       //}
   	}
