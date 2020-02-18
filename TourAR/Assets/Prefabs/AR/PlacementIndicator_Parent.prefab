@@ -12,14 +12,14 @@ GameObject:
   - component: {fileID: 959272485013666975}
   - component: {fileID: 959272485013666972}
   - component: {fileID: 959272485013666973}
-  - component: {fileID: 959272485013666974}
+  - component: {fileID: 1164384389}
   m_Layer: 0
   m_Name: Placement Indicator_Obj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &959272485013666962
 Transform:
   m_ObjectHideFlags: 0
@@ -91,12 +91,12 @@ MeshCollider:
   m_GameObject: {fileID: 959272485013666963}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &959272485013666974
+--- !u!95 &1164384389
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -106,9 +106,9 @@ Animator:
   m_GameObject: {fileID: 959272485013666963}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21227bf5834044431ae42405af15fd6a, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 2
+  m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -159,7 +159,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779a90138564844579dd87312269feb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToPlace: {fileID: 0}
+  objectToPlace: {fileID: 3535234658791357376, guid: 8d9305e29780841e0b751a9f846c4549,
+    type: 3}
   ObjectLocText: {fileID: 0}
 --- !u!1 &959272486480846877
 GameObject:

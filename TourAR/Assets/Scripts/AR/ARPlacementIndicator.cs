@@ -43,13 +43,14 @@ public class ARPlacementIndicator : MonoBehaviour
             if(!indicator.activeInHierarchy)
                 indicator.SetActive(true);
 
-            //DoubleTap();
+            DoubleTap();
 
-
+            /*
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         		{
         			PlaceObject();
         		}
+            */
 
         }
       }

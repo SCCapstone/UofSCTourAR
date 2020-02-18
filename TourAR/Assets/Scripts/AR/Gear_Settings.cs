@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Gear_Settings : MonoBehaviour
 {
-    enum type {Button, Gear};
-    [SerializeField] type objtype;
+    public enum ARUItype {Button, Gear, Back};
+    [SerializeField] public ARUItype objtype;
 
     public static int size = 0;
     public GameObject[] objects = new GameObject[size];
+    public static int back_size = 0;
+    public GameObject[] back_objects = new GameObject[back_size];
+
 
     //[SerializeField] GameObject boxTop;
     [SerializeField] Animator boxTopAnimator;
@@ -33,34 +36,53 @@ public class Gear_Settings : MonoBehaviour
 
 
       switch(objtype) {
-        case type.Button:
+        case ARUItype.Button:
 
           Debug.Log("Button");
 
-          if (!boxStatus)
+          if (!boxStatus) {
             boxTopAnimator.Play("BoxOpen");
-          else
+            Debug.Log("Toggle_BoxOpen");
+          }
+          else {
             boxTopAnimator.Play("BoxClose");
+            Debug.Log("Toggle_BoxClose");
 
+          }
 
           foreach (GameObject obj in objects) {
             obj.SetActive(!obj.activeInHierarchy);
           }
-
-          Debug.Log("Objects Set");
-
 
           boxStatus = !boxStatus;
 
 
           break;
-        case type.Gear:
+
+        case ARUItype.Gear:
           foreach (GameObject obj in objects) {
             obj.SetActive(!obj.activeInHierarchy);
           }
           break;
 
+        case ARUItype.Back:
+          foreach (GameObject obj in objects) {
+            obj.SetActive(false);
+          }
+
+          foreach (GameObject back in back_objects) {
+            back.SetActive(true);
+          }
+
+          boxTopAnimator.Play("BoxClose");
+          Debug.Log("Toggle_BoxClose");
+
+          boxStatus = !boxStatus;
+
+          break;
+
         default:
+          Debug.Log("DefaultCase_Toggle");
           break;
       }
 
