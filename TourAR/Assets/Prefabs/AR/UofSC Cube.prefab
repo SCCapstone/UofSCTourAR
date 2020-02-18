@@ -291,9 +291,10 @@ MonoBehaviour:
   objects: []
   trueObjects:
   - {fileID: 7012857370243044384}
+  - {fileID: 4453049726642742317}
   - {fileID: 7157824478769502027}
   falseObjects:
-  - {fileID: 3904963359984265125}
+  - {fileID: 5091521051986166659}
   - {fileID: 6714828033345043975}
   boxTop: {fileID: 7459643613298950540}
 --- !u!1 &1705853577682653625
@@ -534,9 +535,10 @@ MonoBehaviour:
   objects: []
   trueObjects:
   - {fileID: 9096959869375379657}
+  - {fileID: 4453049726642742317}
   - {fileID: 7157824478769502027}
   falseObjects:
-  - {fileID: 3904963359984265125}
+  - {fileID: 5091521051986166659}
   - {fileID: 4826551801431451232}
   boxTop: {fileID: 7459643613298950540}
 --- !u!1 &1933853189029887768
@@ -1540,7 +1542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4398073264595037004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2779,7 +2781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8539639767842179581
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3328,10 +3330,11 @@ MonoBehaviour:
   trueObjects:
   - {fileID: 6714828033345043975}
   - {fileID: 4826551801431451232}
-  - {fileID: 3904963359984265125}
+  - {fileID: 5091521051986166659}
   falseObjects:
   - {fileID: 7012857370243044384}
   - {fileID: 9096959869375379657}
+  - {fileID: 4453049726642742317}
   - {fileID: 7157824478769502027}
   boxTop: {fileID: 7459643613298950540}
 --- !u!1 &7619441638143500943
@@ -3675,7 +3678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2311968457216727759
 RectTransform:
   m_ObjectHideFlags: 0
