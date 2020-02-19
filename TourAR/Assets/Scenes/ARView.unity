@@ -463,6 +463,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1370508551980356409}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1919353175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919353174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e0163541e674d1590b21cebae9a71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portraitOnly: 0
 --- !u!1001 &1370508551980356409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -552,41 +565,6 @@ PrefabInstance:
       propertyPath: plcIndObject
       value: 
       objectReference: {fileID: 655227645}
-    - target: {fileID: 1113029001614034643, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1113029001614034643, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1737119397545724698, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_Name
-      value: Text
-      objectReference: {fileID: 0}
-    - target: {fileID: 2748215180081917302, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2748215180081917302, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2748215180081917302, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8178512813451942324, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_Text
-      value: '< TODO: Settings Panel >'
-      objectReference: {fileID: 0}
     - target: {fileID: 8609179583604692353, guid: ff6051af738ca447aad1907418d260cc,
         type: 3}
       propertyPath: m_Name
@@ -695,11 +673,6 @@ PrefabInstance:
     - target: {fileID: 8609179583604692365, guid: ff6051af738ca447aad1907418d260cc,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813909931715838925, guid: ff6051af738ca447aad1907418d260cc,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
