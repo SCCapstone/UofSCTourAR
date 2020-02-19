@@ -10,27 +10,11 @@ public class loadTourStops : MonoBehaviour
     private List<TourStop> tourStops;
     public Text stopTitle;
     public Text data;
-    //public Dropdown selection;
+    public string stopToLoad = "Rutledge";
+    //public Dropdown selection; Dropdown did not work as intended
     //private int prevDropVal=-1;
 
-
-    /*public loadTourStops()
-    {
-        //loadTheTourStops();
-        //sendToAR();
-    }*/
-
     void Start() {
-
-      /*
-      selection = GameObject.Find("ChooseStop").GetComponent<Dropdown>();
-
-      if (selection == null) {
-        Debug.Log("I have a bad feeling about this...");
-      }
-      Debug.Log(selection.value);
-      prevDropVal = selection.value;
-      */
 
       loadTheTourStops();
       sendToAR();
@@ -62,32 +46,17 @@ public class loadTourStops : MonoBehaviour
       Debug.Log("sendToAR");
       //Debug.Log(selection.options[selection.value].text);
       //Debug.Log(selection.captionText.text);
-      stopTitle.text = this.getTitleForTourStop("Horseshoe");
-      data.text = this.getMetadataForTourStop("Horseshoe");
+      stopTitle.text = this.getTitleForTourStop(stopToLoad);
+      data.text = this.getMetadataForTourStop(stopToLoad);
     }
 
 
     private void loadTheTourStops()
     {
-        /*
-            Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
-            on both desktop runs and mobile.
-        */
-        //Debug.Log("dataPath: "+Application.dataPath);
-        //string filePath = Application.dataPath + "Resources/JSON/tourStops.json";
-
         string json = Resources.Load<TextAsset>("JSON/tourStops").text;
-        Debug.Log("JSON DATA:  "+ json);
+        //Debug.Log("JSON DATA:  "+ json);
         tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
 
-
-        /*
-        using (StreamReader r = new StreamReader(filePath))
-        {
-            string json = r.ReadToEnd();
-            tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
-        }
-        */
     }
 
     public List<TourStop> getTourStops()
@@ -118,7 +87,7 @@ public class loadTourStops : MonoBehaviour
         {
             if(tourStops[i].buildingID.Equals(bID))
             {
-                retVal += "<b>Contstructed:</b> " + tourStops[i].year;
+                retVal += "<b>Constructed:</b> " + tourStops[i].year;
                 retVal += "\n<b>Location:</b> " + tourStops[i].location;
                 retVal += "\n<b>Description:</b> " + tourStops[i].description;
             }

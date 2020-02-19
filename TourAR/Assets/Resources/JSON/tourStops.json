@@ -8,5 +8,25 @@
         "buildingID":"Horseshoe",
         "location": "Horseshoe",
         "closestPOI": "n/a"
+    },
+    {
+
+        "name": "Rutledge",
+        "description": "Description coming soon...",
+        "pictureName": "",
+        "year": "1805",
+        "buildingID":"Rutledge",
+        "location": "Horseshoe",
+        "closestPOI": "n/a"
+    },
+    {
+
+        "name": "McKissick Museum",
+        "description": "Description coming soon...",
+        "pictureName": "",
+        "year": "1940",
+        "buildingID":"McKissick",
+        "location": "Horseshoe",
+        "closestPOI": "n/a"
     }
 ]
