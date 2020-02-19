@@ -10,7 +10,7 @@ public class loadTourStops : MonoBehaviour
     private List<TourStop> tourStops;
     public Text stopTitle;
     public Text data;
-    public Dropdown selection;
+    //public Dropdown selection;
     //private int prevDropVal=-1;
 
 
@@ -60,10 +60,10 @@ public class loadTourStops : MonoBehaviour
 
     private void sendToAR() {
       Debug.Log("sendToAR");
-      Debug.Log(selection.options[selection.value].text);
-      Debug.Log(selection.captionText.text);
-      stopTitle.text = this.getTitleForTourStop("Rutledge");
-      data.text = this.getMetadataForTourStop("Rutledge");
+      //Debug.Log(selection.options[selection.value].text);
+      //Debug.Log(selection.captionText.text);
+      stopTitle.text = this.getTitleForTourStop("Horseshoe");
+      data.text = this.getMetadataForTourStop("Horseshoe");
     }
 
 
@@ -102,6 +102,7 @@ public class loadTourStops : MonoBehaviour
         {
             if(tourStops[i].buildingID.Equals(bID))
             {
+                Debug.Log("buildingID: "+bID);
                 retVal += tourStops[i].name;
             }
         }
