@@ -22,11 +22,11 @@ MonoBehaviour:
   BuildNumber: 0
   MyTests:
   - _selected: 0
-    _testName: /Users/prithvi/GitHub Repos/Unity/Capstone/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _status: 0
     _isSuite: 1
     _parentName: 
-    _testCaseCount: 106
+    _testCaseCount: 115
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
@@ -1627,13 +1627,156 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: Assets/Mapbox
+  - _selected: 0
+    _testName: sceneLoaderTest
+    _status: 0
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: sceneLoaderTest.searchCaseInsensitive_Test
+    _status: 0
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.searchForMapScene_Test
+    _status: 0
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.searchForTourHistoryScene_Test
+    _status: 0
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.searchInvalidScene_Test
+    _status: 0
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.testManageAchievements
+    _status: 0
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.testManageTourHistory
+    _status: 0
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: TestAchievements
+    _status: 0
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: TestAchievements.Test
+    _status: 0
+    _isSuite: 0
+    _parentName: TestAchievements
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/TestAchievements.cs
+  - _selected: 0
+    _testName: TestARView
+    _status: 0
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: TestARView.Test
+    _status: 0
+    _isSuite: 0
+    _parentName: TestARView
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/TestARView.cs
+  - _selected: 0
+    _testName: TestSearch
+    _status: 0
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: TestSearch.Test
+    _status: 0
+    _isSuite: 0
+    _parentName: TestSearch
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/TestSearch.cs
   - _selected: 1
     _testName: TestTH
     _status: -1
     _isSuite: 1
     _parentName: /Users/prithvi/GitHub Repos/Unity/Capstone/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _testCaseCount: 1
-    _foldOut: 0
+    _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
@@ -1650,23 +1793,34 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0
     path: Assets/UITests/Editor/TestTH.cs
+  - _selected: 0
+    _testName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    _status: 0
+    _isSuite: 1
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
   Scenes:
   - _toBeBuilt: 1
     _path: Assets/Scenes/HomePage.unity
     _buildIndex: 0
-  - _toBeBuilt: 0
+  - _toBeBuilt: 1
     _path: Assets/Scenes/Map.unity
     _buildIndex: 0
-  - _toBeBuilt: 0
+  - _toBeBuilt: 1
     _path: Assets/Scenes/Achievements.unity
     _buildIndex: 0
   - _toBeBuilt: 1
     _path: Assets/Scenes/TourHistory.unity
     _buildIndex: 0
-  - _toBeBuilt: 0
+  - _toBeBuilt: 1
     _path: Assets/Scenes/Search.unity
     _buildIndex: 0
-  - _toBeBuilt: 0
+  - _toBeBuilt: 1
     _path: Assets/Scenes/ARView.unity
     _buildIndex: 0
   platform: 2
