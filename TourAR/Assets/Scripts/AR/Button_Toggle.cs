@@ -103,7 +103,7 @@ public class Button_Toggle : MonoBehaviour
     }
 
     private void PrintState() {
-      string[] states = new string[]{"Idle_State", "BoxOpen", "BoxClose"};
+      string[] states = new string[] {"Closed, BoxOpening, Open, BoxClosing"};
 
       foreach (string state in states) { //find the matching name of the state the animator is in and print
         if (boxTopAnimator.GetCurrentAnimatorStateInfo(0).IsName(state)) {

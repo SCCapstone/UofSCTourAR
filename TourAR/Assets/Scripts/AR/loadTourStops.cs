@@ -10,7 +10,10 @@ public class loadTourStops : MonoBehaviour
     private List<TourStop> tourStops;
     public Text stopTitle;
     public Text data;
-    public string stopToLoad = "Rutledge";
+    public static string stopToLoad = "Rutledge";
+    //public static List<string> imageNames = new List<string>();
+    
+    //ChangeStop change;
     //public Dropdown selection; Dropdown did not work as intended
     //private int prevDropVal=-1;
 
@@ -23,6 +26,10 @@ public class loadTourStops : MonoBehaviour
     void Update() {
       //if (prevDropVal != selection.value)
         //sendToAR();
+        if (ChangeStop.hasChanged) {
+          sendToAR();
+          ChangeStop.hasChanged = false;
+        }
     }
 
     public class TourStop
@@ -43,7 +50,7 @@ public class loadTourStops : MonoBehaviour
     }
 
     private void sendToAR() {
-      Debug.Log("sendToAR");
+      Debug.Log("sendToAR: "+stopToLoad);
       //Debug.Log(selection.options[selection.value].text);
       //Debug.Log(selection.captionText.text);
       stopTitle.text = this.getTitleForTourStop(stopToLoad);
