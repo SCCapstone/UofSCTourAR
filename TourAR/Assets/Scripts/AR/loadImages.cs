@@ -64,7 +64,7 @@ public class loadImages : MonoBehaviour
     }
 
     void loadSprite() {
-      Debug.Log("index: "+imageIndex);
+      Debug.Log("_index: "+imageIndex);
       imageComponent.sprite = images[imageIndex];
       Debug.Log("load image"+images[imageIndex].name);
       //Debug.Log("Its dimensions are- height: "+ +"width:"+ )

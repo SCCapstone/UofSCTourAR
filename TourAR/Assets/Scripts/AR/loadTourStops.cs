@@ -125,6 +125,8 @@ public class loadTourStops : MonoBehaviour
       */
       imageNames.Add("horseshoe_old");
       imageNames.Add("horseshoe_new");
+      imageNames.Add("rutledge-1875");
+
 
     }
 
