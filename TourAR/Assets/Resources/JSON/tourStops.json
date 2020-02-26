@@ -7,7 +7,9 @@
         "year": "1801",
         "buildingID":"Horseshoe",
         "location": "Horseshoe",
-        "closestPOI": "n/a"
+        "closestPOI": "n/a",
+        "photos" : ["Photo1", "Photo2", "Photo3"]
+        
     },
     {
 
