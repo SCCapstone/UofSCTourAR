@@ -10,8 +10,8 @@ public class loadTourStops : MonoBehaviour
     private List<TourStop> tourStops;
     public Text stopTitle;
     public Text data;
-    public static string stopToLoad = "Rutledge";
-    //public static List<string> imageNames = new List<string>();
+    public static string stopToLoad = "Horseshoe";
+    public static List<string> imageNames = new List<string>();    //public static List<string> imageNames = new List<string>();
 
     //ChangeStop change;
     //public Dropdown selection; Dropdown did not work as intended
@@ -47,6 +47,8 @@ public class loadTourStops : MonoBehaviour
         public string location;
 
         public string closestPOI;
+
+        public string photos;
     }
 
     private void sendToAR() {
@@ -55,6 +57,7 @@ public class loadTourStops : MonoBehaviour
       //Debug.Log(selection.captionText.text);
       stopTitle.text = this.getTitleForTourStop(stopToLoad);
       data.text = this.getMetadataForTourStop(stopToLoad);
+      setPhotosForTourStop(stopToLoad);
     }
 
 
@@ -63,6 +66,7 @@ public class loadTourStops : MonoBehaviour
         string json = Resources.Load<TextAsset>("JSON/tourStops").text;
         //Debug.Log("JSON DATA:  "+ json);
         tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
+        Debug.Log("finished convert");
 
     }
 
@@ -100,6 +104,28 @@ public class loadTourStops : MonoBehaviour
             }
         }
         return retVal;
+    }
+
+    public void setPhotosForTourStop(string bID) {
+
+      /*
+      string retVal = ""; //array in a  string
+      string[] retValArray;
+      for(int i = 0; i < tourStops.Count; i++)
+      {
+          if(tourStops[i].buildingID.Equals(bID))
+          {
+              Debug.Log("buildingID: "+bID);
+              retVal += tourStops[i].photos;
+
+              Debug.Log(retVal);
+          }
+      }
+      //return retValArray;
+      */
+      imageNames.Add("horseshoe_old");
+      imageNames.Add("horseshoe_new");
+
     }
 
     public string[] getAllDataForTourStop(string bID) {
