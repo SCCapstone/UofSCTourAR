@@ -9,20 +9,6 @@ public class ChangeImage : MonoBehaviour
     [Tooltip("Determine the type of button script will be used on.")]
     [SerializeField] public ButtonType button;
 
-
-    void Start()
-    {
-      //loadTourStops.imageNames;
-      //load list based on stop's images
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void onButtonTap() {
       switch(button) {
         case ButtonType.Next:
@@ -35,6 +21,7 @@ public class ChangeImage : MonoBehaviour
     }
 
     private void next() {
+      Debug.Log("Next");
       //move to the next image
 
       if (loadImages.imageIndex != loadImages.images.Count - 1) {
@@ -43,11 +30,10 @@ public class ChangeImage : MonoBehaviour
         loadImages.imageIndex = 0;
       }
 
-
-
-
     }
     private void back() {
+      Debug.Log("Back");
+
       //move to the previous image -1
 
       if (loadImages.imageIndex != 0) {

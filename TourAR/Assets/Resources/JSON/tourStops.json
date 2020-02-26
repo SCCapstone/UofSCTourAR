@@ -23,10 +23,120 @@
 
         "name": "McKissick Museum",
         "description": "Description coming soon...",
-        "pictureName": "",
-        "year": "1940",
-        "buildingID":"McKissick",
-        "location": "Horseshoe",
-        "closestPOI": "n/a"
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "DeSaussure",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "DeSaussure College",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"DeSaussure",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "President's House",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "McCutchen House",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "Pinckney/Legare",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "President's House",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "Ellicott/Harper College",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "Leiber College",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"_",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "South Caroliniana Library",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"Caroliniana",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "Storey Innovation Center",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"",
+        "location": "_",
+        "closestPOI": "_"
+    },
+    {
+
+        "name": "Swearingen",
+        "description": "Description coming soon...",
+        "pictureName": "_",
+        "year": "_",
+        "buildingID":"",
+        "location": "_",
+        "closestPOI": "_"
     }
 ]

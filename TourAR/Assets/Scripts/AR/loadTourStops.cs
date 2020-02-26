@@ -12,7 +12,7 @@ public class loadTourStops : MonoBehaviour
     public Text data;
     public static string stopToLoad = "Rutledge";
     //public static List<string> imageNames = new List<string>();
-    
+
     //ChangeStop change;
     //public Dropdown selection; Dropdown did not work as intended
     //private int prevDropVal=-1;
