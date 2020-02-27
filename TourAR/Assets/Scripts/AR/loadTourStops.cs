@@ -40,8 +40,6 @@ public class loadTourStops : MonoBehaviour
 
         public string description;
 
-        public string pictureName;
-
         public string year;
 
         public string buildingID;
@@ -133,7 +131,6 @@ public class loadTourStops : MonoBehaviour
             {
                 retVal[0] = tourStops[i].name;
                 retVal[1] = tourStops[i].description;
-                retVal[2] = tourStops[i].pictureName;
                 retVal[3] = tourStops[i].year;
                 retVal[4] = tourStops[i].buildingID;
                 retVal[5] = tourStops[i].location;
