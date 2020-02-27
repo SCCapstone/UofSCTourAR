@@ -34,6 +34,8 @@ public class Button_Toggle : MonoBehaviour
     void Start()
     {
       boxTopAnimator = boxTop.GetComponent<Animator>();
+      dataCanvasAnimator = dataCanvas.GetComponent<Animator>();
+      picsCanvasAnimator = picsCanvas.GetComponent<Animator>();
       //boxStatus = boxTopAnimator.GetBool("isOpen");
       //boxTopAnimator.SetBool("isOpen", false); //initialize box as closed so animation doesnt trigger on spawn
 
@@ -69,7 +71,7 @@ public class Button_Toggle : MonoBehaviour
 
     private void ARButton() {
       if (!boxTopAnimator.GetBool("isOpen")) { // boxStatus will be false here on initialization
-        //boxTopAnimator.Play("BoxOpen"); //TODO does not work...
+        Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
         boxTopAnimator.SetBool("isOpen", true);
         DelayAnimCoroutine();
         dataCanvasAnimator.SetBool("isOpen", true);
@@ -106,6 +108,7 @@ public class Button_Toggle : MonoBehaviour
     }
 
     private void BackButton() {
+      Debug.Log("Toggle_BoxClose: " + boxTopAnimator.GetBool("isOpen"));
       dataCanvasAnimator.SetBool("isOpen", false);
       picsCanvasAnimator.SetBool("isOpen", false);
       DelayAnimCoroutine();
@@ -144,5 +147,6 @@ public class Button_Toggle : MonoBehaviour
 
     IEnumerator DelayAnimCoroutine() {
       yield return new WaitForSeconds(0.5f);
+      Debug.Log("Waiting.....");
     }
 }
