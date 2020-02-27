@@ -8,7 +8,7 @@
         "buildingID":"Horseshoe",
         "location": "The Horseshoe Columbia, SC 29208",
         "closestPOI": "n/a",
-
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -18,7 +18,8 @@
         "year": "1805",
         "buildingID":"Rutledge",
         "location": "Horseshoe",
-        "closestPOI": "n/a"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -28,7 +29,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -38,7 +40,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -48,7 +51,8 @@
         "year": "_",
         "buildingID":"DeSaussure",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -58,7 +62,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -68,7 +73,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -78,7 +84,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -88,7 +95,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -98,7 +106,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -108,7 +117,8 @@
         "year": "_",
         "buildingID":"_",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -118,7 +128,8 @@
         "year": "_",
         "buildingID":"Caroliniana",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -128,7 +139,8 @@
         "year": "_",
         "buildingID":"",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     },
     {
 
@@ -138,6 +150,7 @@
         "year": "_",
         "buildingID":"",
         "location": "_",
-        "closestPOI": "_"
+        "closestPOI": "n/a",
+        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
     }
 ]
