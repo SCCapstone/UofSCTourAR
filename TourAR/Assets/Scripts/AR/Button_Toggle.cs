@@ -17,12 +17,17 @@ public class Button_Toggle : MonoBehaviour
     public GameObject[] trueObjects = new GameObject[trueObjectsSize];
 
     public static int falseObjectsSize = 0;
-    [Tooltip("Set all objects to False.")]
+    [Tooltip("Set all objects to False. Make sure self is in the last spot in the array")]
     public GameObject[] falseObjects = new GameObject[falseObjectsSize];
 
 
     [SerializeField] GameObject boxTop;
+    [SerializeField] GameObject dataCanvas;
+    [SerializeField] GameObject picsCanvas;
     private Animator boxTopAnimator;
+    private Animator dataCanvasAnimator;
+    private Animator picsCanvasAnimator;
+
     //private bool boxStatus = false;
 
     // Start is called before the first frame update
@@ -66,6 +71,10 @@ public class Button_Toggle : MonoBehaviour
       if (!boxTopAnimator.GetBool("isOpen")) { // boxStatus will be false here on initialization
         //boxTopAnimator.Play("BoxOpen"); //TODO does not work...
         boxTopAnimator.SetBool("isOpen", true);
+        DelayAnimCoroutine();
+        dataCanvasAnimator.SetBool("isOpen", true);
+        picsCanvasAnimator.SetBool("isOpen", true);
+
         Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
         PrintState();
         //boxStatus = boxTopAnimator.GetBool("isOpen");
@@ -86,13 +95,22 @@ public class Button_Toggle : MonoBehaviour
         Debug.Log("Toggle "+t.name+ " is "+t.activeInHierarchy);
       }
       foreach (GameObject f in falseObjects) {
-        f.SetActive(false);
+        if (f.name.Contains("Button")) {
+          DelayAnimCoroutine();
+          f.SetActive(false);
+        } else {
+          f.SetActive(false);
+        }
         Debug.Log("Toggle "+f.name+ " is "+f.activeInHierarchy);
       }
     }
 
     private void BackButton() {
+      dataCanvasAnimator.SetBool("isOpen", false);
+      picsCanvasAnimator.SetBool("isOpen", false);
+      DelayAnimCoroutine();
       boxTopAnimator.SetBool("isOpen", false);
+
       Debug.Log("Toggle_BoxClose: " + boxTopAnimator.GetBool("isOpen"));
       //boxStatus = boxTopAnimator.GetBool("isOpen");
       PrintState();
@@ -103,7 +121,12 @@ public class Button_Toggle : MonoBehaviour
         //t.GetComponent<Animator>().SetBool("FadeIn", true);
       }
       foreach (GameObject f in falseObjects) {
-        f.SetActive(false);
+        if (f.name.Contains("Button")) {
+          DelayAnimCoroutine();
+          f.SetActive(false);
+        } else {
+          f.SetActive(false);
+        }
       }
     }
 
@@ -117,5 +140,9 @@ public class Button_Toggle : MonoBehaviour
       }
       Debug.Log("Toggle_state: " + boxTopAnimator.GetBool("isOpen"));
 
+    }
+
+    IEnumerator DelayAnimCoroutine() {
+      yield return new WaitForSeconds(0.5f);
     }
 }
