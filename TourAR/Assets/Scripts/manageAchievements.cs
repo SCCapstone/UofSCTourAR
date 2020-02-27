@@ -6,7 +6,7 @@ using System.IO;
 
 public class manageAchievements : MonoBehaviour
 {
-    
+
     private List<Achievement> achievements;
     public string filePath = Application.dataPath + "/achievements.json";
 
@@ -35,7 +35,7 @@ public class manageAchievements : MonoBehaviour
             Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
             on both desktop runs and mobile. 
         */
-        
+
         using (StreamReader r = new StreamReader(filePath))
         {
             string json = r.ReadToEnd();
@@ -51,15 +51,15 @@ public class manageAchievements : MonoBehaviour
 
     public void toggleAchievementStatus(string achievementName)
     {
-        for(int i = 0; i < achievements.Count; i++) 
+        for (int i = 0; i < achievements.Count; i++)
         {
-            if(achievements[i].name.Equals(achievementName)) 
+            if (achievements[i].name.Equals(achievementName))
             {
                 achievements[i].isCompleted = !achievements[i].isCompleted;
             }
         }
     }
-    public void addAchievement(string aName, bool completion, string desc) 
+    public void addAchievement(string aName, bool completion, string desc)
     {
         Achievement a = new Achievement();
         a.name = aName;
@@ -68,18 +68,19 @@ public class manageAchievements : MonoBehaviour
         achievements.Insert(0, a);
     }
 
-    public void saveAchievements() 
+    public void saveAchievements()
     {
         //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
         File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
     }
 
-    public void resetAchievements() 
+    public void resetAchievements()
     {
         //set all achievements to be uncompleted
-        for(int i = 0; i < achievements.Count; i++) {
+        for (int i = 0; i < achievements.Count; i++)
+        {
             achievements[i].isCompleted = false;
         }
     }
 
-} 
+}

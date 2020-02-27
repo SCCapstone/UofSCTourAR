@@ -43,55 +43,6 @@ public class sceneLoaderTest : MonoBehaviour
         Assert.AreEqual(sceneExists, false);
     }
 
-    // [Test]
-    // public void testWrite()
-    // {
-    //     var writePath = Application.dataPath + "/TestWrite.txt";
-    //     List<string> myFile = new List<string>();
-    //     myFile.Add("thisisatest");
-    //     WriteFile(writePath, myFile);
-    // }
-    // void WriteFile(string filePath, List<string> fileToWrite)
-    // {
-    //     StreamWriter sWriter;
-
-    //     if (!File.Exists(filePath))
-    //     {
-    //         sWriter = File.CreateText(Application.dataPath + "/Test.txt");
-    //     }
-    //     else
-    //     {
-    //         sWriter = File.CreateText(filePath);
-    //     }
-
-    //     for (int i = 0; i < fileToWrite.Count; i++)
-    //     {
-    //         sWriter.WriteLine(fileToWrite[i]);
-    //     }
-    //     sWriter.Close();
-    // }
-
-    // [Test]
-    // public void testRead()
-    // {
-    //     var readPath = Application.dataPath + "/Test.txt";
-    //     Assert.AreEqual(readFile(readPath), "thisisatest");
-    // }
-
-    // string readFile(string filePath) 
-    // {
-    //     StreamReader sReader = new StreamReader(filePath);
-    //     string toReturn = "";
-    //     while(!sReader.EndOfStream) 
-    //     {
-    //         string line = sReader.ReadLine();
-    //         toReturn += line;
-    //     }
-
-    //     sReader.Close();
-    //     return toReturn;
-    // }
-
     [Test]
     public void testManageTourHistory()
     {
