@@ -20,7 +20,7 @@ public class loadTourStops : MonoBehaviour
     void Start() {
 
       loadTheTourStops();
-      sendToAR();
+      sendToAR(); 
     }
 
     void Update() {
@@ -48,7 +48,7 @@ public class loadTourStops : MonoBehaviour
 
         public string closestPOI;
 
-        public string photos;
+        public string[] photos;
     }
 
     private void sendToAR() {
@@ -75,7 +75,8 @@ public class loadTourStops : MonoBehaviour
         return tourStops;
     }
 
-    public string getTitleForTourStop(string bID) {
+    public string getTitleForTourStop(string bID)
+    {
         //title
         string retVal = "";
         for(int i = 0; i < tourStops.Count; i++)
@@ -89,7 +90,8 @@ public class loadTourStops : MonoBehaviour
         return retVal;
     }
 
-    public string getMetadataForTourStop(string bID) {
+    public string getMetadataForTourStop(string bID) 
+    {
         // constructed:
         // Location:
         // description:
@@ -106,28 +108,18 @@ public class loadTourStops : MonoBehaviour
         return retVal;
     }
 
-    public void setPhotosForTourStop(string bID) {
-
-      /*
-      string retVal = ""; //array in a  string
-      string[] retValArray;
-      for(int i = 0; i < tourStops.Count; i++)
-      {
-          if(tourStops[i].buildingID.Equals(bID))
-          {
-              Debug.Log("buildingID: "+bID);
-              retVal += tourStops[i].photos;
-
-              Debug.Log(retVal);
-          }
-      }
-      //return retValArray;
-      */
-      imageNames.Add("horseshoe_old");
-      imageNames.Add("horseshoe_new");
-      imageNames.Add("rutledge-1875");
-
-
+    public void setPhotosForTourStop(string bID) 
+    {
+        for(int i = 0; i < tourStops.Count; i++) 
+        {
+            if(tourStops[i].buildingID.Equals(bID))
+            {
+                for(int j = 0; j < tourStops[i].photos.Length; j++) 
+                {
+                    imageNames.Add(tourStops[i].photos[j]);
+                }
+            }
+        }
     }
 
     public string[] getAllDataForTourStop(string bID) {
