@@ -142,7 +142,7 @@ public class loadTourStops : MonoBehaviour
         }
         return retVal;
     }
-    
+
     public string getStopDescription(string stopName)
     {
         for (int i = 0; i < tourStops.Count; i++)
