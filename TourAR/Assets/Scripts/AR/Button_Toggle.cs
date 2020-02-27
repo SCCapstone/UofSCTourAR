@@ -23,14 +23,18 @@ public class Button_Toggle : MonoBehaviour
 
     [SerializeField] GameObject boxTop;
     private Animator boxTopAnimator;
-    private bool boxStatus = false;
+    //private bool boxStatus = false;
 
     // Start is called before the first frame update
     void Start()
     {
       boxTopAnimator = boxTop.GetComponent<Animator>();
+      //boxStatus = boxTopAnimator.GetBool("isOpen");
       //boxTopAnimator.SetBool("isOpen", false); //initialize box as closed so animation doesnt trigger on spawn
 
+    }
+    void Update() {
+      //boxStatus = removed boxStatus
     }
 
     public void ToggleSettings() {
@@ -59,12 +63,12 @@ public class Button_Toggle : MonoBehaviour
     }
 
     private void ARButton() {
-      if (!boxStatus) { // boxStatus will be false here on initialization
+      if (!boxTopAnimator.GetBool("isOpen")) { // boxStatus will be false here on initialization
         //boxTopAnimator.Play("BoxOpen"); //TODO does not work...
         boxTopAnimator.SetBool("isOpen", true);
         Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
         PrintState();
-        boxStatus = true;
+        //boxStatus = boxTopAnimator.GetBool("isOpen");
       }
       else {
         //boxTopAnimator.Play("BoxClose");
@@ -86,7 +90,13 @@ public class Button_Toggle : MonoBehaviour
         Debug.Log("Toggle "+f.name+ " is "+f.activeInHierarchy);
       }
     }
+
     private void BackButton() {
+      boxTopAnimator.SetBool("isOpen", false);
+      Debug.Log("Toggle_BoxClose: " + boxTopAnimator.GetBool("isOpen"));
+      //boxStatus = boxTopAnimator.GetBool("isOpen");
+      PrintState();
+
       foreach (GameObject t in trueObjects) {
         t.SetActive(true);
         //TODO implement animations for every object, should look somthing like:
@@ -95,22 +105,17 @@ public class Button_Toggle : MonoBehaviour
       foreach (GameObject f in falseObjects) {
         f.SetActive(false);
       }
-      boxTopAnimator.SetBool("isOpen", false);
-      Debug.Log("Toggle_BoxClose: " + boxTopAnimator.GetBool("isOpen"));
-      PrintState();
-
-      boxStatus = false;
     }
 
     private void PrintState() {
-      string[] states = new string[]{"Idle_State", "BoxOpen", "BoxClose"};
+      string[] states = new string[]{"Idle_State", "Open", "Close"};
 
       foreach (string state in states) { //find the matching name of the state the animator is in and print
         if (boxTopAnimator.GetCurrentAnimatorStateInfo(0).IsName(state)) {
             Debug.Log("Toggle_ The current anim state is: "+state);
         }
       }
-      Debug.Log("Toggle_state: " + boxStatus);
+      Debug.Log("Toggle_state: " + boxTopAnimator.GetBool("isOpen"));
 
     }
 }

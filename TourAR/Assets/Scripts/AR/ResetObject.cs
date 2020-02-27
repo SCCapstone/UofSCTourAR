@@ -5,20 +5,19 @@ using UnityEngine;
 public class ResetObject : MonoBehaviour
 {
 
-    private GameObject objectToDelete;
+    private GameObject objectToChange = null;
 
-    [SerializeField] GameObject plcIndObject;
-    ARPlacementIndicator plcInd;
+    public void ResetRotation() {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-      plcIndObject.GetComponent<ARPlacementIndicator>();
-    }
+      objectToChange = GameObject.Find("UofSC Cube");
 
-    public void Delete() {
-      objectToDelete.Destroy();
-      plcInd.objectPlaced = false;
-      plcIndObject.SetActive(true);
+      if (objectToChange != null) {
+
+        var cameraForward = Camera.current.transform.forward;
+        var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
+
+        objectToChange.transform.SetPositionAndRotation(objectToChange.transform.position, Quaternion.LookRotation(cameraBearing));
+
+      }
     }
 }
