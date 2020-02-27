@@ -20,7 +20,7 @@ public class loadTourStops : MonoBehaviour
     void Start() {
 
       loadTheTourStops();
-      sendToAR(); 
+      sendToAR();
     }
 
     void Update() {
@@ -90,7 +90,7 @@ public class loadTourStops : MonoBehaviour
         return retVal;
     }
 
-    public string getMetadataForTourStop(string bID) 
+    public string getMetadataForTourStop(string bID)
     {
         // constructed:
         // Location:
@@ -108,13 +108,13 @@ public class loadTourStops : MonoBehaviour
         return retVal;
     }
 
-    public void setPhotosForTourStop(string bID) 
+    public void setPhotosForTourStop(string bID)
     {
-        for(int i = 0; i < tourStops.Count; i++) 
+        for(int i = 0; i < tourStops.Count; i++)
         {
             if(tourStops[i].buildingID.Equals(bID))
             {
-                for(int j = 0; j < tourStops[i].photos.Length; j++) 
+                for(int j = 0; j < tourStops[i].photos.Length; j++)
                 {
                     imageNames.Add(tourStops[i].photos[j]);
                 }

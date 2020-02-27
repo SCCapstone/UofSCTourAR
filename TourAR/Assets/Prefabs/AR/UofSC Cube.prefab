@@ -1929,7 +1929,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4453049726642742317}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!114 &3978053792990097784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,6 +2048,7 @@ GameObject:
   - component: {fileID: 6195936218634060354}
   - component: {fileID: 292631559325139044}
   - component: {fileID: 8788501523158446588}
+  - component: {fileID: 2924105548700076738}
   m_Layer: 0
   m_Name: Photos_Button Canvas
   m_TagString: Untagged
@@ -2155,6 +2156,14 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!222 &2924105548700076738
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826551801431451232}
+  m_CullTransparentMesh: 1
 --- !u!1 &4945504774388813273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,7 +2379,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5091521051986166659}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!114 &9033164942314110151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3143,6 +3152,7 @@ GameObject:
   - component: {fileID: 5405132969662566016}
   - component: {fileID: 2961866353750825915}
   - component: {fileID: 5998606804836157618}
+  - component: {fileID: 634716391058694725}
   m_Layer: 0
   m_Name: Data_Button Canvas
   m_TagString: Untagged
@@ -3250,6 +3260,14 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!222 &634716391058694725
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714828033345043975}
+  m_CullTransparentMesh: 1
 --- !u!1 &6759240100720697733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3490,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7012857370243044384}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!1 &7132655757099263342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,6 +3581,7 @@ GameObject:
   - component: {fileID: 4390328543896818772}
   - component: {fileID: 8462406650256722272}
   - component: {fileID: 7885015379466867387}
+  - component: {fileID: 8866534389898854114}
   m_Layer: 0
   m_Name: Back_Button Canvas
   m_TagString: Untagged
@@ -3671,6 +3690,14 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!222 &8866534389898854114
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7157824478769502027}
+  m_CullTransparentMesh: 1
 --- !u!1 &7459643613298950540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,6 +4430,7 @@ GameObject:
   - component: {fileID: 8826109249522878459}
   - component: {fileID: 9172226715699931886}
   - component: {fileID: 7771945806788418327}
+  - component: {fileID: 1905603194022029526}
   m_Layer: 0
   m_Name: Stop_Photos Canvas
   m_TagString: Untagged
@@ -4512,6 +4540,14 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!222 &1905603194022029526
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9096959869375379657}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2553734501596364208
 PrefabInstance:
   m_ObjectHideFlags: 0
