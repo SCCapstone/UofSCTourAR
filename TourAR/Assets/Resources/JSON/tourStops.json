@@ -8,7 +8,7 @@
         "buildingID":"Horseshoe",
         "location": "The Horseshoe Columbia, SC 29208",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Horseshoe1", "Horseshoe2", "Horseshoe3"]
     },
     {
 
@@ -19,7 +19,7 @@
         "buildingID":"Rutledge",
         "location": "Horseshoe",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Rutledge1", "Rutledge2", "Rutledge3"]
     },
     {
 
@@ -30,18 +30,7 @@
         "buildingID":"_",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
-    },
-    {
-
-        "name": "DeSaussure",
-        "description": "Description coming soon...",
-        "pictureName": "_",
-        "year": "_",
-        "buildingID":"_",
-        "location": "_",
-        "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["McKissick1", "McKissick2", "McKissick3"]
     },
     {
 
@@ -52,7 +41,7 @@
         "buildingID":"DeSaussure",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["DeSaussure1", "DeSaussure2", "DeSaussure3"]
     },
     {
 
@@ -63,7 +52,7 @@
         "buildingID":"_",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["President1", "President2", "President3"]
     },
     {
 
@@ -74,7 +63,7 @@
         "buildingID":"_",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["McCutchen1", "McCutchen2", "McCutchen3"]
     },
     {
 
@@ -85,18 +74,7 @@
         "buildingID":"_",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
-    },
-    {
-
-        "name": "President's House",
-        "description": "Description coming soon...",
-        "pictureName": "_",
-        "year": "_",
-        "buildingID":"_",
-        "location": "_",
-        "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Pinckney1", "Pinckney2", "Pinckney3"]
     },
     {
 
@@ -107,7 +85,7 @@
         "buildingID":"_",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Harper1", "Harper2", "Harper3"]
     },
     {
 
@@ -118,7 +96,7 @@
         "buildingID":"_",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Leiber1", "Leiber2", "Leiber3"]
     },
     {
 
@@ -129,7 +107,7 @@
         "buildingID":"Caroliniana",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Library1", "Library2", "Library3"]
     },
     {
 
@@ -140,7 +118,7 @@
         "buildingID":"",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Storey1", "Storey2", "Storey3"]
     },
     {
 
@@ -151,6 +129,6 @@
         "buildingID":"",
         "location": "_",
         "closestPOI": "n/a",
-        "photos": ["horseshoe_old", "horseshoe_new", "rutledge-1875"]
+        "photos": ["Swearingen1", "Swearingen2", "Swearingen3"]
     }
 ]
