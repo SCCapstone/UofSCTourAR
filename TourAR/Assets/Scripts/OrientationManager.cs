@@ -23,6 +23,7 @@ public class OrientationManager : MonoBehaviour
 
       if (portraitOnly){
         Screen.autorotateToPortrait = true;
+        Screen.orientation = ScreenOrientation.Portrait;
       } else {
         Screen.autorotateToPortrait = false;
         Screen.orientation = ScreenOrientation.AutoRotation;

@@ -11,6 +11,13 @@ public class loadTourStops : MonoBehaviour
     public Text stopTitle;
     public Text data;
     public static string stopToLoad = "Horseshoe";
+
+    [SerializeField]
+    private Text hcData;
+    private Text hcTitle;
+
+    public static string stopIBM = "Storey Innovation Center";
+
     public static List<string> imageNames = new List<string>();    //public static List<string> imageNames = new List<string>();
 
     //ChangeStop change;
@@ -21,6 +28,8 @@ public class loadTourStops : MonoBehaviour
     {
         loadTheTourStops();
         sendToAR();
+        sendToSearchHorseshoe();
+        sendToSearchIBM();
     }
 
     void Update()
@@ -61,6 +70,19 @@ public class loadTourStops : MonoBehaviour
         setPhotosForTourStop(stopToLoad);
     }
 
+    private void sendToSearchHorseshoe()
+    {
+        Debug.Log("sendToSearch: " + stopToLoad);
+        stopTitle.text = this.getTitleForTourStop(stopToLoad);
+        data.text = this.getMetadataForTourStop(stopToLoad);
+    }
+
+    private void sendToSearchIBM()
+    {
+        Debug.Log("sendToSearch: " + stopIBM);
+        hcTitle.text = this.getTitleForTourStop(stopIBM);
+        hcData.text = getMetadataForTourStop(stopIBM);
+    }
 
     private void loadTheTourStops()
     {
