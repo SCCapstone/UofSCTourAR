@@ -552,6 +552,11 @@ PrefabInstance:
       propertyPath: arSessionOrigin
       value: 
       objectReference: {fileID: 1919353174}
+    - target: {fileID: 3912380155673226304, guid: ff6051af738ca447aad1907418d260cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8609179583604692353, guid: ff6051af738ca447aad1907418d260cc,
         type: 3}
       propertyPath: m_Name
@@ -660,6 +665,11 @@ PrefabInstance:
     - target: {fileID: 8609179583604692365, guid: ff6051af738ca447aad1907418d260cc,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813909931715838925, guid: ff6051af738ca447aad1907418d260cc,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
