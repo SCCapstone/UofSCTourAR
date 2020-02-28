@@ -141,10 +141,9 @@ GameObject:
   - component: {fileID: 3535234658791357379}
   - component: {fileID: 2346661078968002833}
   - component: {fileID: 1977024130493755855}
-  - component: {fileID: 5365059867838146494}
   m_Layer: 0
   m_Name: UofSC Cube POI
-  m_TagString: POI
+  m_TagString: ARObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,21 +194,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.25, y: 1.25, z: 1.25}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &5365059867838146494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3535234658791357376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89b634d81eec14240a2d9b0fc1670385, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buildingID: Horseshoe
 --- !u!1 &3535234658927300684
 GameObject:
   m_ObjectHideFlags: 0

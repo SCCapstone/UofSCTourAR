@@ -67,7 +67,7 @@ public class loadTourStops : MonoBehaviour
         string json = Resources.Load<TextAsset>("JSON/tourStops").text;
         //Debug.Log("JSON DATA:  "+ json);
         tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
-        Debug.Log("finished convert");
+        //Debug.Log("finished convert");
     }
 
     public List<TourStop> getTourStops()
