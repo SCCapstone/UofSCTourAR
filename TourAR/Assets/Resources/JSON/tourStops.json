@@ -13,10 +13,10 @@
         ]
     },
     {
-        "name": "Rutledge",
+        "name": "Rutledge College",
         "description": "The very first building constructed for South Carolina College, originally known as South Building, opened its doors in 1805. It contained a dormitory, lecture hall, chapel and library. In 1855, a fire severly destroyed the original elements of the chapel and the west wing of the building and was subsequently rebuilt. When the university was desegregated between 1873 and 1877, this building housed the State Normal School for Teachers, a program that trained African Americans to become teachers. The building is currently used for student dormitories, and the renovated chapel is available for rentals.",
         "year": "1805",
-        "buildingID": "Rutledge",
+        "buildingID": "rutledgeCollege",
         "location": "Rutledge College, Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -29,7 +29,7 @@
         "name": "McKissick Museum",
         "description": "The structure that currently houses McKissick Museum is the only twentieth-century building standing on the Horseshoe. It functioned as McKissick Library, the university's main library until the construction of Thomas Cooper Library in 1959. In 1984, the Roosevelt-era facility was rededicated as McKissick Museum, which today houses a nationally recognized southern folk life collection.",
         "year": "1940",
-        "buildingID": "McKissick",
+        "buildingID": "mckissickMuseum",
         "location": "1501 Pendleton St, Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -42,7 +42,7 @@
         "name": "DeSaussure College",
         "description": "DeSaussure College was named for Henry William DeSaussure (1763-1839), who served in the Revolutionary War and later as a politician in both chambers of the South Carolina legislature. The structure, constructed as a twin of Rutledge College, served as a hospital during the Civil War, and was the site of the first medical school at Carolina from 1866-1873. During Reconstruction, one wing served as a federal military prison while the university and the city were occupied. During World War I, one wing served as the first women’s dormitory. During the 1970s Horseshoe Restoration Project, archaeologists discovered DeSaussure’s original foundation had been 100 feet closer to Rutledge.",
         "year": "1809",
-        "buildingID": "DeSaussure",
+        "buildingID": "desaussureCollege",
         "location": "DeSaussure CollegeColumbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -68,7 +68,7 @@
         "name": "McCutchen House",
         "description": "McCutchen House was the second faculty double residence constructed at South Carolina College, likely designed after the Blacklock House in Charleston, S.C. The house hosted two of the longest-serving faculty members in school history — Maximilian LaBorde (1804-1873) and George McCutchen (1876-1951). The building is named for George McCutchen, who taught economics from 1900 to 1948. McCutchen lived in the house from 1915 until the university stopped providing faculty housing in 1945.",
         "year": "1813",
-        "buildingID": "McCutchen",
+        "buildingID": "mccutchenHouse",
         "location": "The Horseshoe Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -78,10 +78,10 @@
         ]
     },
     {
-        "name": "Pinckney/Legare",
+        "name": "Pinckney Legare College",
         "description": "Pinckney College was designed solely as student housing and lacks the central academic portions of other Horseshoe buildings. Pinckney is named for Charles Cotesworth Pinckney (1746-1825) and his cousin, Charles Pinckney (1757-1824). Charles C. Pinckney was a Revolutionary War general, legislator, diplomat and one of the first members of the college’s board of trustees. Legare's design included a meeting hall on the third floor for the Clariosophic Literary Society, one of the first two student organizations in Carolina history. Legare was used as a Confederate hospital during the Civil War and, when the university was desegregated from 1873-1877 during Reconstruction, it became the primary residence hall for the predominantly African American student body. Among its residents was T. McCants Stewart, the first African American graduate of Carolina.",
         "year": "1837; 1848",
-        "buildingID": "PinLeg",
+        "buildingID": "pickneyLegare",
         "location": "The Horseshoe Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -91,10 +91,10 @@
         ]
     },
     {
-        "name": "Ellicott/Harper College",
+        "name": "Harper Elliott College",
         "description": "Elliott College was designed solely as student housing and lacks central academic space. The building was named for Stephen Elliott (1771-1830), a botanist, educator, state legislator and one of the founders of the State Bank of South Carolina in 1812. Harper College was constructed at the same time and follow the pattern established by Rutledge College of a central academic section flanked by wings of student housing. Its third floor meeting hall was used by the Euphradian Literary Society, one of the first two student organizations at South Carolina College. The building was named for William Harper (1790-1847), an early graduate of South Carolina College (1808) who served as a state legislator, United States Senator, judge, state chancellor and member of the board of trustees.",
         "year": "1837; 1848",
-        "buildingID": "EllHarp",
+        "buildingID": "harperElliott",
         "location": "The Horseshoe Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -120,7 +120,7 @@
         "name": "South Caroliniana Library",
         "description": "The South Caroliniana Library is the oldest freestanding academic library in the United States. The structure is based on plans submitted by Robert Mills, a South Carolinian, the nation’s first federal architect and the designer of the Washington Monument. The second floor reading room is a replica of the original reading room of the Library of Congress. Wings designed by J. Carroll Johnson were added in 1927 to provide more storage and work space. It served as the main college library for 100 years. The historic building became the South Caroliniana Library, a repository for published and unpublished materials relating to the history, literature and culture of South Carolina, and one of the nation’s top repositories of Southern manuscripts. The term 'Caroliniana' means 'things pertaining to Carolina.'",
         "year": "1840, 1927",
-        "buildingID": "Caroliniana",
+        "buildingID": "southCaroliniana",
         "location": "910 Sumter St, Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -130,10 +130,10 @@
         ]
     },
     {
-        "name": "Storey Innovation Center",
+        "name": "Edward Storey Innovation Center",
         "description": "The Storey Engineering and Innovation Center is housed in the first two floors of five for Applied Innovation building at Blossom and Assembly streets. The 44,000-square-feet of space will house research and teaching activity related to cyber security, robotics, computer information systems and integrated information technology. The goal is to create a space where students and researchers from different disciplines can interact and collaborate on projects.",
         "year": "",
-        "buildingID": "Storey",
+        "buildingID": "innovCenter",
         "location": "550 Assembly St, Columbia, SC 29201",
         "closestPOI": "n/a",
         "photos": [
@@ -146,7 +146,7 @@
         "name": "Swearingen Engineering Center",
         "description": "Turn the technical into the functional. Logic into language. And, with a bit of creativity, the complex into the captivating. No matter your path, you’ll be challenged to turn real-life problems into savvy industry solutions in the College of Engineering and Computing at the University of South Carolina.",
         "year": "1987",
-        "buildingID": "Swearingen",
+        "buildingID": "swearingen",
         "location": "301 Main St, Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
