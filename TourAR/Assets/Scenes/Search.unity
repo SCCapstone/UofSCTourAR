@@ -991,7 +991,6 @@ MonoBehaviour:
   stopTitle: {fileID: 1864131498}
   data: {fileID: 995125051}
   hcData: {fileID: 2119834649}
-  hcTitle: {fileID: 856981348}
 --- !u!1 &343109812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &792901661
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9579,8 +9578,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076293945, y: -0.00025177002}
-  m_SizeDelta: {x: 640, y: 317.4}
+  m_AnchoredPosition: {x: -13.375, y: -35.2}
+  m_SizeDelta: {x: 837.5, y: 693.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119834649
 MonoBehaviour:
@@ -9613,7 +9612,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Information coming soon! \n"
+  m_Text: "<b>Constructed:</b> \n<b>Location:</b> 550 Assembly St, Columbia, SC 29201\n<b>Description:</b>
+    The Storey Engineering and Innovation Center is housed in the first two floors
+    of five for Applied Innovation building at Blossom and Assembly streets. The
+    44,000-square-feet of space will house research and teaching activity related
+    to cyber security, robotics, computer information systems and integrated information
+    technology. The goal is to create a space where students and researchers from
+    different disciplines can interact and collaborate on projects."
 --- !u!222 &2119834650
 CanvasRenderer:
   m_ObjectHideFlags: 0

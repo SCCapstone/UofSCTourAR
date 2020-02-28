@@ -14,8 +14,6 @@ public class loadTourStops : MonoBehaviour
 
     [SerializeField]
     private Text hcData;
-
-    [SerializeField]
     private Text hcTitle;
 
     public static string stopIBM = "Storey Innovation Center";
@@ -83,7 +81,7 @@ public class loadTourStops : MonoBehaviour
     {
         Debug.Log("sendToSearch: " + stopIBM);
         hcTitle.text = this.getTitleForTourStop(stopIBM);
-        hcData.text = this.getMetadataForTourStop(stopIBM);
+        hcData.text = getMetadataForTourStop(stopIBM);
     }
 
     private void loadTheTourStops()
