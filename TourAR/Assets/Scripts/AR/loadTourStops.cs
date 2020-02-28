@@ -21,6 +21,7 @@ public class loadTourStops : MonoBehaviour
     {
         loadTheTourStops();
         sendToAR();
+        sendToSearch();
     }
 
     void Update()
@@ -59,6 +60,13 @@ public class loadTourStops : MonoBehaviour
         stopTitle.text = this.getTitleForTourStop(stopToLoad);
         data.text = this.getMetadataForTourStop(stopToLoad);
         setPhotosForTourStop(stopToLoad);
+    }
+
+    private void sendToSearch()
+    {
+        Debug.Log("sendToSearch: " + stopToLoad);
+        stopTitle.text = this.getTitleForTourStop(stopToLoad);
+        data.text = this.getMetadataForTourStop(stopToLoad);
     }
 
 
