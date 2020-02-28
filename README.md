@@ -31,6 +31,9 @@ Packages:
 ## Setup
  > Currently there are no one-time setup instructions for this app
  
+## Project Settings: TODO
+
+ 
 
 ## Running
  1. First, connect a compatible iOS device running the version(s) specified above.

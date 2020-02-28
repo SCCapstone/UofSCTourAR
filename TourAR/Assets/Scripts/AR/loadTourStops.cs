@@ -17,18 +17,20 @@ public class loadTourStops : MonoBehaviour
     //public Dropdown selection; Dropdown did not work as intended
     //private int prevDropVal=-1;
 
-    void Start() {
-
-      loadTheTourStops();
-      sendToAR();
+    void Start()
+    {
+        loadTheTourStops();
+        sendToAR();
     }
 
-    void Update() {
-      //if (prevDropVal != selection.value)
+    void Update()
+    {
+        //if (prevDropVal != selection.value)
         //sendToAR();
-        if (ChangeStop.hasChanged) {
-          sendToAR();
-          ChangeStop.hasChanged = false;
+        if (ChangeStop.hasChanged)
+        {
+            sendToAR();
+            ChangeStop.hasChanged = false;
         }
     }
 
@@ -37,8 +39,6 @@ public class loadTourStops : MonoBehaviour
         public string name;
 
         public string description;
-
-        public string pictureName;
 
         public string year;
 
@@ -51,13 +51,14 @@ public class loadTourStops : MonoBehaviour
         public string[] photos;
     }
 
-    private void sendToAR() {
-      Debug.Log("sendToAR: "+stopToLoad);
-      //Debug.Log(selection.options[selection.value].text);
-      //Debug.Log(selection.captionText.text);
-      stopTitle.text = this.getTitleForTourStop(stopToLoad);
-      data.text = this.getMetadataForTourStop(stopToLoad);
-      setPhotosForTourStop(stopToLoad);
+    private void sendToAR()
+    {
+        Debug.Log("sendToAR: " + stopToLoad);
+        //Debug.Log(selection.options[selection.value].text);
+        //Debug.Log(selection.captionText.text);
+        stopTitle.text = this.getTitleForTourStop(stopToLoad);
+        data.text = this.getMetadataForTourStop(stopToLoad);
+        setPhotosForTourStop(stopToLoad);
     }
 
 
@@ -67,7 +68,6 @@ public class loadTourStops : MonoBehaviour
         //Debug.Log("JSON DATA:  "+ json);
         tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
         Debug.Log("finished convert");
-
     }
 
     public List<TourStop> getTourStops()
@@ -79,11 +79,11 @@ public class loadTourStops : MonoBehaviour
     {
         //title
         string retVal = "";
-        for(int i = 0; i < tourStops.Count; i++)
+        for (int i = 0; i < tourStops.Count; i++)
         {
-            if(tourStops[i].buildingID.Equals(bID))
+            if (tourStops[i].buildingID.Equals(bID))
             {
-                Debug.Log("buildingID: "+bID);
+                Debug.Log("buildingID: " + bID);
                 retVal += tourStops[i].name;
             }
         }
@@ -96,9 +96,9 @@ public class loadTourStops : MonoBehaviour
         // Location:
         // description:
         string retVal = "";
-        for(int i = 0; i < tourStops.Count; i++)
+        for (int i = 0; i < tourStops.Count; i++)
         {
-            if(tourStops[i].buildingID.Equals(bID))
+            if (tourStops[i].buildingID.Equals(bID))
             {
                 retVal += "<b>Constructed:</b> " + tourStops[i].year;
                 retVal += "\n<b>Location:</b> " + tourStops[i].location;
@@ -110,11 +110,11 @@ public class loadTourStops : MonoBehaviour
 
     public void setPhotosForTourStop(string bID)
     {
-        for(int i = 0; i < tourStops.Count; i++)
+        for (int i = 0; i < tourStops.Count; i++)
         {
-            if(tourStops[i].buildingID.Equals(bID))
+            if (tourStops[i].buildingID.Equals(bID))
             {
-                for(int j = 0; j < tourStops[i].photos.Length; j++)
+                for (int j = 0; j < tourStops[i].photos.Length; j++)
                 {
                     imageNames.Add(tourStops[i].photos[j]);
                 }
@@ -122,15 +122,15 @@ public class loadTourStops : MonoBehaviour
         }
     }
 
-    public string[] getAllDataForTourStop(string bID) {
+    public string[] getAllDataForTourStop(string bID)
+    {
         string[] retVal = new string[2];
-        for(int i = 0; i < tourStops.Count; i++)
+        for (int i = 0; i < tourStops.Count; i++)
         {
-            if(tourStops[i].buildingID.Equals(bID))
+            if (tourStops[i].buildingID.Equals(bID))
             {
                 retVal[0] = tourStops[i].name;
                 retVal[1] = tourStops[i].description;
-                retVal[2] = tourStops[i].pictureName;
                 retVal[3] = tourStops[i].year;
                 retVal[4] = tourStops[i].buildingID;
                 retVal[5] = tourStops[i].location;
@@ -138,5 +138,17 @@ public class loadTourStops : MonoBehaviour
             }
         }
         return retVal;
+    }
+
+    public string getStopDescription(string stopName)
+    {
+        for (int i = 0; i < tourStops.Count; i++)
+        {
+            if (tourStops[i].name.Equals(stopName))
+            {
+                return tourStops[i].description;
+            }
+        }
+        return "n/a couldn't find a match";
     }
 }
