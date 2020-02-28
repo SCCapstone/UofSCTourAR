@@ -132,16 +132,21 @@ public class loadTourStops : MonoBehaviour
 
     public void setPhotosForTourStop(string bID)
     {
-        for (int i = 0; i < tourStops.Count; i++)
-        {
-            if (tourStops[i].buildingID.Equals(bID))
-            {
-                for (int j = 0; j < tourStops[i].photos.Length; j++)
-                {
-                    imageNames.Add(tourStops[i].photos[j]);
-                }
-            }
-        }
+      foreach (string image in imageNames)
+      {
+          imageNames.Remove(image);
+      }
+
+      for (int i = 0; i < tourStops.Count; i++)
+      {
+          if (tourStops[i].buildingID.Equals(bID))
+          {
+              for (int j = 0; j < tourStops[i].photos.Length; j++)
+              {
+                  imageNames.Add(tourStops[i].photos[j]);
+              }
+          }
+      }
     }
 
     public string[] getAllDataForTourStop(string bID)
