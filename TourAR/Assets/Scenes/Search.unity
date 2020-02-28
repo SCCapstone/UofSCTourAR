@@ -991,6 +991,7 @@ MonoBehaviour:
   stopTitle: {fileID: 1864131498}
   data: {fileID: 995125051}
   hcData: {fileID: 2119834649}
+  hcTitle: {fileID: 856981348}
 --- !u!1 &343109812
 GameObject:
   m_ObjectHideFlags: 0
