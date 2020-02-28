@@ -121,90 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &41327583
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3535234658791357376, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_Name
-      value: UofSC Cube POI
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3535234658791357379, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616448315732270888, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.051918738
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616448315732270888, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.051918738
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616448315732270888, guid: e09ef47dc8d694d19821a0869cb2e661,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.051918738
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e09ef47dc8d694d19821a0869cb2e661, type: 3}
 --- !u!1 &148196851
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +835,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _vectorData._layerProperty.vectorSubLayers.Array.data[1].GoModifiers.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 866380150c130402eb0d14f648c57418,
+      objectReference: {fileID: 11400000, guid: c421e1927fa1642528afae3d8022da60,
         type: 2}
     - target: {fileID: 3729492934289627581, guid: cb41eadeadc404200a1a4822f2674828,
         type: 3}
@@ -929,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 3729492934289627581, guid: cb41eadeadc404200a1a4822f2674828,
         type: 3}
       propertyPath: _previewOptions.isPreviewEnabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3729492934289627581, guid: cb41eadeadc404200a1a4822f2674828,
         type: 3}
