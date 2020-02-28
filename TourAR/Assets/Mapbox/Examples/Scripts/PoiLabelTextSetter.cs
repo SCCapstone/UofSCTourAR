@@ -22,7 +22,7 @@
 			}
       if (props.ContainsKey("buildingID"))
 			{
-        if (text.title == "") {
+        if (_text.text == "") {
           _text.text = props["buildingID"].ToString();
         }
         gameObject.GetComponent<cubePOI_ID>().buildingID = props["buildingID"].ToString();
@@ -51,5 +51,6 @@
 			//LayoutRebuilder.ForceRebuildLayoutImmediate(backgroundRect);
 		}
     */
+    }
 	}
 }
