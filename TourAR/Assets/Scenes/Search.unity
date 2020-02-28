@@ -990,8 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopTitle: {fileID: 1864131498}
   data: {fileID: 995125051}
-  hardcodeData: {fileID: 2119834649}
-  hardcodeTitle: {fileID: 856981348}
+  hcData: {fileID: 2119834649}
 --- !u!1 &343109812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,7 +3364,7 @@ GameObject:
   - component: {fileID: 856981349}
   - component: {fileID: 856981348}
   m_Layer: 5
-  m_Name: Text
+  m_Name: IBM_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4014,7 +4013,7 @@ GameObject:
   - component: {fileID: 995125052}
   - component: {fileID: 995125051}
   m_Layer: 5
-  m_Name: Text_1
+  m_Name: Text_HorseshoePopUP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8190,7 +8189,7 @@ GameObject:
   - component: {fileID: 1864131499}
   - component: {fileID: 1864131498}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_Horseshoe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9557,7 +9556,7 @@ GameObject:
   - component: {fileID: 2119834650}
   - component: {fileID: 2119834649}
   m_Layer: 5
-  m_Name: Text_11
+  m_Name: IBM_Text_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
