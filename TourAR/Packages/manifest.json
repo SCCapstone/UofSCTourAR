@@ -11,6 +11,7 @@
     "com.unity.xr.arfoundation": "3.0.1",
     "com.unity.xr.arkit": "3.0.1",
     "com.unity.xr.interaction.toolkit": "0.9.3-preview",
+    "com.unity.xr.management": "3.0.6",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

@@ -25,10 +25,14 @@ Packages:
   - AR Subsystems: 3.0.0
   - ARKit XR Plugin: 3.0.1
   - XR Interaction Tookit: (preview) 0.9.6
+  - XR Management: 3.0.6
  
  
 ## Setup
  > Currently there are no one-time setup instructions for this app
+ 
+## Project Settings: TODO
+
  
 
 ## Running
