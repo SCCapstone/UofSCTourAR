@@ -707,6 +707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3729492934289627581, guid: cb41eadeadc404200a1a4822f2674828,
         type: 3}
+      propertyPath: _vectorData._layerProperty.vectorSubLayers.Array.data[1].filterOptions.filters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729492934289627581, guid: cb41eadeadc404200a1a4822f2674828,
+        type: 3}
       propertyPath: _options.tileMaterial
       value: 
       objectReference: {fileID: 586467201}
