@@ -1975,6 +1975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 883978556}
+  title: {fileID: 1063015309}
 --- !u!4 &1738870730
 Transform:
   m_ObjectHideFlags: 0
@@ -2049,7 +2050,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: 1
   panel: {fileID: 883978556}
-  title: {fileID: 1164311410}
 --- !u!114 &1800145637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2194,7 +2194,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: 0
   panel: {fileID: 883978556}
-  title: {fileID: 437440969}
 --- !u!114 &1939604692
 MonoBehaviour:
   m_ObjectHideFlags: 0
