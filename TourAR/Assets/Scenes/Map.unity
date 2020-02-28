@@ -606,6 +606,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 348660644, guid: cb41eadeadc404200a1a4822f2674828, type: 3}
+      propertyPath: _rotationFollowFactor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3622560568760092039, guid: cb41eadeadc404200a1a4822f2674828,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -680,6 +684,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675055637221753125, guid: cb41eadeadc404200a1a4822f2674828,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3729492934289627581, guid: cb41eadeadc404200a1a4822f2674828,
         type: 3}
@@ -852,6 +861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _tileProvider
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729918124569823557, guid: cb41eadeadc404200a1a4822f2674828,
+        type: 3}
+      propertyPath: _updateTimeInMilliSeconds
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb41eadeadc404200a1a4822f2674828, type: 3}
