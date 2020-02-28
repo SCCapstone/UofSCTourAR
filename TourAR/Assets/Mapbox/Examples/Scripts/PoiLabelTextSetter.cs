@@ -26,8 +26,8 @@
           _text.text = props["buildingID"].ToString();
         }
         gameObject.GetComponent<cubePOI_ID>().buildingID = props["buildingID"].ToString();
-        //Debug.Log("test_buildingID: " + props["buildingID"].ToString());
-        //Debug.Log("test_cubeID: " + gameObject.GetComponent<cubePOI_ID>().buildingID);
+        Debug.Log("test_buildingID: " + props["buildingID"].ToString());
+        Debug.Log("test_cubeID: " + gameObject.GetComponent<cubePOI_ID>().buildingID);
 			}
       /*
 			else if (props.ContainsKey("title"))
