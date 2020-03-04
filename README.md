@@ -9,6 +9,8 @@ This repository contains the files for our Capstone Senior Design project pertai
  - Update version if needed
  - Target minimum iOS version: 11.0 
  - Architecture: ARM64
+ - You may need to add text in the "Allow Camera Access" and "Allow Location Access" fields that are marked with an *
+ 
  
 
 ## Technologies
