@@ -154,5 +154,84 @@
             "Swearingen2",
             "Swearingen3"
         ]
+    },
+    {
+        "name": "Thomas Cooper Library",
+        "description": "Thomas Cooper Library, constructed in 1976, is the home of the University Libraries. Here, students can rent books, reserve study space, and browse special collections of maps, art, music, manuscripts and more.",
+        "year": "",
+        "buildingID": "thomasCooper",
+        "location": "1322 Greene St, Columbia, SC 29208",
+        "closestPOI": "n/a",
+        "photos": [
+            "Tcoop1",
+            "Tcoop2",
+            "Tcoop3"
+        ]
+    },
+    {
+        "name": "Russell House University Union",
+        "description": "The Russell House is the home of the majority of our dining locations on campus. You can also find the leadership and service center here, the home of Student Government and over 500 on campus student organizations. Gamecock Entertainment hosts free movie showings every weekend in the Russell House theater located on the second floor.",
+        "year": "",
+        "buildingID": "russellHouse",
+        "location": "",
+        "closestPOI": "n/a",
+        "photos": [
+            "RH1",
+            "RH2",
+            "RH3"
+        ]
+    },
+    {
+        "name": "williams-Brice Stadium",
+        "description": "Williams-Brice Stadium is the home of the South Carolina Gamecocks football team. Built in 1934, the stadium has been renovated 4 times since then, and currently has a capacity of over 80,000.",
+        "year": "",
+        "buildingID": "williamsBrice",
+        "location": "1174 George Rogers Boulevard",
+        "closestPOI": "n/a",
+        "photos": [
+            "WB1",
+            "WB2",
+            "WB3"
+        ]
+    },
+    {
+        "name": "Stone Stadium",
+        "description": "Stone Stadium hosts the Gamecock mens and womens soccer teams. The stadium can seat 5000 fans and was built in 1981. It is named after Eugene E. Stone, the donor who made the construction of the current grandstand possible.",
+        "year": "",
+        "buildingID": "stoneStadium",
+        "location": "1313 Heyward Street",
+        "closestPOI": "n/a",
+        "photos": [
+            "Stone1",
+            "Stone2",
+            "Stone3"
+        ]
+    },
+    {
+        "name": "Founders Park",
+        "description": "The Founders Park baseball stadium opened in 2009 under its original name, Carolina Stadium. With a capacity of 8,242, it is home to the South Carolina Gamecocks baseball team.",
+        "year": "",
+        "buildingID": "foundersPark",
+        "location": "1313 Heyward Street",
+        "closestPOI": "n/a",
+        "photos": [
+            "FP1",
+            "FP2",
+            "FP3"
+        ]
+    },
+    {
+        "name": "Colonial Life Arena",
+        "description": "Colonial Life Arena is a multi purpose facility in Columbia, hosting concerts, rallies, competitions, and sports game. Its primary purpose is as the home of the South Carolina mens and womens basketball teams.",
+        "year": "",
+        "buildingID": "colonialLife",
+        "location": "801 Lincoln St",
+        "closestPOI": "n/a",
+        "photos": [
+            "CLA1",
+            "CLA2",
+            "CLA3"
+        ]
     }
+    
 ]
