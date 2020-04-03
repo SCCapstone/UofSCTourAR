@@ -49,11 +49,11 @@ public class manageAchievements : MonoBehaviour
     public List<Achievement> getAchievements()
     {
         // Fetch achievement list in another class
-        /*
-            Example of fetching list
-            public static manageAchievements ach = new manageAchievements();
-            private List<manageAchievements.Achievement> achievement = ach.getAchievements();
-        */
+         /*
+             Example of fetching list
+             public static manageAchievements ach = new manageAchievements();
+             private List<manageAchievements.Achievement> achievement = ach.getAchievements();
+         */
         return achievements;
     }
 
