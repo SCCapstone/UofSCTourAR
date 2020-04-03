@@ -25,6 +25,7 @@ public class manageAchievements : MonoBehaviour
     public class Achievement
     {
         public string name;
+        public int condition;
         public bool isCompleted;
         public string description;
     }
@@ -59,10 +60,22 @@ public class manageAchievements : MonoBehaviour
             }
         }
     }
-    public void addAchievement(string aName, bool completion, string desc)
+
+ /*   public void checkIfCompleted() {
+        for (int i = 0; i < achievements.Count; i++)
+        {
+            if (achievementScore.countbids.Count >= achievements[i].condition) {
+                achievements[i].isCompleted = true;
+            }
+        }
+    }
+*/
+
+    public void addAchievement(string aName, int condition, bool completion, string desc)
     {
         Achievement a = new Achievement();
         a.name = aName;
+        a.condition = condition;
         a.isCompleted = completion;
         a.description = desc;
         achievements.Insert(0, a);
