@@ -32,6 +32,7 @@ public class manageAchievements : MonoBehaviour
 
     private void loadAchievements()
     {
+        // JUST FILE IO
         /*
             Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
             on both desktop runs and mobile. 
@@ -47,6 +48,12 @@ public class manageAchievements : MonoBehaviour
 
     public List<Achievement> getAchievements()
     {
+        // Fetch achievement list in another class
+        /*
+            Example of fetching list
+            public static manageAchievements ach = new manageAchievements();
+            private List<manageAchievements.Achievement> achievement = ach.getAchievements();
+        */
         return achievements;
     }
 
@@ -59,17 +66,18 @@ public class manageAchievements : MonoBehaviour
                 achievements[i].isCompleted = !achievements[i].isCompleted;
             }
         }
+        saveAchievements();
     }
 
- /*   public void checkIfCompleted() {
+    public void checkIfCompleted() {
         for (int i = 0; i < achievements.Count; i++)
         {
             if (achievementScore.countbids.Count >= achievements[i].condition) {
                 achievements[i].isCompleted = true;
             }
         }
+        saveAchievements();
     }
-*/
 
     public void addAchievement(string aName, int condition, bool completion, string desc)
     {
