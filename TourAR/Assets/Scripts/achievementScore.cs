@@ -10,13 +10,9 @@ public class achievementScore : MonoBehaviour
     public static int scoreValue = 0;
     Text score;
 
-    public static manageAchievements ach = new manageAchievements();
-    private List<manageAchievements.Achievement> achievement = ach.getAchievements();
-
     // Start is called before the first frame update
     void Start()
     {
-        ach.checkIfCompleted();
         score = GetComponent<Text> ();
     }
 

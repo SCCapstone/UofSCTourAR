@@ -13,14 +13,16 @@ public class ButtonListControl : MonoBehaviour
 
     private List<GameObject> buttons;
 
-    public static manageAchievements ach; //= new manageAchievements(); 
-    private List<manageAchievements.Achievement> achievement; //= ach.getAchievements();
+    public static manageAchievements ach = new manageAchievements();
+    private List<manageAchievements.Achievement> achievement = ach.getAchievements();
 
     // Start is called before the first frame update
     void Start()
     {
-        ach = new manageAchievements(); 
-        achievement = ach.getAchievements();
+/* 
+        Debug.Log(ach);
+        Debug.Log(achieve);
+
         buttons = new List<GameObject>();
 
         if (buttons.Count > 0) {
@@ -30,18 +32,19 @@ public class ButtonListControl : MonoBehaviour
             buttons.Clear();
         }
 
-        for (int i = 0; i < achievement.Count; i++) {
+        for (int i = 0; i < achieve.Count; i++) {
             GameObject button = Instantiate(buttonTemplate) as GameObject;
-            if (achievement[i].isCompleted = false) {
+            if (achieve[i].isCompleted == false) {
                 button.SetActive(true);
-                button.GetComponent<ButtonListButton>().SetText(achievement[i].name);
+                button.GetComponent<ButtonListButton>().SetText(achieve[i].name);ç
             } else {
                 button.SetActive(false);
-                button.GetComponent<ButtonListButton>().SetText(achievement[i].description);
+                button.GetComponent<ButtonListButton>().SetText(achieve[i].description);
                 button.GetComponent<ButtonListButton>().SetIcon(null);
             }
             button.transform.SetParent(buttonTemplate.transform.parent, false);
         }
+*/
     }
 
     public void ButtonClicked(string myTextString) {

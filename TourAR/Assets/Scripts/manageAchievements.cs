@@ -6,9 +6,8 @@ using System.IO;
 
 public class manageAchievements : MonoBehaviour
 {
-
     private List<Achievement> achievements;
-    public string filePath = Application.dataPath + "/achievements.json";
+    //public string filePath = Application.dataPath + "/achievements.json";
 
     /*
         Suggested Workflow:
@@ -17,9 +16,10 @@ public class manageAchievements : MonoBehaviour
             - call toggleAchievementStatus()
             - IMPORTANT: call saveAchievements() otherwise any changes will not actually update the JSON file.
     */
-    public manageAchievements()
+    void Start()
     {
         loadAchievements();
+        Debug.Log(achievements);
     }
 
     public class Achievement
@@ -38,12 +38,17 @@ public class manageAchievements : MonoBehaviour
             on both desktop runs and mobile. 
         */
 
-        using (StreamReader r = new StreamReader(filePath))
+        string json = Resources.Load<TextAsset>("JSON/achievements").text;
+        achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+        Debug.Log(achievements);
+
+
+/*        using (StreamReader r = new StreamReader(filePath))
         {
             string json = r.ReadToEnd();
             achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
         }
-
+*/
     }
 
     public List<Achievement> getAchievements()
@@ -54,6 +59,7 @@ public class manageAchievements : MonoBehaviour
              public static manageAchievements ach = new manageAchievements();
              private List<manageAchievements.Achievement> achievement = ach.getAchievements();
          */
+        Debug.Log(achievements);
         return achievements;
     }
 
@@ -79,7 +85,7 @@ public class manageAchievements : MonoBehaviour
         saveAchievements();
     }
 
-    public void addAchievement(string aName, int condition, bool completion, string desc)
+/*    public void addAchievement(string aName, int condition, bool completion, string desc)
     {
         Achievement a = new Achievement();
         a.name = aName;
@@ -88,11 +94,13 @@ public class manageAchievements : MonoBehaviour
         a.description = desc;
         achievements.Insert(0, a);
     }
+*/
 
     public void saveAchievements()
     {
         //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
-        File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
+        //File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
+        File.WriteAllText("Assets/Resources/JSON/achievements.json", JsonConvert.SerializeObject(achievements));
     }
 
     public void resetAchievements()
