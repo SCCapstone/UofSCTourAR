@@ -974,7 +974,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 319457881}
+  - component: {fileID: 319457883}
   - component: {fileID: 319457882}
+  - component: {fileID: 319457884}
   m_Layer: 5
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -1013,9 +1015,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d4b3eaa5491340ecb5b35e6c474be65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopTitle: {fileID: 1864131498}
+  stopTitle: {fileID: 1676007976}
+  data: {fileID: 1676007976}
+--- !u!114 &319457883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319457880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4b3eaa5491340ecb5b35e6c474be65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopTitle: {fileID: 995125051}
   data: {fileID: 995125051}
-  hcData: {fileID: 2119834649}
+--- !u!114 &319457884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319457880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4b3eaa5491340ecb5b35e6c474be65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopTitle: {fileID: 510534632}
+  data: {fileID: 510534632}
 --- !u!1 &343109812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,7 +1787,7 @@ GameObject:
   - component: {fileID: 510534633}
   - component: {fileID: 510534632}
   m_Layer: 5
-  m_Name: Text_3
+  m_Name: McK_poptext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4063,7 +4092,7 @@ GameObject:
   - component: {fileID: 995125052}
   - component: {fileID: 995125051}
   m_Layer: 5
-  m_Name: Text_HorseshoePopUP
+  m_Name: Horseshoe_poptext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4710,27 +4739,13 @@ GameObject:
   - component: {fileID: 1191840810}
   - component: {fileID: 1191840809}
   - component: {fileID: 1191840808}
-  - component: {fileID: 1191840807}
   m_Layer: 5
-  m_Name: Popup_2
+  m_Name: Rutledge_pop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1191840807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191840806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc590d09683824abd99a4fa7681b9cc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path: Assets/Resources/JSON/tourStops.json
 --- !u!114 &1191840808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4964,7 +4979,7 @@ GameObject:
   - component: {fileID: 1215297327}
   - component: {fileID: 1215297326}
   m_Layer: 5
-  m_Name: Popup_1
+  m_Name: Horseshoe_pop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7059,7 +7074,7 @@ GameObject:
   - component: {fileID: 1676007977}
   - component: {fileID: 1676007976}
   m_Layer: 5
-  m_Name: Text_2
+  m_Name: Rutledge_poptext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7948,7 +7963,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Rutledge
+  m_Text: 'Rutledge College
+
+'
 --- !u!222 &1796708635
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9491,7 +9508,7 @@ GameObject:
   - component: {fileID: 2110723541}
   - component: {fileID: 2110723540}
   m_Layer: 5
-  m_Name: Popup_3
+  m_Name: McK_pop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9712,13 +9729,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<b>Constructed:</b> \n<b>Location:</b> 550 Assembly St, Columbia, SC 29201\n<b>Description:</b>
-    The Storey Engineering and Innovation Center is housed in the first two floors
-    of five for Applied Innovation building at Blossom and Assembly streets. The
-    44,000-square-feet of space will house research and teaching activity related
-    to cyber security, robotics, computer information systems and integrated information
-    technology. The goal is to create a space where students and researchers from
-    different disciplines can interact and collaborate on projects."
+  m_Text: Information coming soon!
 --- !u!222 &2119834650
 CanvasRenderer:
   m_ObjectHideFlags: 0
