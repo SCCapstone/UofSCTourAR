@@ -30,6 +30,14 @@ public class loadTourStops : MonoBehaviour
         sendToAR();
         sendToSearchHorseshoe();
         sendToSearchIBM();
+
+
+        Debug.Log("loadourstops: "+ imageNames);
+        int counter=0;
+        foreach(var name in imageNames) {
+            Debug.Log("loadourstops: "+counter + " "+ name);
+            counter++;
+        }
     }
 
     void Update()

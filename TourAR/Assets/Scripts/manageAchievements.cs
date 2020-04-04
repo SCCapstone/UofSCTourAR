@@ -6,7 +6,7 @@ using System.IO;
 
 public class manageAchievements : MonoBehaviour
 {
-    private List<Achievement> achievements;
+    public static List<Achievement> achievements;
     //public string filePath = Application.dataPath + "/achievements.json";
 
     /*
@@ -19,7 +19,17 @@ public class manageAchievements : MonoBehaviour
     void Start()
     {
         loadAchievements();
-        Debug.Log(achievements);
+        /*
+        Debug.Log("line :"+achievements[0]);
+        if (achievements.Count>1 && achievements != null) {
+            Debug.Log("ohhhh yeahhhhh");
+        }
+        int counter=0;
+        foreach (Achievement ach in achievements) {
+            Debug.Log("Name "+counter+": "+ ach.name);
+            Debug.Log("Name_index "+counter+": "+ achievements[counter].name);
+            counter++;
+        }*/
     }
 
     public class Achievement
@@ -40,7 +50,7 @@ public class manageAchievements : MonoBehaviour
 
         string json = Resources.Load<TextAsset>("JSON/achievements").text;
         achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
-        Debug.Log(achievements);
+        //Debug.Log(achievements);
 
 
 /*        using (StreamReader r = new StreamReader(filePath))
@@ -59,7 +69,7 @@ public class manageAchievements : MonoBehaviour
              public static manageAchievements ach = new manageAchievements();
              private List<manageAchievements.Achievement> achievement = ach.getAchievements();
          */
-        Debug.Log(achievements);
+        //Debug.Log(achievements);
         return achievements;
     }
 
