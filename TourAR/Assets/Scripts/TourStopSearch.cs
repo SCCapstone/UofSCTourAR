@@ -21,6 +21,7 @@ public class TourStopSearch : MonoBehaviour
 
     public List<Button> tourstops = new List<Button>();
 
+
     public void ShowHideButtons(List<Button> stops)
     {
         if (inField.text == null)

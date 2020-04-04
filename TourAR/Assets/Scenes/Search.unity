@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 87603083}
   m_Layer: 5
   m_Name: Williams-Brice Stadium
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 118524084}
   m_Layer: 5
   m_Name: South Caroliniana Library
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 333420779}
   m_Layer: 5
   m_Name: Thomas Cooper Library
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 343109818}
   m_Layer: 5
   m_Name: Lieber College
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1349,7 +1349,7 @@ GameObject:
   - component: {fileID: 541351857}
   m_Layer: 5
   m_Name: Russell House
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1677,7 +1677,7 @@ GameObject:
   - component: {fileID: 603852076}
   m_Layer: 5
   m_Name: McCutchen House
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1852,7 +1852,7 @@ GameObject:
   - component: {fileID: 651045990}
   m_Layer: 5
   m_Name: Storey Innovation Center
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2679,7 +2679,7 @@ GameObject:
   - component: {fileID: 889181063}
   m_Layer: 5
   m_Name: McKissick Museum
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3004,7 +3004,7 @@ GameObject:
   - component: {fileID: 1018243094}
   m_Layer: 5
   m_Name: Rutledge
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3179,7 +3179,7 @@ GameObject:
   - component: {fileID: 1020172938}
   m_Layer: 5
   m_Name: Founders Park
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3508,7 +3508,7 @@ GameObject:
   - component: {fileID: 1198565609}
   m_Layer: 5
   m_Name: Swearingen
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3835,7 +3835,7 @@ GameObject:
   - component: {fileID: 1256098869}
   m_Layer: 5
   m_Name: Pinckney/Legare
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4139,7 +4139,7 @@ GameObject:
   - component: {fileID: 1291149765}
   m_Layer: 5
   m_Name: Ellicot/Harper College
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4600,11 +4600,11 @@ MonoBehaviour:
   - {fileID: 651045987}
   - {fileID: 1198565606}
   - {fileID: 333420781}
+  - {fileID: 541351859}
   - {fileID: 87603085}
   - {fileID: 1500394778}
   - {fileID: 1020172940}
   - {fileID: 1926035151}
-  - {fileID: 541351859}
 --- !u!114 &1363393565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4823,7 +4823,7 @@ GameObject:
   - component: {fileID: 1500394776}
   m_Layer: 5
   m_Name: Stone Stadium
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5281,7 +5281,7 @@ GameObject:
   - component: {fileID: 1623981538}
   m_Layer: 5
   m_Name: President's House
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5786,7 +5786,7 @@ GameObject:
   - component: {fileID: 1753618058}
   m_Layer: 5
   m_Name: Horseshoe
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6637,7 +6637,7 @@ GameObject:
   - component: {fileID: 1926035149}
   m_Layer: 5
   m_Name: Colonial Life Arena
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7168,7 +7168,7 @@ GameObject:
   - component: {fileID: 2083253450}
   m_Layer: 5
   m_Name: DeSaussure
-  m_TagString: Untagged
+  m_TagString: SearchButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
