@@ -232,6 +232,17 @@
             "CLA2",
             "CLA3"
         ]
+    },
+    {
+        "name": "Wade's Hosue",
+        "description": "This is Wade's maryland house! congrats ",
+        "year": "",
+        "buildingID": "wadesHouse",
+        "location": "idk Maryland maybe",
+        "closestPOI": "n/a",
+        "photos": [
+            "pepe"
+        ]
     }
     
 ]
