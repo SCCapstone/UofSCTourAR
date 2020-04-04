@@ -22,8 +22,6 @@ public class loadTourStops : MonoBehaviour
     {
         loadTheTourStops();
         sendToAR();
-        sendToSearch();
-
 
         Debug.Log("loadourstops: " + imageNames);
         int counter = 0;
@@ -44,7 +42,6 @@ public class loadTourStops : MonoBehaviour
             ChangeStop.hasChanged = false;
         }
 
-        sendToSearch();
     }
 
     public class TourStop
@@ -74,8 +71,12 @@ public class loadTourStops : MonoBehaviour
         setPhotosForTourStop(stopToLoad);
     }
 
-    private void sendToSearch()
+    public void sendToSearch(string currentStop)
     {
+        Debug.Log("sendToSearch: " + stopToLoad);
+        data.text = this.getMetadataForTourStop(currentStop);
+
+        /**
         for (int i = 0; i < loadTourStops.tourStops.Count; i++)
         {
             string currStop = loadTourStops.tourStops[i].buildingID;
@@ -84,6 +85,7 @@ public class loadTourStops : MonoBehaviour
             Debug.Log(loadTourStops.tourStops[i].name);
             data.text = getMetadataForTourStop(currStop);
         }
+        **/
     }
 
     private void loadTheTourStops()
