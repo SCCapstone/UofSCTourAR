@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class loadTourStops : MonoBehaviour
 {
-    private List<TourStop> tourStops;
+    public static List<TourStop> tourStops;
     public Text stopTitle;
     public Text data;
     public static string stopToLoad = "Horseshoe";
