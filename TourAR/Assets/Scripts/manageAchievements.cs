@@ -7,7 +7,6 @@ using System.IO;
 public class manageAchievements : MonoBehaviour
 {
     public static List<Achievement> achievements;
-    //public string filePath = Application.dataPath + "/achievements.json";
 
     /*
         Suggested Workflow:
@@ -19,17 +18,7 @@ public class manageAchievements : MonoBehaviour
     void Start()
     {
         loadAchievements();
-        /*
-        Debug.Log("line :"+achievements[0]);
-        if (achievements.Count>1 && achievements != null) {
-            Debug.Log("ohhhh yeahhhhh");
-        }
-        int counter=0;
-        foreach (Achievement ach in achievements) {
-            Debug.Log("Name "+counter+": "+ ach.name);
-            Debug.Log("Name_index "+counter+": "+ achievements[counter].name);
-            counter++;
-        }*/
+        checkIfCompleted();
     }
 
     public class Achievement
@@ -43,33 +32,12 @@ public class manageAchievements : MonoBehaviour
     private void loadAchievements()
     {
         // JUST FILE IO
-        /*
-            Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
-            on both desktop runs and mobile. 
-        */
-
         string json = Resources.Load<TextAsset>("JSON/achievements").text;
         achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
-        //Debug.Log(achievements);
-
-
-/*        using (StreamReader r = new StreamReader(filePath))
-        {
-            string json = r.ReadToEnd();
-            achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
-        }
-*/
     }
 
     public List<Achievement> getAchievements()
     {
-        // Fetch achievement list in another class
-         /*
-             Example of fetching list
-             public static manageAchievements ach = new manageAchievements();
-             private List<manageAchievements.Achievement> achievement = ach.getAchievements();
-         */
-        //Debug.Log(achievements);
         return achievements;
     }
 
@@ -86,8 +54,7 @@ public class manageAchievements : MonoBehaviour
     }
 
     public void checkIfCompleted() {
-        for (int i = 0; i < achievements.Count; i++)
-        {
+        for (int i = 0; i < achievements.Count; i++) {
             if (achievementScore.countbids.Count >= achievements[i].condition) {
                 achievements[i].isCompleted = true;
             }
@@ -109,7 +76,6 @@ public class manageAchievements : MonoBehaviour
     public void saveAchievements()
     {
         //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
-        //File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
         File.WriteAllText("Assets/Resources/JSON/achievements.json", JsonConvert.SerializeObject(achievements));
     }
 

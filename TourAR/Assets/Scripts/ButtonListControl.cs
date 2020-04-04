@@ -13,17 +13,9 @@ public class ButtonListControl : MonoBehaviour
 
     private List<GameObject> buttons;
 
-    //public static manageAchievements ach = manageAchievements.ac;
-    //private List<manageAchievements.Achievement> achievement = manageAchievements.achievements;
-
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("ButtonListControl Start!");
-        /* 
-        Debug.Log(ach);
-        Debug.Log(achieve);
-
         buttons = new List<GameObject>();
 
         if (buttons.Count > 0) {
@@ -32,19 +24,17 @@ public class ButtonListControl : MonoBehaviour
             }
             buttons.Clear();
         }
-        */      
 
         for (int i = 0; i < manageAchievements.achievements.Count; i++) {
-            //Debug.Log("Name_index "+i+": "+ manageAchievements.achievements[i].name);
-
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             if (manageAchievements.achievements[i].isCompleted == false) {
                 button.SetActive(true);
                 button.GetComponent<ButtonListButton>().SetText(manageAchievements.achievements[i].name);
+                button.GetComponent<ButtonListButton>().SetIcon(iconSprites[0]);
             } else {
-                button.SetActive(false);
+                button.SetActive(true);
                 button.GetComponent<ButtonListButton>().SetText(manageAchievements.achievements[i].description);
-                button.GetComponent<ButtonListButton>().SetIcon(null);
+                button.GetComponent<ButtonListButton>().SetIcon(iconSprites[1]);
             }
             button.transform.SetParent(buttonTemplate.transform.parent, false);
         }
