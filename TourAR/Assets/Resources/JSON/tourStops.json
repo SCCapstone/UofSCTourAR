@@ -232,6 +232,19 @@
             "CLA2",
             "CLA3"
         ]
+    },
+    {
+        "name": "Wade's House",
+        "description": "This is a test POI, located in Maryland.",
+        "year": "",
+        "buildingID": "wadesHouse",
+        "location": "Somewhere north of SC",
+        "closestPOI": "n/a",
+        "photos": [
+            "CLA1",
+            "CLA2",
+            "CLA3"
+        ]
     }
     
 ]

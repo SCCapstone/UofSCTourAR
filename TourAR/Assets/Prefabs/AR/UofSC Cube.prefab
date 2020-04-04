@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopTitle: {fileID: 3978053792990097784}
   data: {fileID: 6276312732817507613}
+  hcData: {fileID: 0}
 --- !u!1 &1577145728983761269
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5e446d9aee44252ac16a932236898b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objtype: 0
+  objtype: 1
   objects: []
   trueObjects:
   - {fileID: 7012857370243044384}
@@ -907,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5e446d9aee44252ac16a932236898b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objtype: 0
+  objtype: 2
   objects: []
   trueObjects:
   - {fileID: 9096959869375379657}

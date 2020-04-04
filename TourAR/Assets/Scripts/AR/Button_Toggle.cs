@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Button_Toggle : MonoBehaviour
 {
-    public enum ARUItype {ARButton, Settings, Back}; //determine which type of button this is being applied to
+    public enum ARUItype {ARButton, Data, Photos, Settings, Back}; //determine which type of button this is being applied to
     [Tooltip("Determine the type of button script will be used on.")]
     [SerializeField] public ARUItype objtype;
 
@@ -49,6 +49,13 @@ public class Button_Toggle : MonoBehaviour
       switch(objtype) { // check for type
         case ARUItype.ARButton:
             ARButton();
+          break;
+        case ARUItype.Data:
+            Data();
+          break;
+
+        case ARUItype.Photos:
+            Photos();
           break;
 
         case ARUItype.Settings:
@@ -107,11 +114,92 @@ public class Button_Toggle : MonoBehaviour
       }
     }
 
+    private void Data() {
+      if (!boxTopAnimator.GetBool("isOpen")) { // boxStatus will be false here on initialization
+        Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
+        boxTopAnimator.SetBool("isOpen", true);
+        DelayAnimCoroutine(); //gives time for box to open before anything else
+        //dataCanvasAnimator.SetBool("isOpen", true);
+        //picsCanvasAnimator.SetBool("isOpen", true);
+
+        Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
+        PrintState();
+        //boxStatus = boxTopAnimator.GetBool("isOpen");
+      }
+      else {
+        //boxTopAnimator.Play("BoxClose");
+        //boxTopAnimator.SetBool("isOpen", false);
+        Debug.Log("Toggle "+"Box is already open: " + boxTopAnimator.GetBool("isOpen"));
+        PrintState();
+
+      }
+
+      dataCanvasAnimator.SetBool("isOpen", true);
+
+      foreach (GameObject obj in objects) { //set all objects to opposite what they are currently
+        obj.SetActive(!obj.activeInHierarchy);
+      }
+      foreach (GameObject t in trueObjects) {
+        t.SetActive(true);
+        Debug.Log("Toggle "+t.name+ " is "+t.activeInHierarchy);
+      }
+      foreach (GameObject f in falseObjects) {
+        if (f.name.Contains("Button")) {
+          DelayAnimCoroutine();
+          f.SetActive(false);
+        } else {
+          f.SetActive(false);
+        }
+        Debug.Log("Toggle "+f.name+ " is "+f.activeInHierarchy);
+      }
+    }
+    private void Photos() {
+      if (!boxTopAnimator.GetBool("isOpen")) { // boxStatus will be false here on initialization
+        Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
+        boxTopAnimator.SetBool("isOpen", true);
+        DelayAnimCoroutine(); //gives time for box to open before anything else
+        //dataCanvasAnimator.SetBool("isOpen", true);
+        //picsCanvasAnimator.SetBool("isOpen", true);
+
+        Debug.Log("Toggle_BoxOpen: "+ boxTopAnimator.GetBool("isOpen"));
+        PrintState();
+        //boxStatus = boxTopAnimator.GetBool("isOpen");
+      }
+      else {
+        //boxTopAnimator.Play("BoxClose");
+        //boxTopAnimator.SetBool("isOpen", false);
+        Debug.Log("Toggle "+"Box is already open: " + boxTopAnimator.GetBool("isOpen"));
+        PrintState();
+
+      }
+
+      picsCanvasAnimator.SetBool("isOpen", true);
+
+
+      foreach (GameObject obj in objects) { //set all objects to opposite what they are currently
+        obj.SetActive(!obj.activeInHierarchy);
+      }
+      foreach (GameObject t in trueObjects) {
+        t.SetActive(true);
+        Debug.Log("Toggle "+t.name+ " is "+t.activeInHierarchy);
+      }
+      foreach (GameObject f in falseObjects) {
+        if (f.name.Contains("Button")) {
+          DelayAnimCoroutine();
+          f.SetActive(false);
+        } else {
+          f.SetActive(false);
+        }
+        Debug.Log("Toggle "+f.name+ " is "+f.activeInHierarchy);
+      }
+
+    }
+
     private void BackButton() {
       Debug.Log("Toggle_BoxClose: " + boxTopAnimator.GetBool("isOpen"));
       dataCanvasAnimator.SetBool("isOpen", false);
       picsCanvasAnimator.SetBool("isOpen", false);
-      DelayAnimCoroutine();
+      DelayAnimCoroutineLong(); //lets canvases close before boxClose
       boxTopAnimator.SetBool("isOpen", false);
 
       Debug.Log("Toggle_BoxClose: " + boxTopAnimator.GetBool("isOpen"));
@@ -147,6 +235,10 @@ public class Button_Toggle : MonoBehaviour
 
     IEnumerator DelayAnimCoroutine() {
       yield return new WaitForSeconds(0.5f);
+      Debug.Log("Waiting.....");
+    }
+    IEnumerator DelayAnimCoroutineLong() {
+      yield return new WaitForSeconds(1f);
       Debug.Log("Waiting.....");
     }
 }
