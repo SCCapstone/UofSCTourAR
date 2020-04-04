@@ -232,6 +232,28 @@
             "CLA2",
             "CLA3"
         ]
+    },
+    {
+        "name": "Wade's Hosue",
+        "description": "This is Wade's maryland house! congrats ",
+        "year": "",
+        "buildingID": "wadesHouse",
+        "location": "idk Maryland maybe",
+        "closestPOI": "n/a",
+        "photos": [
+            "pepe"
+        ]
+    },
+    {
+        "name": "Joe's Columbia House",
+        "description": "This is Joe's house on Hamrick st added for testing purposes",
+        "year": "",
+        "buildingID": "joesHouse",
+        "location": "Hamrick St",
+        "closestPOI": "n/a",
+        "photos": [
+            "pepe"
+        ]
     }
     
 ]
