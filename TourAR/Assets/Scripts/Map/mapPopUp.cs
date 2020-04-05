@@ -13,21 +13,18 @@ public class mapPopUp : MonoBehaviour
     [SerializeField] public yesOrNo button;
 
     public GameObject panel;
-
+    
     public void onClick() {
       switch(button) { // check for type
         case yesOrNo.Yes:
-            fadeOut.SetBool("Fade", false);
-            WaitForAnimation(); // waits 1 sec to switch scene
+            if (!achievementScore.countbids.Contains(loadTourStops.stopToLoad)) {
+                achievementScore.countbids.Add(loadTourStops.stopToLoad);
+            }
             SceneManager.LoadScene("ARView");
           break;
         case yesOrNo.No:
             panel.SetActive(false);
           break;
       }
-    }
-    private IEnumerator WaitForAnimation()
-    {
-      yield return new WaitForSeconds(1);
     }
 }

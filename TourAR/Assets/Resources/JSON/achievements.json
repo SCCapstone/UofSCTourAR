@@ -1,12 +1,1 @@
-[
-    {
-        "name": "achievement1",
-        "isCompleted": "false",
-        "description": "n/a yet"
-    },
-    {
-        "name": "achievment2",
-        "isCompleted": "true",
-        "description": "n/a yet"
-    }
-]
+[{"name":"1st Stop!","condition":1,"isCompleted":false,"description":"You've visited your first tour stop!"},{"name":"Tour Stop Rookie!","condition":3,"isCompleted":false,"description":"You've visited at least 3 tour stops!"},{"name":"Tour Stop Frequenter!","condition":5,"isCompleted":false,"description":"You've visited at least 5 tour stops!"},{"name":"Tour Stop Expert!","condition":10,"isCompleted":false,"description":"You've visited at least 10 tour stops!"},{"name":"Tour Stop Master!","condition":15,"isCompleted":false,"description":"You've visited at least 15 tour stops!"}]

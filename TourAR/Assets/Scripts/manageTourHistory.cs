@@ -8,7 +8,6 @@ public class manageTourHistory : MonoBehaviour
 {
     private List<tourStopVisited> tourHistory;
     private int tourHistoryCap = 10; //Setting as 10 by default
-    public string filePath = Application.dataPath + "/tourHistory.json";
 
     /*
         Suggested Workflow:
@@ -44,17 +43,8 @@ public class manageTourHistory : MonoBehaviour
 
     private void loadTourHistory()
     {
-        /*
-            Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
-            on both desktop runs and mobile. 
-        */
-
-        using (StreamReader r = new StreamReader(filePath))
-        {
-            string json = r.ReadToEnd();
-            tourHistory = JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
-        }
-
+        string json = Resources.Load<TextAsset>("JSON/tourHistory").text;
+        tourHistory = JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
     }
 
     public List<tourStopVisited> getTourHistory()
@@ -73,6 +63,7 @@ public class manageTourHistory : MonoBehaviour
         newItem.stopID = tourStopID;
         newItem.completionDate = date;
         tourHistory.Insert(0, newItem);
+        saveTourHistory();
     }
 
     public void clearTourHistory()
@@ -82,7 +73,6 @@ public class manageTourHistory : MonoBehaviour
 
     public void saveTourHistory()
     {
-        //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
-        File.WriteAllText(filePath, JsonConvert.SerializeObject(tourHistory));
+        File.WriteAllText("Assets/Resources/JSON/tourHistory.json", JsonConvert.SerializeObject(tourHistory));
     }
 }

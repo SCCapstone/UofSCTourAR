@@ -6,9 +6,7 @@ using System.IO;
 
 public class manageAchievements : MonoBehaviour
 {
-
-    private List<Achievement> achievements;
-    public string filePath = Application.dataPath + "/achievements.json";
+    public static List<Achievement> achievements;
 
     /*
         Suggested Workflow:
@@ -17,31 +15,25 @@ public class manageAchievements : MonoBehaviour
             - call toggleAchievementStatus()
             - IMPORTANT: call saveAchievements() otherwise any changes will not actually update the JSON file.
     */
-    public manageAchievements()
+    void Start()
     {
         loadAchievements();
+        checkIfCompleted();
     }
 
     public class Achievement
     {
         public string name;
+        public int condition;
         public bool isCompleted;
         public string description;
     }
 
     private void loadAchievements()
     {
-        /*
-            Application.dataPath is required because it is the only way to ensure that we are accessing our assets folder,
-            on both desktop runs and mobile. 
-        */
-
-        using (StreamReader r = new StreamReader(filePath))
-        {
-            string json = r.ReadToEnd();
-            achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
-        }
-
+        // JUST FILE IO
+        string json = Resources.Load<TextAsset>("JSON/achievements").text;
+        achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
     }
 
     public List<Achievement> getAchievements()
@@ -58,20 +50,33 @@ public class manageAchievements : MonoBehaviour
                 achievements[i].isCompleted = !achievements[i].isCompleted;
             }
         }
+        saveAchievements();
     }
-    public void addAchievement(string aName, bool completion, string desc)
+
+    public void checkIfCompleted() {
+        for (int i = 0; i < achievements.Count; i++) {
+            if (achievementScore.countbids.Count >= achievements[i].condition) {
+                achievements[i].isCompleted = true;
+            }
+        }
+        saveAchievements();
+    }
+
+/*    public void addAchievement(string aName, int condition, bool completion, string desc)
     {
         Achievement a = new Achievement();
         a.name = aName;
+        a.condition = condition;
         a.isCompleted = completion;
         a.description = desc;
         achievements.Insert(0, a);
     }
+*/
 
     public void saveAchievements()
     {
         //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
-        File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
+        File.WriteAllText("Assets/Resources/JSON/achievements.json", JsonConvert.SerializeObject(achievements));
     }
 
     public void resetAchievements()

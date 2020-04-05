@@ -244,6 +244,16 @@
             "CLA1",
             "CLA2",
             "CLA3"
+    },
+    {
+        "name": "Joe's Columbia House",
+        "description": "This is Joe's house on Hamrick st added for testing purposes",
+        "year": "",
+        "buildingID": "joesHouse",
+        "location": "Hamrick St",
+        "closestPOI": "n/a",
+        "photos": [
+            "pepe"
         ]
     }
     

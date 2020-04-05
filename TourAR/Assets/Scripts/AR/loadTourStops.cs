@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class loadTourStops : MonoBehaviour
 {
-    private List<TourStop> tourStops;
+    public static List<TourStop> tourStops;
     public Text stopTitle;
     public Text data;
     public static string stopToLoad = "Horseshoe";
@@ -30,6 +30,14 @@ public class loadTourStops : MonoBehaviour
         sendToAR();
         sendToSearchHorseshoe();
         sendToSearchIBM();
+
+
+        Debug.Log("loadourstops: "+ imageNames);
+        int counter=0;
+        foreach(var name in imageNames) {
+            Debug.Log("loadourstops: "+counter + " "+ name);
+            counter++;
+        }
     }
 
     void Update()
@@ -132,11 +140,7 @@ public class loadTourStops : MonoBehaviour
 
     public void setPhotosForTourStop(string bID)
     {
-      foreach (string image in imageNames)
-      {
-          imageNames.Remove(image);
-      }
-
+      clearImageNames();
       for (int i = 0; i < tourStops.Count; i++)
       {
           if (tourStops[i].buildingID.Equals(bID))
@@ -177,5 +181,12 @@ public class loadTourStops : MonoBehaviour
             }
         }
         return "n/a couldn't find a match";
+    }
+
+    public void clearImageNames() {
+        for (int i = imageNames.Count - 1; i >=0; i--)
+        {
+            imageNames.RemoveAt(i);
+        }
     }
 }
