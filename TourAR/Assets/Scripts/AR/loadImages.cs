@@ -42,6 +42,11 @@ public class loadImages : MonoBehaviour
 
       }*/
 
+      foreach (Sprite image in images)
+      {
+          images.Remove(image);
+      }
+
       foreach (string imageName in imageNames) {
 
         //bool exists = imageNames.Contains(imageName);
