@@ -12,6 +12,11 @@
 
 		[SerializeField]
 		Text _statusText;
+		[SerializeField] Animator fadeIn;
+		[SerializeField] GameObject fadePanel;
+		private bool hasFade=false;
+		[SerializeField] Animator textFade;
+
 
 		private AbstractLocationProvider _locationProvider = null;
 		void Start()
@@ -46,6 +51,13 @@
 					else
 					{
 						_statusText.text = string.Format("{0}", currLoc.LatitudeLongitude);
+						//trigger anim
+						if (!hasFade) {
+							textFade.SetBool("Fade", true);
+							fadeIn.SetBool("Fade", true);
+							fadePanel.SetActive(false);
+							hasFade=true;
+						}
 					}
 				}
 			}

@@ -131,8 +131,8 @@ public class loadTourStops : MonoBehaviour
             if (tourStops[i].buildingID.Equals(bID))
             {
                 retVal += "<b>Constructed:</b> " + tourStops[i].year;
-                retVal += "\n<b>Location:</b> " + tourStops[i].location;
-                retVal += "\n<b>Description:</b> " + tourStops[i].description;
+                retVal += "\n\n<b>Location:</b> " + tourStops[i].location;
+                retVal += "\n\n<b>Description:</b> " + tourStops[i].description;
             }
         }
         return retVal;
