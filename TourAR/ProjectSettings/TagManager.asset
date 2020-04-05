@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ARObject
   - POI
+  - SearchButton
   layers:
   - Default
   - TransparentFX

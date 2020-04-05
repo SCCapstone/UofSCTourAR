@@ -4,18 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TourStopSearch : MonoBehaviour
-{   
-    
-    
+{
+
+    private void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        ShowHideButtons(tourstops);
+    }
+
     public InputField inField;
 
     public List<Button> tourstops = new List<Button>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     public void ShowHideButtons(List<Button> stops)
     {
@@ -24,9 +29,11 @@ public class TourStopSearch : MonoBehaviour
             foreach (Button ts in stops)
             {
                 //Unhide every button
-                ts.gameObject.SetActive(true);
+                ts.gameObject.SetActive(false);
             }
         }
+
+        //user starts typing
         else
         {
             foreach (Button ts in stops)
@@ -34,7 +41,6 @@ public class TourStopSearch : MonoBehaviour
                 if (ts.name.ToLower().Contains(inField.text.ToLower()))
                 {
                     ts.gameObject.SetActive(true);
-
                 }
 
                 else
@@ -46,9 +52,5 @@ public class TourStopSearch : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        ShowHideButtons(tourstops);
-    }
+
 }
