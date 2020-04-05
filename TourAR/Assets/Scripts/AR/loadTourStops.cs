@@ -12,6 +12,12 @@ public class loadTourStops : MonoBehaviour
     public Text data;
     public static string stopToLoad = "Horseshoe";
 
+    [SerializeField]
+    private Text hcData;
+    private Text hcTitle;
+
+    public static string stopIBM = "Storey Innovation Center";
+
     public static List<string> imageNames = new List<string>();    //public static List<string> imageNames = new List<string>();
 
     //ChangeStop change;
@@ -22,12 +28,14 @@ public class loadTourStops : MonoBehaviour
     {
         loadTheTourStops();
         sendToAR();
+        sendToSearchHorseshoe();
+        sendToSearchIBM();
 
-        Debug.Log("loadourstops: " + imageNames);
-        int counter = 0;
-        foreach (var name in imageNames)
-        {
-            Debug.Log("loadourstops: " + counter + " " + name);
+
+        Debug.Log("loadourstops: "+ imageNames);
+        int counter=0;
+        foreach(var name in imageNames) {
+            Debug.Log("loadourstops: "+counter + " "+ name);
             counter++;
         }
     }
@@ -41,7 +49,6 @@ public class loadTourStops : MonoBehaviour
             sendToAR();
             ChangeStop.hasChanged = false;
         }
-
     }
 
     public class TourStop
@@ -71,21 +78,18 @@ public class loadTourStops : MonoBehaviour
         setPhotosForTourStop(stopToLoad);
     }
 
-    public void sendToSearch(string currentStop)
+    private void sendToSearchHorseshoe()
     {
         Debug.Log("sendToSearch: " + stopToLoad);
-        data.text = this.getMetadataForTourStop(currentStop);
+        stopTitle.text = this.getTitleForTourStop(stopToLoad);
+        data.text = this.getMetadataForTourStop(stopToLoad);
+    }
 
-        /**
-        for (int i = 0; i < loadTourStops.tourStops.Count; i++)
-        {
-            string currStop = loadTourStops.tourStops[i].buildingID;
-
-            // do something like get description. You can get any attributes or do anything here.
-            Debug.Log(loadTourStops.tourStops[i].name);
-            data.text = getMetadataForTourStop(currStop);
-        }
-        **/
+    private void sendToSearchIBM()
+    {
+        Debug.Log("sendToSearch: " + stopIBM);
+        hcTitle.text = this.getTitleForTourStop(stopIBM);
+        hcData.text = getMetadataForTourStop(stopIBM);
     }
 
     private void loadTheTourStops()
@@ -136,7 +140,6 @@ public class loadTourStops : MonoBehaviour
 
     public void setPhotosForTourStop(string bID)
     {
-
       clearImageNames();
       for (int i = 0; i < tourStops.Count; i++)
       {
@@ -179,7 +182,7 @@ public class loadTourStops : MonoBehaviour
         }
         return "n/a couldn't find a match";
     }
-    
+
     public void clearImageNames() {
         for (int i = imageNames.Count - 1; i >=0; i--)
         {
