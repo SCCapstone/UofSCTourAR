@@ -29,7 +29,7 @@ public class TourStopSearch : MonoBehaviour
             foreach (Button ts in stops)
             {
                 //Unhide every button
-                ts.gameObject.SetActive(true);
+                ts.gameObject.SetActive(false);
             }
         }
 
