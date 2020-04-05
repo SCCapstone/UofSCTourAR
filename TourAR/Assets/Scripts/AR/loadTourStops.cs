@@ -136,21 +136,18 @@ public class loadTourStops : MonoBehaviour
 
     public void setPhotosForTourStop(string bID)
     {
-        foreach (string image in imageNames)
-        {
-            imageNames.Remove(image);
-        }
 
-        for (int i = 0; i < tourStops.Count; i++)
-        {
-            if (tourStops[i].buildingID.Equals(bID))
-            {
-                for (int j = 0; j < tourStops[i].photos.Length; j++)
-                {
-                    imageNames.Add(tourStops[i].photos[j]);
-                }
-            }
-        }
+      clearImageNames();
+      for (int i = 0; i < tourStops.Count; i++)
+      {
+          if (tourStops[i].buildingID.Equals(bID))
+          {
+              for (int j = 0; j < tourStops[i].photos.Length; j++)
+              {
+                  imageNames.Add(tourStops[i].photos[j]);
+              }
+          }
+      }
     }
 
     public string[] getAllDataForTourStop(string bID)
@@ -181,5 +178,12 @@ public class loadTourStops : MonoBehaviour
             }
         }
         return "n/a couldn't find a match";
+    }
+    
+    public void clearImageNames() {
+        for (int i = imageNames.Count - 1; i >=0; i--)
+        {
+            imageNames.RemoveAt(i);
+        }
     }
 }
