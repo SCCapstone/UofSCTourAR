@@ -10,5 +10,12 @@ public class HistoryReset : MonoBehaviour
         {
             HistoryList.listHistory.RemoveAt(i);
         }
+        if (HistoryListControl.buttons.Count > 0) {
+            foreach (GameObject button in HistoryListControl.buttons) {
+                Destroy(button.gameObject);
+            }
+            HistoryListControl.buttons.Clear();
+        }
+        HistoryListControl.Reset(); //Deletes the button gameobjects
     }
 }

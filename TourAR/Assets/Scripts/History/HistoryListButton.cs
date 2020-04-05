@@ -23,4 +23,8 @@ public class HistoryListButton : MonoBehaviour
         buttonControl.ButtonClicked(myTextString);
     }
 
+    public void Reset() {
+        Destroy(gameObject);
+    }
+
 }

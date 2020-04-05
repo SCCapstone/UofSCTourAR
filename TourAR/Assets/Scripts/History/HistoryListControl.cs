@@ -8,11 +8,12 @@ public class HistoryListControl : MonoBehaviour
     [SerializeField]
     private GameObject buttonTemplate;
 
-    private List<GameObject> buttons;
+    public static List<GameObject> buttons;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
+        yield return null;
         Debug.Log("goodbye");
         buttons = new List<GameObject>();
 
@@ -23,14 +24,24 @@ public class HistoryListControl : MonoBehaviour
             buttons.Clear();
         }
         Debug.Log("goodbye2");
+        if (HistoryList.listHistory == null && HistoryList.listHistory.Count<0) {
+            Debug.Log("uh oh");
+        }
 
         foreach (string name in HistoryList.listHistory) {
             Debug.Log("button loop");
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
-            button.GetComponent<ButtonListButton>().SetText(name);
+            button.GetComponent<HistoryListButton>().SetText(name);
             button.transform.SetParent(buttonTemplate.transform.parent, false);
+            Debug.Log("finished for each");
         }
+    }
+
+    public static void Reset() {
+        foreach (var gameObj in GameObject.FindGameObjectsWithTag("HButton")) {
+            Destroy(gameObj);
+        }    
     }
 
     public void ButtonClicked(string myTextString) {
