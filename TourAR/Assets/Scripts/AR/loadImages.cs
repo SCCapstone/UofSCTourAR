@@ -15,43 +15,29 @@ public class loadImages : MonoBehaviour
     public static int imageIndex=0;
     public static int prev_imageIndex=-1;
 
-
-    // Start is called before the first frame update
     // Start is called before the first frame update
     void Start()
     {
       imageComponent = GetComponent<Image>(); // gets the image component attached to this gameobject
-      //imageSprite = GetComponent<Image>().sprite;
+      imageNames = loadTourStops.imageNames; // uses same memory as loadTourStops list
+      clearImages();
+      addImages();
+      loadSprite();
 
+      //imageSprite = GetComponent<Image>().sprite;
       //for each name in loadTourStops.imageNames
       //no file type needed
       //imageNames.Add("horseshoe_old");
       //imageNames.Add("horseshoe_new");
-      imageNames = loadTourStops.imageNames; // uses same meory as loadTourStops list
 
-
-
-
-      /* //print image names
-
+      /*    //print image names
       Debug.Log("ImageNames: ");
       int index=0;
       foreach (string imageName in imageNames) {
         Debug.Log(imageNames[index]);
         index++;
-
-      }*/
-
-      foreach (string imageName in imageNames) {
-
-        //bool exists = imageNames.Contains(imageName);
-        //if (!exists) {
-          images.Add(Resources.Load <Sprite>("Sprites/"+imageName)); //need to make sure name is valid
-          Debug.Log("Added "+imageName+" to <sprite>images list");
-        //}
       }
-
-      loadSprite();
+      */
     }
 
     // Update is called once per frame
@@ -68,6 +54,18 @@ public class loadImages : MonoBehaviour
       imageComponent.sprite = images[imageIndex];
       Debug.Log("load image"+images[imageIndex].name);
       //Debug.Log("Its dimensions are- height: "+ +"width:"+ )
-      //fade animation?
     }
+
+    void clearImages() {
+      for (int i = images.Count - 1; i >=0; i--)
+      {
+          images.RemoveAt(i);
+      }
+    }
+
+      void addImages() {
+          foreach (string imageName in imageNames) {
+            images.Add(Resources.Load <Sprite>("Sprites/"+imageName)); //need to make sure name is valid
+          }
+      }
 }
