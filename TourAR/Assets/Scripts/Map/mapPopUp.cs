@@ -9,6 +9,7 @@ public class mapPopUp : MonoBehaviour
 
 
     public enum yesOrNo {Yes, No};
+    [SerializeField] Animator fadeOut;
     [SerializeField] public yesOrNo button;
 
     public GameObject panel;
@@ -19,7 +20,6 @@ public class mapPopUp : MonoBehaviour
             if (!achievementScore.countbids.Contains(loadTourStops.stopToLoad)) {
                 achievementScore.countbids.Add(loadTourStops.stopToLoad);
             }
-            HistoryList.listHistory.Add(loadTourStops.stopToLoad);
             SceneManager.LoadScene("ARView");
           break;
         case yesOrNo.No:

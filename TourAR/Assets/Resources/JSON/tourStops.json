@@ -234,15 +234,16 @@
         ]
     },
     {
-        "name": "Wade's Hosue",
-        "description": "This is Wade's maryland house! congrats ",
+        "name": "Wade's House",
+        "description": "This is a test POI, located in Maryland.",
         "year": "",
         "buildingID": "wadesHouse",
-        "location": "idk Maryland maybe",
+        "location": "Somewhere north of SC",
         "closestPOI": "n/a",
         "photos": [
-            "pepe"
-        ]
+            "CLA1",
+            "CLA2",
+            "CLA3"
     },
     {
         "name": "Joe's Columbia House",
