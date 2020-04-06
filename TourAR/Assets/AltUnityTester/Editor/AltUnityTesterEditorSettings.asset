@@ -1,0 +1,2574 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bcbb7697f22cd348aafc3b0e2b5b136, type: 3}
+  m_Name: AltUnityTesterEditorSettings
+  m_EditorClassIdentifier: 
+  appendToName: 0
+  OutputPathName: sampleGame/sampleGame.exe
+  AdbPath: /usr/local/bin/adb
+  IProxyPath: /usr/local/bin/iproxy
+  XcrunPath: /usr/bin/xcrun
+  AutomaticallySign: 0
+  SigningTeamId: 
+  BuildNumber: 0
+  MyTests:
+  - _selected: 0
+    _testName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _status: 0
+    _isSuite: 1
+    _parentName: 
+    _testCaseCount: 114
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: AchPageLoad
+    _status: -1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: AchPageLoad.Test
+    _status: -1
+    _isSuite: 0
+    _parentName: AchPageLoad
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
+      refused'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/AchPageLoad.cs
+  - _selected: 0
+    _testName: Mapbox
+    _status: 0
+    _isSuite: 1
+    _parentName: /Users/prithvi/GitHub Repos/Unity/Capstone/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 105
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.CheapRulerCs
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.CheapRulerCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.DistanceInMiles
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.loadFixtures () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:101
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.SetUp () [0x00001] in
+      /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:41
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0019644
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.DistanceInNauticalMiles
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.loadFixtures () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:101
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.SetUp () [0x00001] in
+      /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:41
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0009179
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.FixturesLoaded
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.loadFixtures () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:101
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.SetUp () [0x00001] in
+      /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:41
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0008992
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.FromTile
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.loadFixtures () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:101
+      \n  at Mapbox.CheapRulerCs.UnitTest.CheapRulerCsTest.SetUp () [0x00001] in
+      /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/cheap-ruler-cs/Tests/Editor/MapboxUnitTests_CheapRulerCs.cs:41
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0007767
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.Editor
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.FindCommonAncestorsWithinListWorks
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001481
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.TestListToTreeThrowsExceptionIfRootIsInvalidDepth
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001035
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.TestListToTreeWorks
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001032
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeElementUtilityTests.TestTreeToListWorks
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeElementUtilityTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001873
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeModelTests
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.Editor
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeModelTests.TestTreeModelCanAddElements
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeModelTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001152
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Editor.TreeModelTests.TestTreeModelCanRemoveElements
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Editor.TreeModelTests
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0002279
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 91
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs
+    _testCaseCount: 91
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.Average
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0146627
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.LowPass
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.1005387
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.NoOp
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.00337
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest.Weighted
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.AngleSmoothingTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0637851
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest.Deserialize
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0005104
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest.Serialize
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BboxToVector2dBoundsConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0002641
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest.InvalidValues
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001687
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest.ToStringTest
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.BearingFilterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000972
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CanonicalTileIdTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CanonicalTileIdTest.ToVector2d
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CanonicalTileIdTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0191905
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.Corrupt
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.CompressionTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Compression.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0092847
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.Decompress
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.CompressionTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Compression.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006586
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.Empty
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.CompressionTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Compression.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006062
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest.NotCompressed
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.CompressionTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.CompressionTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Compression.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.000635
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.GetUrl
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0048086
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.SetInvalidBearings
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001293
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.SetInvalidRadiuses_Mismatched
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001784
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest.SetInvalidRadiuses_TooSmall
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001928
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest.SerializesAndDeserializesBasic
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "OneTimeSetUp: System.TypeInitializationException : The type
+      initializer for 'Path' threw an exception.\n  ----> UnityEngine.UnityException
+      : get_dataPath can only be called from the main thread.\nConstructors and field
+      initializers will be executed from the loading thread when loading a scene.\nDon't
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest.SerializesAndDeserializesWithSteps
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.DirectionsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "OneTimeSetUp: System.TypeInitializationException : The type
+      initializer for 'Path' threw an exception.\n  ----> UnityEngine.UnityException
+      : get_dataPath can only be called from the main thread.\nConstructors and field
+      initializers will be executed from the loading thread when loading a scene.\nDon't
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.MultipleRequests
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_FileSource.cs:36
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0014759
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.Request
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_FileSource.cs:36
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0009609
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.RequestCancel
+    _status: 0
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'test ignored: Request.Cancel() does not work on some devices'
+    _testStackTrace: 
+    _testDuration: 0.0027765
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.RequestDnsError
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_FileSource.cs:36
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006342
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.RequestForbidden
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_FileSource.cs:36
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0008599
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.WaitWithNoRequests
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.FileSourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.FileSourceTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_FileSource.cs:36
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006522
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest.GetUrl
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0039531
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest.SetInvalidCountries
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001473
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest.SetInvalidTypes
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ForwardGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001296
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest.SerializesAndDeserializesForward
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "OneTimeSetUp: System.TypeInitializationException : The type
+      initializer for 'Path' threw an exception.\n  ----> UnityEngine.UnityException
+      : get_dataPath can only be called from the main thread.\nConstructors and field
+      initializers will be executed from the loading thread when loading a scene.\nDon't
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest.SerializesAndDeserializesReverse
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.GeocoderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "OneTimeSetUp: System.TypeInitializationException : The type
+      initializer for 'Path' threw an exception.\n  ----> UnityEngine.UnityException
+      : get_dataPath can only be called from the main thread.\nConstructors and field
+      initializers will be executed from the loading thread when loading a scene.\nDon't
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest.Deserialize
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001691
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest.Serialize
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.LonLatToVector2dConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001716
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 15
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.AllParameters
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.000654
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.AlternativesWithSteps
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0011103
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Annotation
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0010187
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.AsSimpleAsPossible
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0007584
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.CoordinatesNull
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006456
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.InvalidCoordinate
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006352
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.LanguageEnglish
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006355
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.LanguageGerman
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006374
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.NoSegment
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0012862
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.OverviewFull
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0010444
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.OverviewSimplified
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0009926
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Profiles
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0010917
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Radiuses
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0019542
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Tidy
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0007758
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.Timestamps
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapMatcherTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_MapMatcher.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006655
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.ChangeTilesetId
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs:34
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006397
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.RasterHelsinki
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs:34
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006368
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.SetVector2dBoundsZoom
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs:34
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006675
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.TileMax
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs:34
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.00066
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.World
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs:34
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006377
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.MapTest.Zoom
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.MapTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.MapTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Map.cs:34
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0009552
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest.Deserialize
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001825
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest.Serialize
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineToVector2dListConverterTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001423
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest.TestDecode
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000933
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest.TestEncode
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.PolylineUtilsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000926
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest.GetUrl
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0006074
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest.SetInvalidTypes
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.ReverseGeocodeResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001503
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 7
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.Clear
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.ConcurrentTilesetInsert
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.InsertSameTileForceOverwrite
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.InsertSameTileNoOverwrite
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.Prune
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.ReInit
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest.VerifyTilesFromConcurrentInsert
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.SQLiteCacheTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: UnityEngine.UnityException : get_persistentDataPath
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest.Helsinki
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001373
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest.World
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileCoverTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0800838
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 4
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.ConcatenatedVectorTilesets
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000675
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.MapboxEmerald
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000983
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.MapboxSatellite
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000544
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest.MapboxStreets
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileJSONTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000885
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest.GetUrlClassicRaster
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0006656
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest.GetUrlRaster
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0008002
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest.GetUrlVector
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileResourceTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0004214
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileTest.States
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.TileTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Tile.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0011252
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TileTest.TileLoading
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.TileTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Tile.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006958
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest.RetrieveConfigToken
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.TokenTest.SetUp () [0x0000c] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Token.cs:33
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006745
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest.TokenInvalid
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.TokenTest.SetUp () [0x0000c] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Token.cs:33
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0011126
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.TokenTest.TokenMalformed
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.TokenTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.TokenTest.SetUp () [0x0000c] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_Token.cs:33
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0012301
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 7
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.CardinalLimits
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001084
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.Center
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0002277
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.Extend
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001443
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.Hull
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.000108
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.IsEmpty
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000811
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.SmallBounds
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001073
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest.World
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dBoundsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001044
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest.DC
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0000815
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest.NullIsland
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.Vector2dTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0001377
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.MapboxSdkCs.UnitTest
+    _testCaseCount: 2
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest.ParseSuccess
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.VectorTileTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_VectorTile.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006435
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest.SeveralTiles
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.MapboxSdkCs.UnitTest.VectorTileTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: "System.TypeInitializationException : The type initializer
+      for 'Path' threw an exception.\n  ----> UnityEngine.UnityException : get_dataPath
+      can only be called from the main thread.\nConstructors and field initializers
+      will be executed from the loading thread when loading a scene.\nDon't use this
+      function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function."
+    _testStackTrace: "  at Mapbox.Unity.MapboxAccess..ctor () [0x00013] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:66
+      \n  at Mapbox.Unity.MapboxAccess.get_Instance () [0x0000e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/MapboxAccess.cs:41
+      \n  at Mapbox.MapboxSdkCs.UnitTest.VectorTileTest.SetUp () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_VectorTile.cs:37
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 \n--UnityException\n 
+      at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n  at
+      Mapbox.Unity.Constants+Path..cctor () [0x00014] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Unity/Constants.cs:19 "
+    _testDuration: 0.0006008
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest
+    _status: 0
+    _isSuite: 1
+    _parentName: Mapbox.ProbeExtractorCs
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _status: -1
+    _isSuite: 1
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest
+    _testCaseCount: 3
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.ExtractFootTrace
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.loadTraceFixture
+      (System.String fixtureName) [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/probe-extractor-cs/Tests/Editor/MapboxUnitTests_ProbeExtractorCs.cs:115
+      \n  at Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.SetUp () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/probe-extractor-cs/Tests/Editor/MapboxUnitTests_ProbeExtractorCs.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0009691
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.ExtractProbes
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.loadTraceFixture
+      (System.String fixtureName) [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/probe-extractor-cs/Tests/Editor/MapboxUnitTests_ProbeExtractorCs.cs:115
+      \n  at Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.SetUp () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/probe-extractor-cs/Tests/Editor/MapboxUnitTests_ProbeExtractorCs.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0007756
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.FixturesLoaded
+    _status: -1
+    _isSuite: 0
+    _parentName: Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Load can only be called from
+      the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Resources.Load(string,System.Type)\n 
+      at UnityEngine.Resources.Load[T] (System.String path) [0x00001] in /Users/builduser/buildslave/unity/build/Runtime/Export/Resources/Resources.bindings.cs:51
+      \n  at Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.loadTraceFixture
+      (System.String fixtureName) [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/probe-extractor-cs/Tests/Editor/MapboxUnitTests_ProbeExtractorCs.cs:115
+      \n  at Mapbox.ProbeExtractorCs.UnitTest.ProbeExtractorCsTest.SetUp () [0x00001]
+      in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Mapbox/Core/probe-extractor-cs/Tests/Editor/MapboxUnitTests_ProbeExtractorCs.cs:35
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0005888
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: Mapbox.Unity
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Unity.UnitTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.Unity
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Unity.UnitTest.CircularBufferTest
+    _status: 1
+    _isSuite: 1
+    _parentName: Mapbox.Unity.UnitTest
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: Mapbox.Unity.UnitTest.CircularBufferTest.SettingAndGettingValues
+    _status: 1
+    _isSuite: 0
+    _parentName: Mapbox.Unity.UnitTest.CircularBufferTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.0003236
+    path: Assets/Mapbox
+  - _selected: 0
+    _testName: sceneLoaderTest
+    _status: -1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 6
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: sceneLoaderTest.searchCaseInsensitive_Test
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_sceneCountInBuildSettings
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      \n  at sceneLoaderTest.searchCaseInsensitive_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:42
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0023896
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.searchForMapScene_Test
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_sceneCountInBuildSettings
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      \n  at sceneLoaderTest.searchForMapScene_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:24
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0139498
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.searchForTourHistoryScene_Test
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_sceneCountInBuildSettings
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      \n  at sceneLoaderTest.searchForTourHistoryScene_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:16
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0029895
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.searchInvalidScene_Test
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_sceneCountInBuildSettings
+      can only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      \n  at sceneLoaderTest.searchInvalidScene_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:33
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0027983
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.testManageAchievements
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_dataPath can only be called
+      from the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n 
+      at manageAchievements..ctor () [0x00000] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageAchievements.cs:11
+      \n  at sceneLoaderTest.testManageAchievements () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:112
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0007442
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.testManageTourHistory
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_dataPath can only be called
+      from the main thread.
+
+      Constructors and field initializers will be executed
+      from the loading thread when loading a scene.
+
+      Don''t use this function
+      in the constructor or field initializers, instead move initialization code
+      to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n 
+      at manageTourHistory..ctor () [0x00008] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:11
+      \n  at sceneLoaderTest.testManageTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:98
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0006447
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: TestARView
+    _status: -1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: TestARView.Test
+    _status: -1
+    _isSuite: 0
+    _parentName: TestARView
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
+      refused'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/TestARView.cs
+  - _selected: 0
+    _testName: TestSearch
+    _status: -1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: TestSearch.Test
+    _status: -1
+    _isSuite: 0
+    _parentName: TestSearch
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
+      refused'
+    _testStackTrace: 
+    _testDuration: 0
+    path: Assets/UITests/Editor/TestSearch.cs
+  - _selected: 0
+    _testName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+    _status: 0
+    _isSuite: 1
+    _parentName: 
+    _testCaseCount: 0
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  Scenes:
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/HomePage.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Map.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Achievements.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/TourHistory.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Search.unity
+    _buildIndex: 0
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/ARView.unity
+    _buildIndex: 0
+  platform: 1
+  standaloneTarget: 2
+  ranInEditor: 0
+  requestSeparator: ;
+  requestEnding: '&'
+  serverPort: 13000
+  scenePathDisplayed: 1
+  inputVisualizer: 0
+  showPopUp: 1

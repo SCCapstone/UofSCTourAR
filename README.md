@@ -9,25 +9,32 @@ This repository contains the files for our Capstone Senior Design project pertai
  - Update version if needed
  - Target minimum iOS version: 11.0 
  - Architecture: ARM64
+ - You may need to add text in the "Allow Camera Access" and "Allow Location Access" fields that are marked with an *
+ 
  
 
 ## Technologies
   - Unity
-  - iOS: 12.1.2 or later (*Soon to be iOS 13*)
+  - iOS: 12.1.2 or later (*Soon to be iOS 13.4*)
 
 Unity: 
-  - Version 2019.2.11f1
+  - Version 2019.3.0f6
   - iOS Build Support
   - Mac Build Support
 
 Packages: 
-  - AR Foundation: 2.1.4
-  - AR Subsystems: 2.1.1
-  - ARKit XR Plugin: 2.1.2
+  - AR Foundation: 3.0.1
+  - AR Subsystems: 3.0.0
+  - ARKit XR Plugin: 3.0.1
+  - XR Interaction Tookit: (preview) 0.9.6
+  - XR Management: 3.0.6
  
  
 ## Setup
  > Currently there are no one-time setup instructions for this app
+ 
+## Project Settings: TODO
+
  
 
 ## Running
@@ -43,7 +50,21 @@ Packages:
 ## Deployment
  
 ## Testing
+
+### Unit Tests
+In order to run the Unit Tests for our project you will need to download and fully set up the project first. After that:
+The Unit Tests are located here: TourAR/Assets/Editor/SceneLoaderTest.
+ 1. First, in the Unity Editor: Open the Test Runner by Navigating to Window -> General -> Test Runner.
+ 2. From the Test Runner popup window, select the "SceneLoader" test file.
+ 3. Click "Run Selected" inside the Test Runner window.
  
+### Behavioral Tests
+To run the UI tests on our project, begin by downloading and configuring the project according to the instructions above. 
+UI Tests are located here: TourAR/Assets/UITests
+ 1. In the Unity Editor, navigate to the Windows tab>AltUnityTester to open the AltUnityTester Editor. 
+ 2. Within the Editor, expand the Assembly-CSharp-Editor.dll folder. 
+ 3. Expand the Unity folder and select the tests you wish to run. 
+ 4. To test within the Unity editor, select the Editor radio button, and click "Run Selected Tests".
  
 ## Authors
  

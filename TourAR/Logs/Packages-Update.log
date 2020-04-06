@@ -16,3 +16,22 @@ The following packages were updated:
   com.unity.collab-proxy from version 1.2.9 to 1.2.16
   com.unity.textmeshpro from version 2.0.0 to 2.0.1
   com.unity.timeline from version 0.0.0-builtin to 1.1.0
+
+=== Mon Feb  3 11:37:56 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.test-framework from version 1.0.18 to 1.1.9
+  com.unity.timeline from version 1.1.0 to 1.2.10
+The following packages were removed:
+  com.unity.package-manager-ui@2.2.0
+
+=== Wed Feb 19 23:05:51 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.test-framework from version 1.1.9 to 1.1.11

@@ -9,16 +9,30 @@
 	{
 		[SerializeField]
 		Text _text;
-		[SerializeField]
-		Image _background;
+		//[SerializeField]
+		//Image _background;
 
 		public void Set(Dictionary<string, object> props)
 		{
 			_text.text = "";
 
-			if (props.ContainsKey("name"))
+      if (props.ContainsKey("title"))
 			{
-				_text.text = props["name"].ToString();
+				_text.text = props["title"].ToString();
+			}
+      if (props.ContainsKey("buildingID"))
+			{
+        if (_text.text == "") {
+          _text.text = props["buildingID"].ToString();
+        }
+        gameObject.GetComponent<cubePOI_ID>().buildingID = props["buildingID"].ToString();
+        Debug.Log("test_buildingID: " + props["buildingID"].ToString());
+        Debug.Log("test_cubeID: " + gameObject.GetComponent<cubePOI_ID>().buildingID);
+			}
+      /*
+			else if (props.ContainsKey("title"))
+			{
+				_text.text = props["title"].ToString();
 			}
 			else if (props.ContainsKey("house_num"))
 			{
@@ -33,8 +47,10 @@
 
 		public void RefreshBackground()
 		{
-			RectTransform backgroundRect = _background.GetComponent<RectTransform>();
-			LayoutRebuilder.ForceRebuildLayoutImmediate(backgroundRect);
+			//RectTransform backgroundRect = _background.GetComponent<RectTransform>();
+			//LayoutRebuilder.ForceRebuildLayoutImmediate(backgroundRect);
 		}
+    */
+    }
 	}
 }
