@@ -9,8 +9,8 @@
 	{
 		[SerializeField]
 		Text _text;
-		[SerializeField]
-		Image _background;
+		//[SerializeField]
+		//Image _background;
 
 		public void Set(Dictionary<string, object> props)
 		{

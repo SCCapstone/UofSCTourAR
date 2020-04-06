@@ -9,9 +9,7 @@ public class mapPopUp : MonoBehaviour
 
 
     public enum yesOrNo {Yes, No};
-    [SerializeField] Animator fadeOut;
     [SerializeField] public yesOrNo button;
-
     public GameObject panel;
     
     public void onClick() {

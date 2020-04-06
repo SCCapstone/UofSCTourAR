@@ -56,6 +56,8 @@
 							textFade.SetBool("Fade", true);
 							fadeIn.SetBool("Fade", true);
 							fadePanel.SetActive(false);
+							Debug.Log("Panel is set to " + fadeIn.GetBool("Fade"));
+							Debug.Log("Text is set to " + textFade.GetBool("Fade"));
 							hasFade=true;
 						}
 					}
