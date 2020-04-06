@@ -14,7 +14,6 @@ public class HistoryListControl : MonoBehaviour
     IEnumerator Start()
     {
         yield return null;
-        Debug.Log("goodbye");
         buttons = new List<GameObject>();
 
         if (buttons.Count > 0) {
@@ -23,18 +22,12 @@ public class HistoryListControl : MonoBehaviour
             }
             buttons.Clear();
         }
-        Debug.Log("goodbye2");
-        if (HistoryList.listHistory == null && HistoryList.listHistory.Count<0) {
-            Debug.Log("uh oh");
-        }
 
         foreach (string name in HistoryList.listHistory) {
-            Debug.Log("button loop");
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
             button.GetComponent<HistoryListButton>().SetText(name);
             button.transform.SetParent(buttonTemplate.transform.parent, false);
-            Debug.Log("finished for each");
         }
     }
 

@@ -18,6 +18,7 @@ public class mapPopUp : MonoBehaviour
             if (!achievementScore.countbids.Contains(loadTourStops.stopToLoad)) {
                 achievementScore.countbids.Add(loadTourStops.stopToLoad);
             }
+            HistoryList.listHistory.Add(loadTourStops.stopToLoad);
             SceneManager.LoadScene("ARView");
           break;
         case yesOrNo.No:
