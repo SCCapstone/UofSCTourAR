@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -48,8 +49,9 @@ public class MapRaycast : MonoBehaviour
                     //set bID based on click
                     string bID = raycastHit.collider.GetComponent<cubePOI_ID>().buildingID;
                     Debug.Log("buildingID: " + bID);
+                    
                     loadTourStops.stopToLoad = bID;
-
+                    
                     //get title
                     string retVal = "";
                     for (int i = 0; i < tourStops.Count; i++)
