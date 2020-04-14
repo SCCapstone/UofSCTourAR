@@ -1109,7 +1109,7 @@
 		&.style2 {
 			@include dark(#333);
 			background-attachment:	fixed,							fixed;
-			background-image:		url('images/overlay1.png'),		url('../../images/header.jpg');
+			background-image:		url('images/overlay1.png'),		url('../../images/uscdsdssdsdsdsd.jpg');
 			background-size:		auto,							cover;
 		}
 	}
@@ -1118,7 +1118,7 @@
 
 	#header {
 		@include padding(9em, 0, (0,0,_size(element-margin),0));
-		@include dark(#4686a0);
+		@include dark(#73000A);
 		background-attachment:	fixed,							fixed,							fixed;
 		background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(45deg, _palette(accent1-alt) 5%, _palette(accent3-alt) 30%, _palette(accent6-alt));
 		background-position:	top left,						center center,					center center;
@@ -1209,7 +1209,7 @@
 
 	#footer {
 		@include padding(6em, 0, (0,0,_size(element-margin),0));
-		@include dark(#4686a0);
+		@include dark(#73000A);
 		background-attachment:	fixed,							fixed,							fixed;
 		background-image:		url('images/overlay2.png'),		url('images/overlay4.svg'),		linear-gradient(45deg, _palette(accent6-alt), _palette(accent3-alt) 50%, _palette(accent1-alt) 95%);
 		background-position:	top left,						center center,					center center;

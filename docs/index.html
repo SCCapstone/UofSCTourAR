@@ -11,6 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script src="https://kit.fontawesome.com/eecc2bfc5b.js" crossorigin="anonymous"></script>
+
+
+		<!-- TODO create favicon
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		-->
+
 	</head>
 	<body class="is-preload">
 
@@ -19,12 +31,21 @@
 				<div class="inner">
 					<!-- <span class="icon solid major fa-cloud"></span> -->
 					<h1><i class="fas fa-map-marked-alt"></i></h1>
-					<h1><strong>UofSCTourAR</strong></h1>
+					<h1 style="font-size: 5em;"><strong>UofSCTourAR</strong></h1>
 					<h3>An Augmented Reality Tour of the University of South Carolina, built with Unity/XCode.</h3>
 					<p>This application was created as a part of <a href="https://capstone.cse.sc.edu" target="_blank">CSCE 490/492</a> at the <a href="https://sc.edu" target="_blank">University of South Carolina</a>.</p>
 					<p><b>TODO:</b> change color scheme of the site, background images</p>
-					<ul class="actions special">
+					<ul class="actions stacked">
 						<li><a href="#one" class="button scrolly">Enter</a></li>
+						<!--
+							<li>
+								<a href="#three" class="button scrolly">Screenshots</a>
+								<a href="#two" class="button scrolly">Features</a>
+							
+								<a href="#four" class="button scrolly">About Us</a></li> -->
+							
+						
+					
 					</ul>
 				</div>
 			</section>
@@ -42,8 +63,14 @@
 						</div>
 						<div class="col-6 col-12-medium imp-medium">
 							<!-- <span class="image fit"><img src="images/pic01.jpg" alt="" /></span> -->
-							<!-- need to make this work with other window sizes-->
+							<!-- need to make this work with other window sizes
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/cu48LU0vhNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							-->
+							<div class="ytcontainer">
+								<iframe src="https://www.youtube.com/embed/cu48LU0vhNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="ytvideo"></iframe>
+							</div>
+						
+						
 						</div>
 					</div>
 				</div>
@@ -55,19 +82,19 @@
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
 							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bolt"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-								<li><span class="icon solid style4 major fa-cog"></span></li>
-								<li><span class="icon solid style5 major fa-desktop"></span></li>
-								<li><span class="icon solid style6 major fa-calendar"></span></li>
+								<li><span class="icon solid style1 major"><i class="fab fa-unity" style="font-size: 4em"></i></span></li>
+								<li><span class="icon solid style2 major"><i class="fab fa-apple" style="font-size: 4em"></i></span></li>
+								<li><span class="icon solid style3 major"><i class="fas fa-map-marker-alt" style="font-size: 4em"></i></span></li>
+								<li><span class="icon solid style4 major"><i class="fas fa-cube" style="font-size: 4em"></i></span></li>
+								<li><span class="icon solid style5 major"><i class="fas fa-university" style="font-size: 4em"></i></span></li>
+								<li><span class="icon solid style6 major"><i class="fas fa-trophy" style="font-size: 4em"></i></span></li>
 							</ul>
 						</div>
 						<div class="col-6 col-12-medium">
 							<header class="major">
 								<h2>Features</h2>
 							</header>
-							<p><b>TODO:</b> Change icons, Describe main features of the application</p>
+							<p><b>TODO:</b> Change icon colors, Describe main features of the application</p>
 							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
 							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
 							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
@@ -83,10 +110,9 @@
 						<h2>Screenshots</h2>
 					</header>
 					<p><b>TODO:</b> Add screenshots of the main features with short descriptions (possibly links?)</p>
-					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic06.jpg" alt="" /></span>
+							<span class="image fit"><img class="scrnsht" src="images/pic06.jpg" alt="Home Screen" /></span>
 							<h3>Home</h3>
 							<p>This is the home screen of our applciation. Thank you for using UofSCTourAR!</p>
 							<ul class="actions special">
@@ -94,23 +120,23 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							<span class="image fit"><img class="scrnsht" src="images/" alt="" /></span>
 							<h3>Mapbox Map</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<p>TODO</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+							<span class="image fit"><img class="scrnsht" src="images/" alt="" /></span>
 							<h3>AR Tour Stop</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<p>TODO</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							<span class="image fit"><img class="scrnsht" src="images/" alt="" /></span>
 							<h3>Tour History</h3>
 							<p>Tour history shows you a list of stops you have visited. Similar to search, clicking on a stop gives you a brief summary about it.</p>
 							<ul class="actions special">
@@ -118,7 +144,7 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<span class="image fit"><img class="scrnsht" src="images/pic04.jpg" alt="" /></span>
 							<h3>Search</h3>
 							<p>The search functionality of the application can be used to search for specific tour stops. This is useful if you don't know where to go next or you're away from campus and cannot access the AR functionality. Clicking on a stop will give you a brief description of the stop, it's location, and the date it was built.</p>
 							<ul class="actions special">
@@ -126,9 +152,9 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic05.jpg" alt="" /></span>
+							<span class="image fit"><img class="scrnsht" src="images/pic05.jpg" alt="" /></span>
 							<h3>Achievements</h3>
-							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<p>TODO</p>
 							<ul class="actions special">
 								<li><a href="#" class="button">More</a></li>
 							</ul>
@@ -506,14 +532,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
+					<!--
 					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+					--->
+					<li><a href="https://github.com/SCCapstone/UofSCTourAR" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>CSCE 490/492<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</section>
 

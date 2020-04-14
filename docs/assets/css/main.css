@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #6bd4c8;
+			color: #73000A;
 		}
 
 	strong, b {
@@ -269,6 +269,13 @@ input, select, textarea {
 
 		.container.max {
 			width: 100%;
+		}
+
+		.container .ytcontainer {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
 		}
 
 		@media screen and (max-width: 980px) {
@@ -2363,6 +2370,10 @@ input, select, textarea {
 			border-radius: 4px;
 			display: block;
 		}
+			.image img.scrnsht {
+				border-width: 5px;
+				border-color: #333;
+			}
 
 		.image.left {
 			float: left;
@@ -2614,6 +2625,14 @@ input, select, textarea {
 					display: inline-block;
 					line-height: inherit;
 				}
+				ul.major-icons li i {
+					-moz-transform: rotate(-45deg);
+					-webkit-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+					display: inline-block;
+					line-height: inherit;
+				}
 
 /* Table */
 
@@ -2826,7 +2845,7 @@ input, select, textarea {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+			background-image: url("images/overlay1.png"), url("../../images/usc.jpg");
 			background-size: auto,							cover;
 		}
 
@@ -2914,10 +2933,10 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		background-color: #000000;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #ffffff 5%, #000000 30%, #73000A);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -2977,7 +2996,7 @@ input, select, textarea {
 			#header .button.primary {
 				background-color: #ffffff;
 				box-shadow: inset 0 0 0 1px #ffffff !important;
-				color: #4686a0 !important;
+				color: #000000 !important;
 			}
 
 				#header input[type="submit"].primary:hover,
@@ -3110,10 +3129,10 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		background-color: #4686a0;
+		background-color: #000000;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		background-image: url("images/overlay1.png"), url("images/overlay4.svg"), linear-gradient(45deg, #73000A, #000000 50%, #73000A 95%);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
@@ -3171,7 +3190,7 @@ input, select, textarea {
 			#footer .button.primary {
 				background-color: #ffffff;
 				box-shadow: inset 0 0 0 1px #ffffff !important;
-				color: #4686a0 !important;
+				color: #000000 !important;
 			}
 
 				#footer input[type="submit"].primary:hover,
@@ -3509,4 +3528,18 @@ input, select, textarea {
 				padding: 2em 1em 2em 1em ;
 			}
 
+	}
+
+	.ytcontainer {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%;
+	}
+	.ytvideo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
