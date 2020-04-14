@@ -484,7 +484,7 @@ MonoBehaviour:
   buttonTemplate: {fileID: 1378240566}
   iconSprites:
   - {fileID: 21300000, guid: 546dd341c3bac4b8a8c2762d7ef49219, type: 3}
-  - {fileID: 21300000, guid: 78d520e4848f74212a34120475fc465b, type: 3}
+  - {fileID: 21300000, guid: eba35848faa894825b1657834c7b52a3, type: 3}
 --- !u!114 &296385135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2269,7 +2269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.9000244, y: -258.7}
+  m_AnchoredPosition: {x: -7.9003906, y: -258.69922}
   m_SizeDelta: {x: -175.8, y: -717.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932227981
@@ -2541,7 +2541,7 @@ PrefabInstance:
     - target: {fileID: 8911043815478914629, guid: f7c272113d8bb432bbd1394c277bbf08,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -476.8
+      value: -476.80078
       objectReference: {fileID: 0}
     - target: {fileID: 8911043815478914629, guid: f7c272113d8bb432bbd1394c277bbf08,
         type: 3}
@@ -2736,7 +2736,7 @@ PrefabInstance:
     - target: {fileID: 8911043816590625325, guid: f7c272113d8bb432bbd1394c277bbf08,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -95.925
+      value: -95.92578
       objectReference: {fileID: 0}
     - target: {fileID: 8911043816590625325, guid: f7c272113d8bb432bbd1394c277bbf08,
         type: 3}
