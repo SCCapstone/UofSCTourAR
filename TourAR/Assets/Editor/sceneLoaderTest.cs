@@ -71,11 +71,32 @@ public class sceneLoaderTest : MonoBehaviour
     }
 
     [Test]
-    public void testManageAchievements()
+    public void createManageAchievements()
     {
-        var manageA = new manageAchievements();
-        manageA.resetAchievements(); //ensure that local data doesn't mess up the test
-        var ach = manageA.getAchievements();
-        Assert.AreEqual(ach[0].isCompleted, false);
+        //Arrange
+        var manager = new GameObject("manageAchievements").AddComponent<manageAchievements>();
+    }
+
+    [Test]
+    public void toggleStatusOfAchievement()
+    {
+        //Arrange
+        var manager = new GameObject("manageAchievements").AddComponent<manageAchievements>();
+        manager.loadAchievements();
+        manager.resetAchievements(); //ensure that local data doesn't mess up the test
+        manager.toggleAchievementStatus("1st Stop!");
+        //Assert
+        Assert.AreEqual(manager.getAchievementStatus(0), true);
+    }
+
+    [Test]
+    public void clearAchievements()
+    {
+        //Arrange
+        var manager = new GameObject("manageAchievements").AddComponent<manageAchievements>();
+        manager.loadAchievements();
+        manager.resetAchievements();
+        //Assert
+        Assert.AreEqual(manager.getAchievementStatus(0), false);
     }
 }

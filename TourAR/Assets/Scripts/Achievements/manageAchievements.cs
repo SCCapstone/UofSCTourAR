@@ -29,11 +29,19 @@ public class manageAchievements : MonoBehaviour
         public string description;
     }
 
-    private void loadAchievements()
+    public void loadAchievements()
     {
         // JUST FILE IO
         string json = Resources.Load<TextAsset>("JSON/achievements").text;
         achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+    }
+    public bool getAchievementStatus(int index)
+    {
+        if (index < achievements.Count)
+        {
+            return achievements[index].isCompleted;
+        }
+        return false;
     }
 
     public List<Achievement> getAchievements()
