@@ -22,27 +22,27 @@ public class Button_Toggle : MonoBehaviour
       switch(objtype) { // check for type
         //switch statements need constant checks, || is not constant
         case ARUItype.Data:
-          dataStampAnim.SetTrigger("Normal");
+          dataStampAnim.SetTrigger("Pressed");
           StartCoroutine(ARButton());
           break;
 
         case ARUItype.Photos:
-          picsStampAnim.SetTrigger("Normal");
+          picsStampAnim.SetTrigger("Pressed");
           StartCoroutine(ARButton());
           break;
 
         case ARUItype.Reset:
-          resetStampAnim.SetTrigger("Normal");
+          resetStampAnim.SetTrigger("Pressed");
           StartCoroutine(ResetButton());
           break;
 
         case ARUItype.Quiz:
-          quizStampAnim.SetTrigger("Normal");
+          quizStampAnim.SetTrigger("Pressed");
           StartCoroutine(QuizButton());
           break;
 
         case ARUItype.Back:
-          backStampAnim.SetTrigger("Normal");
+          backStampAnim.SetTrigger("Pressed");
           StartCoroutine(BackButton());
           break;
 
