@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HistoryList : MonoBehaviour
 {
     public static List<string> listHistory = new List<string>();
-    public int stopsCount = 0;
+    public static int stopsCount = 0;
     Text score;
 
     // Start is called before the first frame update

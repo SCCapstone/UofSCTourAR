@@ -102,6 +102,7 @@ public class manageTourHistory : MonoBehaviour
     public void clearTourHistory()
     {
         tourHistory.RemoveRange(0, tourHistory.Count);
+        saveTourHistory();
     }
 
     private static void saveTourHistory()
