@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class ButtonListButton : MonoBehaviour
 {
-
     [SerializeField]
     private Text myText;
 
@@ -17,17 +16,19 @@ public class ButtonListButton : MonoBehaviour
 
     private string myTextString;
 
-    public void SetText(string textString) {
+    public void SetText(string textString)
+    {
         myTextString = textString;
         myText.text = textString;
     }
 
-    public void SetIcon(Sprite mySprite) {
+    public void SetIcon(Sprite mySprite)
+    {
         myIcon.sprite = mySprite;
     }
 
-    public void OnClick() {
-        buttonControl.ButtonClicked(myTextString);
+    public void OnClick()
+    {
+        buttonControl.ButtonClicked (myTextString);
     }
-
 }

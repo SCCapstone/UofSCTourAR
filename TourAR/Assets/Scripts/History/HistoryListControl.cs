@@ -17,14 +17,17 @@ public class HistoryListControl : MonoBehaviour
         buttons = new List<GameObject>();
         HistoryList.listHistory = manageTourHistory.getTourHistoryAsString();
 
-        if (buttons.Count > 0) {
-            foreach (GameObject button in buttons) {
+        if (buttons.Count > 0)
+        {
+            foreach (GameObject button in buttons)
+            {
                 Destroy(button.gameObject);
             }
             buttons.Clear();
         }
 
-        foreach (string name in HistoryList.listHistory) {
+        foreach (string name in HistoryList.listHistory)
+        {
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
             button.GetComponent<HistoryListButton>().SetText(name);
@@ -32,13 +35,16 @@ public class HistoryListControl : MonoBehaviour
         }
     }
 
-    public static void Reset() {
-        foreach (var gameObj in GameObject.FindGameObjectsWithTag("HButton")) {
-            Destroy(gameObj);
+    public static void Reset()
+    {
+        foreach (var gameObj in GameObject.FindGameObjectsWithTag("HButton"))
+        {
+            Destroy (gameObj);
         }
     }
 
-    public void ButtonClicked(string myTextString) {
-        Debug.Log(myTextString);
+    public void ButtonClicked(string myTextString)
+    {
+        Debug.Log (myTextString);
     }
 }

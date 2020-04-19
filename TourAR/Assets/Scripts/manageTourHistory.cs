@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using Newtonsoft.Json;
 using System.IO;
+using Newtonsoft.Json;
+using UnityEngine;
 
 public class manageTourHistory : MonoBehaviour
 {
     private static List<tourStopVisited> tourHistory;
+
     private static int tourHistoryCap = 10; //Setting as 10 by default
 
     /*
@@ -52,21 +53,28 @@ public class manageTourHistory : MonoBehaviour
 
     public static void loadTourHistory()
     {
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n CURRENTLY IN LOAD TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n CURRENTLY IN LOAD TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");
         if (File.Exists(Application.persistentDataPath + "/tourHistory.json"))
         {
-            Debug.Log("\n\n\n\n ****************** \n\n\n\n FOUND TOURHISTORY.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
-            string filePath = Application.persistentDataPath + "/tourHistory.json";
+            Debug
+                .Log("\n\n\n\n ****************** \n\n\n\n FOUND TOURHISTORY.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
+            string filePath =
+                Application.persistentDataPath + "/tourHistory.json";
             using (StreamReader r = new StreamReader(filePath))
             {
                 string json = r.ReadToEnd();
-                tourHistory = JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
+                tourHistory =
+                    JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
             }
         }
-        else {
-            Debug.Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND TOURHISTORY.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
+        else
+        {
+            Debug
+                .Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND TOURHISTORY.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
             string json = Resources.Load<TextAsset>("JSON/tourHistory").text;
-            tourHistory = JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
+            tourHistory =
+                JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
         }
     }
 
@@ -81,12 +89,15 @@ public class manageTourHistory : MonoBehaviour
         {
             tourHistory.RemoveAt(tourHistoryCap - 1); // we need to remove the last element of the list before adding this one
         }
+
         // Try to convert Building ID to stop name
         var manageTS = new loadTourStops();
         manageTS.prepForUse();
         string title = manageTS.getTitleForTourStop(tourStopID); // stop name
         tourStopVisited newItem = new tourStopVisited();
-        if ( title == "n/a no match found for this building ID") // If we did not find a name for the ID. Realistically this should only happen with our fake tour stops for testing.
+        if (
+            title == "n/a no match found for this building ID" // If we did not find a name for the ID. Realistically this should only happen with our fake tour stops for testing.
+        )
         {
             newItem.stopID = tourStopID;
         }
@@ -96,7 +107,8 @@ public class manageTourHistory : MonoBehaviour
         }
         tourHistory.Insert(0, newItem);
         saveTourHistory();
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n STOP ADDED TO MANAGE TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n STOP ADDED TO MANAGE TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");
     }
 
     public void clearTourHistory()
@@ -107,7 +119,8 @@ public class manageTourHistory : MonoBehaviour
 
     private static void saveTourHistory()
     {
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n SAVING TOUR HISTORY NOW \n\n\n\n ****************** \n\n\n\n");
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n SAVING TOUR HISTORY NOW \n\n\n\n ****************** \n\n\n\n");
         string filePath = Application.persistentDataPath + "/tourHistory.json";
         File.WriteAllText(filePath, JsonConvert.SerializeObject(tourHistory));
     }

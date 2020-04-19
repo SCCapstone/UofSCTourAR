@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using Newtonsoft.Json;
 using System.IO;
+using Newtonsoft.Json;
+using UnityEngine;
 
 public class manageAchievements : MonoBehaviour
 {
@@ -17,29 +17,38 @@ public class manageAchievements : MonoBehaviour
     public class Achievement
     {
         public string name;
+
         public int condition;
+
         public bool isCompleted;
+
         public string description;
     }
 
     public void loadAchievements()
     {
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n LOADING ACHIEVEMENTS \n\n\n\n ****************** \n\n\n\n");
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n LOADING ACHIEVEMENTS \n\n\n\n ****************** \n\n\n\n");
         if (File.Exists(Application.persistentDataPath + "/achievements.json"))
         {
-            Debug.Log("\n\n\n\n ****************** \n\n\n\n FOUND achievements.json IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
-            string filePath = Application.persistentDataPath + "/achievements.json";
+            Debug
+                .Log("\n\n\n\n ****************** \n\n\n\n FOUND achievements.json IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
+            string filePath =
+                Application.persistentDataPath + "/achievements.json";
             using (StreamReader r = new StreamReader(filePath))
             {
                 string json = r.ReadToEnd();
-                achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+                achievements =
+                    JsonConvert.DeserializeObject<List<Achievement>>(json);
             }
         }
         else
         {
-            Debug.Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND achievements.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
+            Debug
+                .Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND achievements.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
             string json = Resources.Load<TextAsset>("JSON/achievements").text;
-            achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+            achievements =
+                JsonConvert.DeserializeObject<List<Achievement>>(json);
         }
     }
 
@@ -69,10 +78,13 @@ public class manageAchievements : MonoBehaviour
         saveAchievements();
     }
 
-    public void checkIfCompleted() {
+    public void checkIfCompleted()
+    {
         loadAchievements();
-        for (int i = 0; i < achievements.Count; i++) {
-            if (achievementScore.countbids.Count >= achievements[i].condition) {
+        for (int i = 0; i < achievements.Count; i++)
+        {
+            if (achievementScore.countbids.Count >= achievements[i].condition)
+            {
                 achievements[i].isCompleted = true;
             }
         }
@@ -81,7 +93,8 @@ public class manageAchievements : MonoBehaviour
 
     public void saveAchievements()
     {
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n SAVING ACHIEVEMENTS NOW \n\n\n\n ****************** \n\n\n\n");
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n SAVING ACHIEVEMENTS NOW \n\n\n\n ****************** \n\n\n\n");
         string filePath = Application.persistentDataPath + "/achievements.json";
         File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
     }
@@ -94,5 +107,4 @@ public class manageAchievements : MonoBehaviour
             achievements[i].isCompleted = false;
         }
     }
-
 }

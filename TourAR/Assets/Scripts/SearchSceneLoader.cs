@@ -9,15 +9,17 @@ public class SearchSceneLoader : MonoBehaviour
     [SerializeField]
     private InputField inField;
 
-    private void Start() {
+    private void Start()
+    {
         GetComponent<Button>().onClick.AddListener(TryLoadScene);
     }
 
-    private void TryLoadScene() {
+    private void TryLoadScene()
+    {
         string sceneName = inField.text;
         if (SceneExists(sceneName))
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene (sceneName);
         }
     }
 
@@ -28,9 +30,11 @@ public class SearchSceneLoader : MonoBehaviour
         {
             string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
             int lastSlash = scenePath.LastIndexOf("/");
-            scenesInBuild.Add(scenePath.Substring(lastSlash + 1, scenePath.LastIndexOf(".") - lastSlash - 1));
+            scenesInBuild
+                .Add(scenePath
+                    .Substring(lastSlash + 1,
+                    scenePath.LastIndexOf(".") - lastSlash - 1));
         }
         return scenesInBuild.Any(t => t == name);
     }
-
 }

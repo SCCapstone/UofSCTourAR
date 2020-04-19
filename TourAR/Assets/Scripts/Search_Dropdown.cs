@@ -5,9 +5,13 @@ using UnityEngine.UI;
 
 public class Search_Dropdown : MonoBehaviour
 {
-    List<string> buildings = new List<string>() { "ARView", "IBM Building", "Swearigen", "Gambrell" };
+    List<string>
+        buildings =
+            new List<string>()
+            { "ARView", "IBM Building", "Swearigen", "Gambrell" };
 
     public Dropdown dropdown;
+
     public Text selectedScene;
 
     public void Dropdown_IndexChange(int index)
@@ -20,10 +24,8 @@ public class Search_Dropdown : MonoBehaviour
         PopulateList();
     }
 
-
     void PopulateList()
     {
-       
-        dropdown.AddOptions(buildings);
+        dropdown.AddOptions (buildings);
     }
 }

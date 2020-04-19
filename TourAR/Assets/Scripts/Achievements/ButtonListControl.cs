@@ -18,29 +18,40 @@ public class ButtonListControl : MonoBehaviour
     {
         buttons = new List<GameObject>();
         achievementScore.loadCountBIDS();
-        if (buttons.Count > 0) {
-            foreach (GameObject button in buttons) {
+        if (buttons.Count > 0)
+        {
+            foreach (GameObject button in buttons)
+            {
                 Destroy(button.gameObject);
             }
             buttons.Clear();
         }
 
-        for (int i = 0; i < manageAchievements.achievements.Count; i++) {
+        for (int i = 0; i < manageAchievements.achievements.Count; i++)
+        {
             GameObject button = Instantiate(buttonTemplate) as GameObject;
-            if (manageAchievements.achievements[i].isCompleted == false) {
+            if (manageAchievements.achievements[i].isCompleted == false)
+            {
                 button.SetActive(true);
-                button.GetComponent<ButtonListButton>().SetText(manageAchievements.achievements[i].name);
+                button
+                    .GetComponent<ButtonListButton>()
+                    .SetText(manageAchievements.achievements[i].name);
                 button.GetComponent<ButtonListButton>().SetIcon(iconSprites[0]);
-            } else {
+            }
+            else
+            {
                 button.SetActive(true);
-                button.GetComponent<ButtonListButton>().SetText(manageAchievements.achievements[i].description);
+                button
+                    .GetComponent<ButtonListButton>()
+                    .SetText(manageAchievements.achievements[i].description);
                 button.GetComponent<ButtonListButton>().SetIcon(iconSprites[1]);
             }
             button.transform.SetParent(buttonTemplate.transform.parent, false);
         }
     }
 
-    public void ButtonClicked(string myTextString) {
-        Debug.Log(myTextString);
+    public void ButtonClicked(string myTextString)
+    {
+        Debug.Log (myTextString);
     }
 }

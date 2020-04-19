@@ -7,32 +7,33 @@ public class ChangeStop : MonoBehaviour
 {
     Dropdown myDropdown;
 
-    public static bool hasChanged=false;
+    public static bool hasChanged = false;
 
     public void OnDropDownChanged(Dropdown dropDown)
     {
-      string stopName="";
+        string stopName = "";
 
-      switch (dropDown.value) {
-        case 1:
-          stopName="Rutledge";
-          break;
-        case 2:
-          stopName="Horseshoe";
-          break;
-        case 3:
-          stopName="McKissick";
-          break;
-      }
+        switch (dropDown.value)
+        {
+            case 1:
+                stopName = "Rutledge";
+                break;
+            case 2:
+                stopName = "Horseshoe";
+                break;
+            case 3:
+                stopName = "McKissick";
+                break;
+        }
 
-      loadTourStops.stopToLoad = stopName;
-      hasChanged = true;
+        loadTourStops.stopToLoad = stopName;
+        hasChanged = true;
     }
 
-
-    public void OnARSelect(string stopName) {
-      loadTourStops.stopToLoad = stopName;
-      hasChanged = true;
-      Debug.Log("ChangeStop: "+ loadTourStops.stopToLoad);
+    public void OnARSelect(string stopName)
+    {
+        loadTourStops.stopToLoad = stopName;
+        hasChanged = true;
+        Debug.Log("ChangeStop: " + loadTourStops.stopToLoad);
     }
 }

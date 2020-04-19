@@ -1,32 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using Newtonsoft.Json;
 using System.IO;
+using Newtonsoft.Json;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class loadTourStops : MonoBehaviour
 {
     public static List<TourStop> tourStops;
+
     public Text stopTitle;
+
     public Text data;
+
     public static string stopToLoad = "Horseshoe";
 
-    public static List<string> imageNames = new List<string>();    //public static List<string> imageNames = new List<string>();
+    public static List<string> imageNames = new List<string>(); //public static List<string> imageNames = new List<string>();
 
     //ChangeStop change;
     //public Dropdown selection; Dropdown did not work as intended
     //private int prevDropVal=-1;
-
     void Start()
     {
         loadTheTourStops();
         sendToAR();
 
-        Debug.Log("loadourstops: "+ imageNames);
-        int counter=0;
-        foreach(var name in imageNames) {
-            Debug.Log("loadourstops: "+counter + " "+ name);
+        Debug.Log("loadourstops: " + imageNames);
+        int counter = 0;
+        foreach (var name in imageNames)
+        {
+            Debug.Log("loadourstops: " + counter + " " + name);
             counter++;
         }
     }
@@ -62,11 +65,12 @@ public class loadTourStops : MonoBehaviour
     private void sendToAR()
     {
         Debug.Log("sendToAR: " + stopToLoad);
+
         //Debug.Log(selection.options[selection.value].text);
         //Debug.Log(selection.captionText.text);
         stopTitle.text = this.getTitleForTourStop(stopToLoad);
         data.text = this.getMetadataForTourStop(stopToLoad);
-        setPhotosForTourStop(stopToLoad);
+        setPhotosForTourStop (stopToLoad);
     }
 
     private void sendToSearch(string stopToLoad)
@@ -78,6 +82,7 @@ public class loadTourStops : MonoBehaviour
     private void loadTheTourStops()
     {
         string json = Resources.Load<TextAsset>("JSON/tourStops").text;
+
         //Debug.Log("JSON DATA:  "+ json);
         tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
         //Debug.Log("finished convert");
@@ -132,17 +137,17 @@ public class loadTourStops : MonoBehaviour
 
     public void setPhotosForTourStop(string bID)
     {
-      clearImageNames();
-      for (int i = 0; i < tourStops.Count; i++)
-      {
-          if (tourStops[i].buildingID.Equals(bID))
-          {
-              for (int j = 0; j < tourStops[i].photos.Length; j++)
-              {
-                  imageNames.Add(tourStops[i].photos[j]);
-              }
-          }
-      }
+        clearImageNames();
+        for (int i = 0; i < tourStops.Count; i++)
+        {
+            if (tourStops[i].buildingID.Equals(bID))
+            {
+                for (int j = 0; j < tourStops[i].photos.Length; j++)
+                {
+                    imageNames.Add(tourStops[i].photos[j]);
+                }
+            }
+        }
     }
 
     public static string[] getAllDataForTourStop(string bID)
@@ -175,10 +180,11 @@ public class loadTourStops : MonoBehaviour
         return "n/a couldn't find a match";
     }
 
-    public void clearImageNames() {
-        for (int i = imageNames.Count - 1; i >=0; i--)
+    public void clearImageNames()
+    {
+        for (int i = imageNames.Count - 1; i >= 0; i--)
         {
-            imageNames.RemoveAt(i);
+            imageNames.RemoveAt (i);
         }
     }
 }

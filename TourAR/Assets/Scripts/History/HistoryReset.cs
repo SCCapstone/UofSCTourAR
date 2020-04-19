@@ -8,8 +8,10 @@ public class HistoryReset : MonoBehaviour
     {
         var mTH = new manageTourHistory();
         mTH.clearTourHistory();
-        if (HistoryListControl.buttons.Count > 0) {
-            foreach (GameObject button in HistoryListControl.buttons) {
+        if (HistoryListControl.buttons.Count > 0)
+        {
+            foreach (GameObject button in HistoryListControl.buttons)
+            {
                 Destroy(button.gameObject);
             }
             HistoryListControl.buttons.Clear();

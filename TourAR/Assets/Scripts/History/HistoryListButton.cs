@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HistoryListButton : MonoBehaviour
 {
-
     [SerializeField]
     private Text myText;
 
@@ -14,17 +13,19 @@ public class HistoryListButton : MonoBehaviour
 
     private string myTextString;
 
-    public void SetText(string textString) {
+    public void SetText(string textString)
+    {
         myTextString = textString;
         myText.text = textString;
     }
- 
-    public void OnClick() {
-        buttonControl.ButtonClicked(myTextString);
+
+    public void OnClick()
+    {
+        buttonControl.ButtonClicked (myTextString);
     }
 
-    public void Reset() {
-        Destroy(gameObject);
+    public void Reset()
+    {
+        Destroy (gameObject);
     }
-
 }
