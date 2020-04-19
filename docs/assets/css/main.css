@@ -2845,7 +2845,7 @@ input, select, textarea {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/gates.jpg");
+			background-image: url("https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/assets/css/images/overlay1.png"), url("https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/gates.jpg");
 			background-size: auto,							cover;
 		}
 
@@ -2936,7 +2936,7 @@ input, select, textarea {
 		background-color: #000000;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #ffffff 5%, #000000 30%, #73000A);
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #000000 5%, #000000 30%, #73000A);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
