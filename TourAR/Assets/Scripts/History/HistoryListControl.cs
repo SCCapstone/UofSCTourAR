@@ -15,6 +15,7 @@ public class HistoryListControl : MonoBehaviour
     {
         yield return null;
         buttons = new List<GameObject>();
+        HistoryList.listHistory = manageTourHistory.getTourHistoryAsString();
 
         if (buttons.Count > 0) {
             foreach (GameObject button in buttons) {
@@ -34,7 +35,7 @@ public class HistoryListControl : MonoBehaviour
     public static void Reset() {
         foreach (var gameObj in GameObject.FindGameObjectsWithTag("HButton")) {
             Destroy(gameObj);
-        }    
+        }
     }
 
     public void ButtonClicked(string myTextString) {
