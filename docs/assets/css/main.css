@@ -453,6 +453,21 @@ input, select, textarea {
 					padding-top: 0em;
 				}
 
+		.row.aboutme a {
+			border-bottom-color: transparent; 
+			color: #ffffff;
+			
+			margin: 0 0.5em 0 0.5em;
+		}
+
+		.row.aboutme i {
+			font-size: 150%;
+		}
+	
+		.row.aboutme i:hover {
+			color: rgba(255, 255, 255, 0.75);
+		}
+
 		.row.gtr-25 {
 			margin-top: 0;
 			margin-left: -0.5em;
