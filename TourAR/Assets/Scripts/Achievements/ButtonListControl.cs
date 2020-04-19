@@ -17,7 +17,7 @@ public class ButtonListControl : MonoBehaviour
     void Start()
     {
         buttons = new List<GameObject>();
-
+        achievementScore.loadCountBIDS();
         if (buttons.Count > 0) {
             foreach (GameObject button in buttons) {
                 Destroy(button.gameObject);

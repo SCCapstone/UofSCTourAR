@@ -8,13 +8,6 @@ public class manageAchievements : MonoBehaviour
 {
     public static List<Achievement> achievements;
 
-    /*
-        Suggested Workflow:
-          - Create an instance of manageAchievements, which will load data from the JSON.
-          - To add a manage an achievements status:
-            - call toggleAchievementStatus()
-            - IMPORTANT: call saveAchievements() otherwise any changes will not actually update the JSON file.
-    */
     void Start()
     {
         loadAchievements();
@@ -31,10 +24,25 @@ public class manageAchievements : MonoBehaviour
 
     public void loadAchievements()
     {
-        // JUST FILE IO
-        string json = Resources.Load<TextAsset>("JSON/achievements").text;
-        achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+        Debug.Log("\n\n\n\n ****************** \n\n\n\n LOADING ACHIEVEMENTS \n\n\n\n ****************** \n\n\n\n");
+        if (File.Exists(Application.persistentDataPath + "/achievements.json"))
+        {
+            Debug.Log("\n\n\n\n ****************** \n\n\n\n FOUND achievements.json IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
+            string filePath = Application.persistentDataPath + "/achievements.json";
+            using (StreamReader r = new StreamReader(filePath))
+            {
+                string json = r.ReadToEnd();
+                achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+            }
+        }
+        else
+        {
+            Debug.Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND achievements.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
+            string json = Resources.Load<TextAsset>("JSON/achievements").text;
+            achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+        }
     }
+
     public bool getAchievementStatus(int index)
     {
         if (index < achievements.Count)
@@ -62,6 +70,7 @@ public class manageAchievements : MonoBehaviour
     }
 
     public void checkIfCompleted() {
+        loadAchievements();
         for (int i = 0; i < achievements.Count; i++) {
             if (achievementScore.countbids.Count >= achievements[i].condition) {
                 achievements[i].isCompleted = true;
@@ -70,21 +79,11 @@ public class manageAchievements : MonoBehaviour
         saveAchievements();
     }
 
-/*    public void addAchievement(string aName, int condition, bool completion, string desc)
-    {
-        Achievement a = new Achievement();
-        a.name = aName;
-        a.condition = condition;
-        a.isCompleted = completion;
-        a.description = desc;
-        achievements.Insert(0, a);
-    }
-*/
-
     public void saveAchievements()
     {
-        //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
-        File.WriteAllText("Assets/Resources/JSON/achievements.json", JsonConvert.SerializeObject(achievements));
+        Debug.Log("\n\n\n\n ****************** \n\n\n\n SAVING ACHIEVEMENTS NOW \n\n\n\n ****************** \n\n\n\n");
+        string filePath = Application.persistentDataPath + "/achievements.json";
+        File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
     }
 
     public void resetAchievements()

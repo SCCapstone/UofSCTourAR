@@ -16,7 +16,7 @@ public class mapPopUp : MonoBehaviour
       switch(button) { // check for type
         case yesOrNo.Yes:
             if (!achievementScore.countbids.Contains(loadTourStops.stopToLoad)) {
-                achievementScore.countbids.Add(loadTourStops.stopToLoad);
+                achievementScore.addToCountBIDS(loadTourStops.stopToLoad);
             }
             HistoryList.addToTourHistory(loadTourStops.stopToLoad);
             SceneManager.LoadScene("ARView");
