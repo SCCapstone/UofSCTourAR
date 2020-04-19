@@ -1,17 +1,20 @@
-﻿using System.Collections;
-using System;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.UI;
-using Newtonsoft.Json;
 
 public class MapRaycast : MonoBehaviour
 {
+    [SerializeField]
+    GameObject panel;
 
-    [SerializeField] GameObject panel;
-    [SerializeField] Text title;
+    [SerializeField]
+    Text title;
 
     private List<TourStop> tourStops;
+
     public class TourStop
     {
         public string name;
@@ -30,28 +33,36 @@ public class MapRaycast : MonoBehaviour
     }
 
     void Start()
-    { //initialize json
-      string json = Resources.Load<TextAsset>("JSON/tourStops").text;
-      tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
-
+    {
+        //initialize json
+        string json = Resources.Load<TextAsset>("JSON/tourStops").text;
+        tourStops = JsonConvert.DeserializeObject<List<TourStop>>(json);
     }
 
     void Update()
     {
-        if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Began))
+        if (
+            (Input.touchCount > 0) &&
+            (Input.GetTouch(0).phase == TouchPhase.Began)
+        )
         {
-            Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            Ray raycast =
+                Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
                 if (raycastHit.collider.CompareTag("POI"))
                 {
                     //set bID based on click
-                    string bID = raycastHit.collider.GetComponent<cubePOI_ID>().buildingID;
+                    string bID =
+                        raycastHit
+                            .collider
+                            .GetComponent<cubePOI_ID>()
+                            .buildingID;
                     Debug.Log("buildingID: " + bID);
-                    
+
                     loadTourStops.stopToLoad = bID;
-                    
+
                     //get title
                     string retVal = "";
                     for (int i = 0; i < tourStops.Count; i++)

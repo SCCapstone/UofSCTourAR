@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class ResetObject : MonoBehaviour
 {
-
     private GameObject objectToChange = null;
 
-    public void ResetRotation() {
+    public void ResetRotation()
+    {
+        objectToChange = GameObject.Find("UofSC Cube");
 
-      objectToChange = GameObject.Find("UofSC Cube");
+        if (objectToChange != null)
+        {
+            var cameraForward = Camera.current.transform.forward;
+            var cameraBearing =
+                new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
 
-      if (objectToChange != null) {
-
-        var cameraForward = Camera.current.transform.forward;
-        var cameraBearing = new Vector3(cameraForward.x, 0, cameraForward.z).normalized;
-
-        objectToChange.transform.SetPositionAndRotation(objectToChange.transform.position, Quaternion.LookRotation(cameraBearing));
-
-      }
+            objectToChange
+                .transform
+                .SetPositionAndRotation(objectToChange.transform.position,
+                Quaternion.LookRotation(cameraBearing));
+        }
     }
 }

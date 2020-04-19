@@ -5,49 +5,53 @@ using UnityEngine.UI;
 
 public class RotateObject : MonoBehaviour
 {
-
     // Assign in the inspector
-     public GameObject objectToRotate;
-     public Slider slider;
+    public GameObject objectToRotate;
 
-     [SerializeField] ARPlacementIndicator status;
-     private bool objHasSpawned=false;
-     private bool counter=false;
+    public Slider slider;
 
-     // Update is called once per frame
-     void Update()
-     {
-       objHasSpawned = status.getStatus();
+    [SerializeField]
+    ARPlacementIndicator status;
 
+    private bool objHasSpawned = false;
 
-       if (objHasSpawned && counter==false) {
-         objectToRotate = GameObject.Find("UofSC Cube");
-         counter=true;
-       }
-     }
+    private bool counter = false;
 
-     // Preserve the original and current orientation
-     private float previousValue;
+    // Update is called once per frame
+    void Update()
+    {
+        objHasSpawned = status.getStatus();
 
-     void Awake ()
-     {
-         // Assign a callback for when this slider changes
-         this.slider.onValueChanged.AddListener(this.OnSliderChanged);
+        if (objHasSpawned && counter == false)
+        {
+            objectToRotate = GameObject.Find("UofSC Cube");
+            counter = true;
+        }
+    }
 
-         // And current value
-         this.previousValue = this.slider.value;
-     }
+    // Preserve the original and current orientation
+    private float previousValue;
 
-     void OnSliderChanged (float value)
-     {
-       if (objHasSpawned) {
-         slider.value = objectToRotate.transform.eulerAngles.y;
+    void Awake()
+    {
+        // Assign a callback for when this slider changes
+        this.slider.onValueChanged.AddListener(this.OnSliderChanged);
 
-         Vector3 current = objectToRotate.transform.eulerAngles;
-         objectToRotate.transform.rotation = Quaternion.Euler(current.x, slider.value, current.z);
+        // And current value
+        this.previousValue = this.slider.value;
+    }
 
+    void OnSliderChanged(float value)
+    {
+        if (objHasSpawned)
+        {
+            slider.value = objectToRotate.transform.eulerAngles.y;
 
-         /*
+            Vector3 current = objectToRotate.transform.eulerAngles;
+            objectToRotate.transform.rotation =
+                Quaternion.Euler(current.x, slider.value, current.z);
+
+            /*
          // How much we've changed
          float delta = value - this.previousValue;
          this.objectToRotate.transform.Rotate (Vector3.right * delta * 360);
@@ -56,6 +60,5 @@ public class RotateObject : MonoBehaviour
          this.previousValue = value;
          */
         }
-      }
-
+    }
 }

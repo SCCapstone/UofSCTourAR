@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class HistoryList : MonoBehaviour
 {
     public static List<string> listHistory = new List<string>();
+
     public static int stopsCount = 0;
+
     Text score;
 
     // Start is called before the first frame update
     void Start()
     {
-        score = GetComponent<Text> ();
+        score = GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -22,16 +24,19 @@ public class HistoryList : MonoBehaviour
         score.text = "Total stops visited:\n" + stopsCount;
     }
 
-    public List<string> GetHistory() {
+    public List<string> GetHistory()
+    {
         return listHistory;
     }
 
     public static void addToTourHistory(string bID)
     {
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n ADD TO TOUR HISTORY CALLED \n\n\n\n ****************** \n\n\n\n");
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n ADD TO TOUR HISTORY CALLED \n\n\n\n ****************** \n\n\n\n");
         var mTH = new manageTourHistory();
-        mTH.addStopToHistory(bID);
-        Debug.Log("\n\n\n\n ****************** \n\n\n\n ADDED TO MANAGE TOUR HISTORY. NOW UPDATING LIST HISTORY IN HISTORY LIST. \n\n\n\n ****************** \n\n\n\n");
+        mTH.addStopToHistory (bID);
+        Debug
+            .Log("\n\n\n\n ****************** \n\n\n\n ADDED TO MANAGE TOUR HISTORY. NOW UPDATING LIST HISTORY IN HISTORY LIST. \n\n\n\n ****************** \n\n\n\n");
         listHistory = manageTourHistory.getTourHistoryAsString();
     }
 }

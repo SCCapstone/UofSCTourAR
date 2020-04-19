@@ -4,9 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class TourStopSearch : MonoBehaviour
-{   
-    
-    
+{
     public InputField inField;
 
     public List<Button> tourstops = new List<Button>();
@@ -14,7 +12,6 @@ public class TourStopSearch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     public void ShowHideButtons(List<Button> stops)
@@ -34,9 +31,7 @@ public class TourStopSearch : MonoBehaviour
                 if (ts.name.ToLower().Contains(inField.text.ToLower()))
                 {
                     ts.gameObject.SetActive(true);
-
                 }
-
                 else
                 {
                     ts.gameObject.SetActive(false);
@@ -45,10 +40,9 @@ public class TourStopSearch : MonoBehaviour
         }
     }
 
-
     // Update is called once per frame
     void Update()
     {
-        ShowHideButtons(tourstops);
+        ShowHideButtons (tourstops);
     }
 }

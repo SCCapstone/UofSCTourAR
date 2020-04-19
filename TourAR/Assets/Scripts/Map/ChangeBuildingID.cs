@@ -7,17 +7,15 @@ public class ChangeBuildingID : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
-    void ChangeID(string bID) {
-      loadTourStops.stopToLoad = bID;
-
+    void ChangeID(string bID)
+    {
+        loadTourStops.stopToLoad = bID;
     }
 }
