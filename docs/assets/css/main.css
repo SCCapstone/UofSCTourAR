@@ -2845,7 +2845,7 @@ input, select, textarea {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("images/usc.jpg");
+			background-image: url("images/overlay1.png"), url("![](/images/usc.jpg)");
 			background-size: auto,							cover;
 		}
 
@@ -3095,7 +3095,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			/*background-image: linear-gradient(45deg, #4fa49a, #4361c2);*/
+			background-image: linear-gradient(45deg, #73000a, #000000);
 			content: '';
 			height: 100%;
 			left: 0;
