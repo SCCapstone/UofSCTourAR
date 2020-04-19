@@ -6,14 +6,14 @@ using System.IO;
 
 public class manageTourHistory : MonoBehaviour
 {
-    private List<tourStopVisited> tourHistory;
+    private static List<tourStopVisited> tourHistory;
     private int tourHistoryCap = 10; //Setting as 10 by default
 
     /*
         Suggested Workflow:
           - Create an instance of manageTourHistory, which will load data from the JSON.
           - To add a stop:
-            - call addStopToHistory() 
+            - call addStopToHistory()
             - IMPORTANT: call saveTourHistory() otherwise this will not update the JSON file.
     */
     public manageTourHistory()
@@ -24,8 +24,6 @@ public class manageTourHistory : MonoBehaviour
     public class tourStopVisited
     {
         public string stopID;
-
-        public string completionDate;
     }
 
     public int getTourHistoryCap()
@@ -52,7 +50,7 @@ public class manageTourHistory : MonoBehaviour
         return tourHistory;
     }
 
-    public void addStopToHistory(string tourStopID, string date)
+    public void addStopToHistory(string tourStopID)
     {
         if (tourHistory.Count >= tourHistoryCap)
         {
@@ -61,7 +59,6 @@ public class manageTourHistory : MonoBehaviour
         }
         tourStopVisited newItem = new tourStopVisited();
         newItem.stopID = tourStopID;
-        newItem.completionDate = date;
         tourHistory.Insert(0, newItem);
         saveTourHistory();
     }

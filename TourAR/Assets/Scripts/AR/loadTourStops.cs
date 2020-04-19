@@ -93,6 +93,18 @@ public class loadTourStops : MonoBehaviour
         return tourStops;
     }
 
+    public static string getStopName(string bID)
+    {
+        string retVal = "n/a";
+        for (int i = 0; i < tourStops.Count; i++)
+        {
+            if (tourStops[i].buildingID.Equals(bID))
+            {
+                return tourStops[i].name;
+            }
+        }
+        return retVal;
+    }
     public string getTitleForTourStop(string bID)
     {
         //title
@@ -145,7 +157,7 @@ public class loadTourStops : MonoBehaviour
       }
     }
 
-    public string[] getAllDataForTourStop(string bID)
+    public static string[] getAllDataForTourStop(string bID)
     {
         string[] retVal = new string[2];
         for (int i = 0; i < tourStops.Count; i++)

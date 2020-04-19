@@ -25,4 +25,10 @@ public class HistoryList : MonoBehaviour
     public List<string> GetHistory() {
         return listHistory;
     }
+
+    public static void addToTourHistory(string bID)
+    {
+        var stopName = loadTourStops.getStopName(bID);
+        listHistory.Add(stopName);
+    }
 }
