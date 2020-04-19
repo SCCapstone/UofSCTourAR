@@ -83,6 +83,11 @@ public class loadTourStops : MonoBehaviour
         //Debug.Log("finished convert");
     }
 
+    public void prepForTests()
+    {
+        loadTheTourStops();
+    }
+
     public List<TourStop> getTourStops()
     {
         return tourStops;
@@ -99,6 +104,10 @@ public class loadTourStops : MonoBehaviour
                 Debug.Log("buildingID: " + bID);
                 retVal += tourStops[i].name;
             }
+        }
+        if (retVal == "")
+        {
+            retVal = "n/a no match found for this building ID";
         }
         return retVal;
     }
