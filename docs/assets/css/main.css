@@ -2845,7 +2845,7 @@ input, select, textarea {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../img/gates.jpg");
+			background-image: url("images/overlay1.png"), url("https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/gates.jpg");
 			background-size: auto,							cover;
 		}
 
