@@ -83,7 +83,7 @@ public class loadTourStops : MonoBehaviour
         //Debug.Log("finished convert");
     }
 
-    public void prepForTests()
+    public void prepForUse()
     {
         loadTheTourStops();
     }

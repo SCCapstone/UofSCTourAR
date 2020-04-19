@@ -81,8 +81,19 @@ public class manageTourHistory : MonoBehaviour
         {
             tourHistory.RemoveAt(tourHistoryCap - 1); // we need to remove the last element of the list before adding this one
         }
+        // Try to convert Building ID to stop name
+        var manageTS = new loadTourStops();
+        manageTS.prepForUse();
+        string title = manageTS.getTitleForTourStop(tourStopID); // stop name
         tourStopVisited newItem = new tourStopVisited();
-        newItem.stopID = tourStopID;
+        if ( title == "n/a no match found for this building ID") // If we did not find a name for the ID. Realistically this should only happen with our fake tour stops for testing.
+        {
+            newItem.stopID = tourStopID;
+        }
+        else
+        {
+            newItem.stopID = title;
+        }
         tourHistory.Insert(0, newItem);
         saveTourHistory();
         Debug.Log("\n\n\n\n ****************** \n\n\n\n STOP ADDED TO MANAGE TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");

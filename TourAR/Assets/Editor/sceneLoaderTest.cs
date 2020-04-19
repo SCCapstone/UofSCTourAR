@@ -112,7 +112,7 @@ public class sceneLoaderTest : MonoBehaviour
     {
         //Arrange
         var manager = new GameObject("loadTourStops").AddComponent<loadTourStops>();
-        manager.prepForTests();
+        manager.prepForUse();
         var title = manager.getTitleForTourStop("rutledgeCollege");
         //Assert
         Assert.AreEqual(title, "Rutledge College");
@@ -123,7 +123,7 @@ public class sceneLoaderTest : MonoBehaviour
     {
         //Arrange
         var manager = new GameObject("loadTourStops").AddComponent<loadTourStops>();
-        manager.prepForTests();
+        manager.prepForUse();
         var title = manager.getTitleForTourStop("invalidTourStop");
         //Assert
         Assert.AreEqual(title, "n/a no match found for this building ID");
@@ -134,7 +134,7 @@ public class sceneLoaderTest : MonoBehaviour
     {
         //Arrange
         var manager = new GameObject("loadTourStops").AddComponent<loadTourStops>();
-        manager.prepForTests();
+        manager.prepForUse();
         var meta = manager.getMetadataForTourStop("rutledgeCollege");
         String[] separator = {"\n\n"};
         var pieces = meta.Split(separator, 3, StringSplitOptions.RemoveEmptyEntries);
@@ -149,7 +149,7 @@ public class sceneLoaderTest : MonoBehaviour
     {
         //Arrange
         var manager = new GameObject("loadTourStops").AddComponent<loadTourStops>();
-        manager.prepForTests();
+        manager.prepForUse();
         var desc = manager.getStopDescription("Thomas Cooper Library");
         //Assert
         Assert.AreEqual(desc, "Thomas Cooper Library, constructed in 1976, is the home of the University Libraries. Here, students can rent books, reserve study space, and browse special collections of maps, art, music, manuscripts and more.");
@@ -160,7 +160,7 @@ public class sceneLoaderTest : MonoBehaviour
     {
         //Arrange
         var manager = new GameObject("loadTourStops").AddComponent<loadTourStops>();
-        manager.prepForTests();
+        manager.prepForUse();
         var desc = manager.getStopDescription("invalidTourStop");
         //Assert
         Assert.AreEqual(desc, "n/a couldn't find a match");
