@@ -13,6 +13,10 @@ public class HistoryList : MonoBehaviour
     void Start()
     {
         score = GetComponent<Text> ();
+        manageTourHistory.loadTourHistory();
+
+        // populate listHistory from manageTourHistory.
+        listHistory = manageTourHistory.getTourHistoryAsString();
     }
 
     // Update is called once per frame
@@ -28,7 +32,10 @@ public class HistoryList : MonoBehaviour
 
     public static void addToTourHistory(string bID)
     {
-        var stopName = loadTourStops.getStopName(bID);
+        var mTS = new loadTourStops();
+        var mTH = new manageTourHistory();
+        string stopName = mTS.getTitleForTourStop(bID);
+        mTH.addStopToHistory(stopName);
         listHistory.Add(stopName);
     }
 }
