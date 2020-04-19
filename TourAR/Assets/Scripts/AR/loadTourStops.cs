@@ -83,7 +83,7 @@ public class loadTourStops : MonoBehaviour
         //Debug.Log("finished convert");
     }
 
-    public void prepForTests()
+    public void prepForUse()
     {
         loadTheTourStops();
     }
@@ -145,7 +145,7 @@ public class loadTourStops : MonoBehaviour
       }
     }
 
-    public string[] getAllDataForTourStop(string bID)
+    public static string[] getAllDataForTourStop(string bID)
     {
         string[] retVal = new string[2];
         for (int i = 0; i < tourStops.Count; i++)

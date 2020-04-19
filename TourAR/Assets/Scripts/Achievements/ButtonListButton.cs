@@ -8,7 +8,7 @@ public class ButtonListButton : MonoBehaviour
 
     [SerializeField]
     private Text myText;
-    
+
     [SerializeField]
     private Image myIcon;
 
@@ -25,7 +25,7 @@ public class ButtonListButton : MonoBehaviour
     public void SetIcon(Sprite mySprite) {
         myIcon.sprite = mySprite;
     }
- 
+
     public void OnClick() {
         buttonControl.ButtonClicked(myTextString);
     }
