@@ -34,6 +34,10 @@ public class ARPlacementIndicator : MonoBehaviour
         //hide the placement indicator visual if not already hidden
         indicator.SetActive(false);
     }
+    void OnEnable() {
+      objectPlaced = false;
+      movePhone.SetActive(true);
+    }
     void Update ()
     {
       if (!objectPlaced) { //only raycasts before object has been placed
@@ -81,21 +85,6 @@ public class ARPlacementIndicator : MonoBehaviour
 
     }
 
-    private void PlaceObject()
-  	{
-      doubleTapPhone.SetActive(false);
-  		Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
-      //Debug.Log("****Instantiate Object: ");
-      //ObjectLocText.text = "Position: "+ indicator.transform.position;
-      //objectPlaced = true;
-
-      //if(indicator.activeInHierarchy) { //turn off placement indicator parent
-      gameObject.SetActive(false);
-      //Debug.Log("gameObject is off");
-
-      //}
-  	}
-
     private void DoubleTap() {
 
       for (var i = 0; i < Input.touchCount; ++i)
@@ -110,6 +99,26 @@ public class ARPlacementIndicator : MonoBehaviour
             }
         }
     }
+
+    private void PlaceObject()
+  	{
+      doubleTapPhone.SetActive(false);
+  		Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
+      //Debug.Log("****Instantiate Object: ");
+      //ObjectLocText.text = "Position: "+ indicator.transform.position;
+      //objectPlaced = true;
+
+      //if(indicator.activeInHierarchy) { //turn off placement indicator parent
+      indicator.SetActive(false);
+      transparentBox.SetActive(false);
+      doubleTapPhone.SetActive(false);
+      gameObject.SetActive(false);
+      //Debug.Log("gameObject is off");
+
+      //}
+  	}
+
+    
 
     public bool getStatus() {
       return objectPlaced;
