@@ -27,11 +27,20 @@ Text button3Text;
         //button1Text = button1.GetComponentInChildren<Text>();
         //Debug.Log(questionText.text);
         //Debug.Log(button1Text.text);
-        questionText.GetComponent<Text>().SetText(QuizManager.quiz[i].question);
-        button1.GetComponentInChildren<Text>().SetText(QuizManager.quiz[i].answer1);
+        //questionText.GetComponent<Text>().SetText(QuizManager.quiz[i].question);
+        //button1.GetComponentInChildren<Text>().SetText(QuizManager.quiz[i].answer1);
        //set from JSON 
        //repeat for others 
+       populateQandA();
     }
+
+    public void populateQandA () {
+        questionText.GetComponent<Text>().SetText(QuizManager.quizzes[0].question);
+        button1.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[0]);
+        button2.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[1]);
+        button3.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[2]);
+    }
+
 
     // Update is called once per frame
     void Update()

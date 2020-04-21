@@ -6,42 +6,56 @@ using System.IO;
 
 public class QuizManager : MonoBehaviour
 {
-    public static List<Achievement> achievements;
 
-    /*
-        Suggested Workflow:
-          - Create an instance of manageAchievements, which will load data from the JSON.
-          - To add a manage an achievements status:
-            - call toggleAchievementStatus()
-            - IMPORTANT: call saveAchievements() otherwise any changes will not actually update the JSON file.
-    */
+    //public static List<string> answerOptions = new List<string>();
+
     void Start()
     {
-        loadAchievements();
+        loadQuizzes();
         checkIfCompleted();
+        question = GetComponent<Text>();
     }
 
-    public class Achievement
+    public class Quizzes
     {
-        public string name;
-        public int condition;
+        public string stopName;
+        public string question;
         public bool isCompleted;
-        public string description;
+        public int correctAnswer;
+        public bool answeredCorrectly;
+        public string buildingID;
+        public List<string> answerOptions;
     }
 
-    private void loadAchievements()
+    private void loadQuizzes()
     {
         // JUST FILE IO
-        string json = Resources.Load<TextAsset>("JSON/achievements").text;
-        achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
+        string json = Resources.Load<TextAsset>("JSON/quizData").text;
+        quizzes = JsonConvert.DeserializeObject<List<Quizzes>>(json);
     }
 
-    public List<Achievement> getAchievements()
-    {
-        return achievements;
+    public void newQuiz(string aName, bool completed, int correctAns, bool answeredRight, string questionData,
+    string building, List<string> ansOps) {
+        Quizzes q = new Quizzes();
+        stopName = aName;
+        isCompleted = completed;
+        correctAnswer = correctAns;
+        answeredCorrectly = answeredRight;
+        question = questionData;
+        buildingID = building;
+        answerOptions = ansOps;
+
     }
 
-    public void toggleAchievementStatus(string achievementName)
+    /*public void populateQuestion(string name) {
+        for (int i = 0; i < quizzes.Count; i++) {
+            if(quizzes[i].stopName.Equals(name)) {
+                question.text = questionContent;
+            }
+        }
+    }*/
+
+   /* public void toggleAchievementStatus(string achievementName)
     {
         for (int i = 0; i < achievements.Count; i++)
         {
@@ -51,32 +65,20 @@ public class QuizManager : MonoBehaviour
             }
         }
         saveAchievements();
-    }
+    }*/
 
-    public void checkIfCompleted() {
+    /*public void checkIfCompleted() {
         for (int i = 0; i < achievements.Count; i++) {
             if (achievementScore.countbids.Count >= achievements[i].condition) {
                 achievements[i].isCompleted = true;
             }
         }
         saveAchievements();
-    }
+    }*/
 
-/*    public void addAchievement(string aName, int condition, bool completion, string desc)
+    public void saveQuizzes()
     {
-        Achievement a = new Achievement();
-        a.name = aName;
-        a.condition = condition;
-        a.isCompleted = completion;
-        a.description = desc;
-        achievements.Insert(0, a);
-    }
-*/
-
-    public void saveAchievements()
-    {
-        //THIS METHOD NEEDS TO BE CALLED TO UPDATE THE JSON FILE
-        File.WriteAllText("Assets/Resources/JSON/achievements.json", JsonConvert.SerializeObject(achievements));
+        
     }
 
     public void resetAchievements()
