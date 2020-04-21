@@ -8,9 +8,6 @@ public class ButtonQuiz : MonoBehaviour
 
     [SerializeField]
     private Text myText;
-    
-    [SerializeField]
-    private Image myIcon;
 
     [SerializeField]
     private ButtonListControl buttonControl;
@@ -20,10 +17,6 @@ public class ButtonQuiz : MonoBehaviour
     public void SetText(string textString) {
         myTextString = textString;
         myText.text = textString;
-    }
-
-    public void SetIcon(Sprite mySprite) {
-        myIcon.sprite = mySprite;
     }
  
     public void OnClick() {

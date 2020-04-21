@@ -35,10 +35,15 @@ Text button3Text;
     }
 
     public void populateQandA () {
-        questionText.GetComponent<Text>().SetText(QuizManager.quizzes[0].question);
-        button1.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[0]);
-        button2.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[1]);
-        button3.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[2]);
+        questionText = question.GetComponent<Text>();
+        questionText.text = QuizManager.quizzes[1].questionContent;
+        Debug.Log(questionText.text);
+        //button1.GetComponentInChildren<Text>();
+        //button1Text.text = QuizManager.quizzes[0].answerOptions[0];
+        button1.GetComponent<ButtonQuiz>().SetText(QuizManager.quizzes[0].answerOptions[0]);
+        Debug.Log(button1Text.text);
+        //button2.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[1]);
+        //button3.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[2]);
     }
 
 
