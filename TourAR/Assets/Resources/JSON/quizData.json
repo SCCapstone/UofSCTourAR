@@ -5,7 +5,32 @@
         "iscompleted": "false",
         "answeredCorrectly": "false",
         "questionContent": "This is a sample question?",
-        "correctAnswer": "Answer1", //Make this an array reference?
+        "correctAnswer": 1,
+        "answerOptions": [
+                "Answer1",
+                "Answer2",
+                "Answer3"
+        ]
+    },    {
+        "name": "Rutledge College",
+        "buildingID": "rutledgeCollege",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "This is a sample question?",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "Answer1",
+                "Answer2",
+                "Answer3"
+        ]
+    },
+    {
+        "name": "McKissick Museum",
+        "buildingID": "mckissickMuseum",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "This is a sample question?",
+        "correctAnswer": 3,
         "answerOptions": [
                 "Answer1",
                 "Answer2",
