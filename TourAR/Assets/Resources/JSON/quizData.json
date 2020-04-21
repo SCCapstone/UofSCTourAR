@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Horseshoe",
+        "buildingID": "horseshoe",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "This is a sample question?",
+        "correctAnswer": "Answer1", //Make this an array reference?
+        "answerOptions": [
+                "Answer1",
+                "Answer2",
+                "Answer3"
+        ]
+    }
+]
