@@ -75,7 +75,7 @@ public class loadTourStops : MonoBehaviour
 
     private void sendToSearch(string stopToLoad)
     {
-        //Debug.Log("sendToSearch: " + stopToLoad);
+        Debug.Log("sendToSearch: " + stopToLoad);
         data.text = this.getMetadataForTourStop(stopToLoad);
     }
 
