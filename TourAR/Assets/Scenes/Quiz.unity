@@ -305,6 +305,8 @@ GameObject:
   - component: {fileID: 476667212}
   - component: {fileID: 476667211}
   - component: {fileID: 476667214}
+  - component: {fileID: 476667216}
+  - component: {fileID: 476667215}
   m_Layer: 5
   m_Name: Object_Canvas
   m_TagString: Untagged
@@ -409,6 +411,32 @@ MonoBehaviour:
   button1: {fileID: 2108437304}
   button2: {fileID: 882893246}
   button3: {fileID: 636587003}
+--- !u!114 &476667215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476667209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331b232ab521949c2ac8823a769122e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: {fileID: 0}
+  buttonControl: {fileID: 0}
+--- !u!114 &476667216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476667209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d9c7576612e847fbb989704a64857a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &522303758
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +603,7 @@ GameObject:
   - component: {fileID: 636587006}
   - component: {fileID: 636587005}
   m_Layer: 5
-  m_Name: Ans3
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +671,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 636587006}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476667214}
+        m_MethodName: checkResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &636587006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,7 +875,7 @@ GameObject:
   - component: {fileID: 882893249}
   - component: {fileID: 882893248}
   m_Layer: 5
-  m_Name: Ans2
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +943,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 882893249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476667214}
+        m_MethodName: checkResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &882893249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,7 +1479,6 @@ GameObject:
   - component: {fileID: 1834131559}
   - component: {fileID: 1834131558}
   - component: {fileID: 1834131557}
-  - component: {fileID: 1834131560}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1502,18 +1551,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1834131560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834131556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d9c7576612e847fbb989704a64857a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2108437304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,7 +1564,7 @@ GameObject:
   - component: {fileID: 2108437307}
   - component: {fileID: 2108437306}
   m_Layer: 5
-  m_Name: Ans1
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1595,7 +1632,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2108437307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 476667214}
+        m_MethodName: checkResponse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2108437307
 MonoBehaviour:
   m_ObjectHideFlags: 0
