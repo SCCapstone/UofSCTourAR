@@ -218,8 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fade: 0
-  animator: {fileID: 0}
 --- !u!114 &150102570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,8 +692,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fade: 0
-  animator: {fileID: 0}
 --- !u!114 &675339669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,8 +704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fade: 0
-  animator: {fileID: 0}
 --- !u!1 &693509626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,16 +1024,16 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 820ac4e732a9e47a69ffea89320b43f4, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 75
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1st stop!
+  m_Text: 1st Stop!
 --- !u!222 &1029258940
 CanvasRenderer:
   m_ObjectHideFlags: 0
