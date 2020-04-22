@@ -7,14 +7,19 @@ public class PopUp : MonoBehaviour
 {
     public GameObject Panel;
 
+
+
     public void OpenPopup()
     {
+
+        
         if (Panel != null)
         {
             bool isActive = Panel.activeSelf;
 
             Panel.SetActive(!isActive);
         }
+        Debug.Log("Open");
     }
 
     public void ClosePopup()

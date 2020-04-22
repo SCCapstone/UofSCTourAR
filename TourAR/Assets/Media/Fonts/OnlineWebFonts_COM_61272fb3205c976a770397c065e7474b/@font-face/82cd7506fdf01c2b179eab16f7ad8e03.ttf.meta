@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: c9579697524584071a930f15c2026adb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Berlingske Serif
+  fontNames:
+  - Berlingske Serif
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 820ac4e732a9e47a69ffea89320b43f4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
