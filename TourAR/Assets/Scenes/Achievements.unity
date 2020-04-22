@@ -474,7 +474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e6ce600f84d43b393c5acdc5157178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuAnim: {fileID: 9032157576788532867}
 --- !u!4 &547331028
 Transform:
   m_ObjectHideFlags: 0
@@ -1804,11 +1803,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 9032157576788532867}
-    - target: {fileID: 3801826762132504616, guid: e3d64c92a826f49a587653b97d32d15b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 675339668}
     - target: {fileID: 3801826763076623762, guid: e3d64c92a826f49a587653b97d32d15b,
         type: 3}
       propertyPath: m_TargetGraphic
@@ -1823,11 +1817,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Screen_Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3801826763736978866, guid: e3d64c92a826f49a587653b97d32d15b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3801826763736978867, guid: e3d64c92a826f49a587653b97d32d15b,
         type: 3}
@@ -1943,15 +1932,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 675339667}
     m_Modifications:
-    - target: {fileID: 884657882, guid: 8035d5a43910744f694fd29815fb542d, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2364622523743273086, guid: 8035d5a43910744f694fd29815fb542d,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 675339668}
     - target: {fileID: 4855825655044429768, guid: 8035d5a43910744f694fd29815fb542d,
         type: 3}
       propertyPath: m_LocalPosition.x
