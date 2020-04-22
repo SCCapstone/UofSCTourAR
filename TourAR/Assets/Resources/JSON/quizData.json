@@ -1,7 +1,7 @@
 [
     {
         "name": "Horseshoe",
-        "buildingID": "horseshoe",
+        "buildingID": "Horseshoe",
         "iscompleted": "false",
         "answeredCorrectly": "false",
         "questionContent": "What letter is the Horseshoe in the shape of?",

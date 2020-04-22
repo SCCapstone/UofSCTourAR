@@ -12,6 +12,7 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         loadQuizzes();
+        Debug.Log("Quiz has been loaded");
         //checkIfCompleted();
     }
 
