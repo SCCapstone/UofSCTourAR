@@ -632,6 +632,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1757595583}
     m_Modifications:
+    - target: {fileID: 403734891469350151, guid: e3d64c92a826f49a587653b97d32d15b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3801826763076623762, guid: e3d64c92a826f49a587653b97d32d15b,
         type: 3}
       propertyPath: m_TargetGraphic
@@ -2420,6 +2425,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1757595583}
     m_Modifications:
+    - target: {fileID: 4484442572917306268, guid: 8035d5a43910744f694fd29815fb542d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 714c97406057a4592876e2f16d590600, type: 2}
     - target: {fileID: 4855825655044429768, guid: 8035d5a43910744f694fd29815fb542d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5077,8 +5087,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fade: 0
-  animator: {fileID: 0}
 --- !u!114 &1757595585
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -276,7 +276,6 @@ GameObject:
   - component: {fileID: 576532149}
   - component: {fileID: 576532148}
   - component: {fileID: 576532150}
-  - component: {fileID: 576532152}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
@@ -383,7 +382,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 576532152}
+      - m_Target: {fileID: 689213669}
+        m_MethodName: setNoMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Search
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 689213668}
         m_MethodName: SceneChange
         m_Mode: 5
         m_Arguments:
@@ -393,19 +403,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Search
           m_BoolArgument: 0
-        m_CallState: 1
---- !u!114 &576532152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576532146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+        m_CallState: 2
 --- !u!1001 &647308462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -548,6 +546,7 @@ GameObject:
   - component: {fileID: 689213665}
   - component: {fileID: 689213664}
   - component: {fileID: 689213668}
+  - component: {fileID: 689213669}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -647,6 +646,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &689213669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689213663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113b23375f12f4e6f8714b417e545fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontInitialize: 1
+  menuStart: {fileID: 0}
+  menuNoStart: {fileID: 0}
 --- !u!1 &769432846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1056,6 @@ GameObject:
   - component: {fileID: 1289043483}
   - component: {fileID: 1289043482}
   - component: {fileID: 1289043481}
-  - component: {fileID: 1289043485}
   m_Layer: 5
   m_Name: TourHistory
   m_TagString: Untagged
@@ -1113,7 +1126,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1289043485}
+      - m_Target: {fileID: 689213669}
+        m_MethodName: setNoMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Search
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 689213668}
         m_MethodName: SceneChange
         m_Mode: 5
         m_Arguments:
@@ -1123,7 +1147,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: TourHistory
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1289043482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,18 +1184,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289043479}
   m_CullTransparentMesh: 0
---- !u!114 &1289043485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289043479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1314177063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,7 +1351,6 @@ GameObject:
   - component: {fileID: 1410638262}
   - component: {fileID: 1410638261}
   - component: {fileID: 1410638260}
-  - component: {fileID: 1410638264}
   m_Layer: 5
   m_Name: Achievements
   m_TagString: Untagged
@@ -1410,7 +1421,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1410638264}
+      - m_Target: {fileID: 689213669}
+        m_MethodName: setNoMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Search
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 689213668}
         m_MethodName: SceneChange
         m_Mode: 5
         m_Arguments:
@@ -1420,7 +1442,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Achievements
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1410638261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,18 +1479,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410638258}
   m_CullTransparentMesh: 0
---- !u!114 &1410638264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410638258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1527316888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,7 +1572,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: Map
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1527316891
 MonoBehaviour:
   m_ObjectHideFlags: 0
