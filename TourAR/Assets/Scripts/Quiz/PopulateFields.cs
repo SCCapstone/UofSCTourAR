@@ -36,6 +36,7 @@ int button3Index = 2;
         //     if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
                 questionText = question.GetComponent<Text>();
                 questionText.text = QuizManager.quizzes[0].questionContent;
+                Debug.Log(QuizManager.quizzes[0].questionContent);
 
                 button1Text = button1.GetComponentInChildren<Text>();
                 button1Text.text = QuizManager.quizzes[0].answerOptions[0];
