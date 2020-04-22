@@ -1,0 +1,222 @@
+[
+    {
+        "name": "Horseshoe",
+        "buildingID": "Horseshoe",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "What letter is the Horseshoe in the shape of?",
+        "correctAnswer": 0,
+        "answerOptions": [
+                "U-shape",
+                "X-shape",
+                "M-shape"
+        ]
+    },    {
+        "name": "Rutledge College",
+        "buildingID": "rutledgeCollege",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "In 1855, a ____ severly destroyed the original chapel of the building.",
+        "correctAnswer": 1,
+        "answerOptions": [
+                "Flood",
+                "Fire",
+                "Earthquake"
+        ]
+    },
+    {
+        "name": "McKissick Museum",
+        "buildingID": "mckissickMuseum",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "McKissick functioned as the university's main ______ until 1959.",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "Dormitory",
+                "Student Union",
+                "Library"
+        ]
+    },
+    {
+        "name": "DeSaussure College",
+        "buildingID": "desaussureCollege",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "Which of the following has not previously been a main purpose of DeSaussure College?",
+        "correctAnswer": 1,
+        "answerOptions": [
+                "Prison",
+                "Cafeteria", 
+                "Hospital"
+        ]
+    },
+    {
+        "name": "President's House",
+        "buildingID": "President",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "What year was the President's House demolished?",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "1865",
+                "1977",
+                "1940"
+        ]
+    },
+    {
+        "name": "McCutchen House",
+        "buildingID": "mccutchenHouse",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "George McCutchen, who McCutchen House is named for, taught _____ at USC.",
+        "correctAnswer": 0,
+        "answerOptions": [
+                "Economics",
+                "Biology",
+                "Mathematics"
+        ]
+    },
+    {
+        "name": "Harper Elliott College",
+        "buildingID": "harperElliott",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "Harper College was constructed at the same time as what other campus building?",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "Russell House",
+                "Swearingen",
+                "Rutledge College"
+        ]
+    },
+    {
+        "name": "Leiber College",
+        "buildingID": "leiberCollege",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "Leiber College is named for ______?",
+        "correctAnswer": 1,
+        "answerOptions": [
+                "Geoffrey Leiber",
+                "Francis Leiber",
+                "Arthur Leiber"
+        ]
+    },
+    {
+        "name": "South Caroliniana Library",
+        "buildingID": "southCaroliniana",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "South Caroliniana Library contains a replica of which famous reading room?",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "White House",
+                "Library of Alexandria",
+                "Library of Congress"
+        ]
+    },
+    {
+        "name": "Edward Storey Innovation Center",
+        "buildingID": "innovCenter",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "The Storey Innovation Center is located on two floors out of how many total floors in the building?",
+        "correctAnswer": 0,
+        "answerOptions": [
+                "Five",
+                "Six",
+                "Two"
+        ]
+    },
+    {
+        "name": "Swearingen Engineering Center",
+        "buildingID": "swearingen",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "Swearingen is home to which academic college at UofSC?",
+        "correctAnswer": 1,
+        "answerOptions": [
+                "College of Computing",
+                "College of Engineering and Computing",
+                "College of Engineering Sciences"
+        ]
+    },
+    {
+        "name": "Thomas Cooper Library",
+        "buildingID": "thomasCooper",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "What year was Thomas Cooper Library constructed?",
+        "correctAnswer": 0,
+        "answerOptions": [
+                "1976",
+                "1796",
+                "1697"
+        ]
+    },
+    {
+        "name": "Russell House Student Union",
+        "buildingID": "russellHouse",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "What is one campus resource that you can find housed in Russell House!",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "Student Health Services",
+                "University Housing",
+                "Leadership and Service Center"
+        ]
+    },
+    {
+        "name": "Williams-Brice Stadium",
+        "buildingID": "williamsBrice",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "How many times has the stadium been renovated?",
+        "correctAnswer": 0,
+        "answerOptions": [
+                "4",
+                "1",
+                "6"
+        ]
+    },
+    {
+        "name": "Stone Stadium",
+        "buildingID": "stoneStadium",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "Eugene Stone made the building of what portion of the stadium possible?",
+        "correctAnswer": 1,
+        "answerOptions": [
+                "goals",
+                "grandstand",
+                "turf"
+        ]
+    },
+    {
+        "name": "Founders Park",
+        "buildingID": "foundersPark",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "What is the capacity of Founders Park?",
+        "correctAnswer": 2,
+        "answerOptions": [
+                "12,534",
+                "6,981",
+                "8,242"
+        ]
+    },
+    {
+        "name": "Colonial Life Arena",
+        "buildingID": "colonialLife",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "What sports team primarily uses Colonial Life Arena?",
+        "correctAnswer": 0,
+        "answerOptions": [
+                "Basketball",
+                "Hockey",
+                "Gymnastics"
+        ]
+    }
+]
