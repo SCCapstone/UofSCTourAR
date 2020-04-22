@@ -16,16 +16,12 @@ public class TourStopSearch : MonoBehaviour
 
     public void ShowHideButtons(List<Button> stops)
     {
-        if (inField.text == null)
-        {
             foreach (Button ts in stops)
             {
                 //Unhide every button
                 ts.gameObject.SetActive(true);
             }
-        }
-        else
-        {
+
             foreach (Button ts in stops)
             {
                 if (ts.name.ToLower().Contains(inField.text.ToLower()))
@@ -37,7 +33,6 @@ public class TourStopSearch : MonoBehaviour
                     ts.gameObject.SetActive(false);
                 }
             }
-        }
     }
 
     // Update is called once per frame
