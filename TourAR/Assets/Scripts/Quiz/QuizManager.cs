@@ -31,6 +31,7 @@ public class QuizManager : MonoBehaviour
         // JUST FILE IO
         string json = Resources.Load<TextAsset>("JSON/quizData").text;
         quizzes = JsonConvert.DeserializeObject<List<Quiz>>(json);
+
     }
 
        public List<Quiz> getQuizzes()

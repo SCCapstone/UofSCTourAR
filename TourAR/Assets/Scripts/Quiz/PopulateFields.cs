@@ -28,43 +28,37 @@ int button3Index = 2;
     void Start()
     {
        populateQandA();
-
     }
 
     public void populateQandA() {
-        // for (int i = 0; i < QuizManager.quizzes.Count; i++) {
-        //     if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
+        for (int i = 0; i < QuizManager.quizzes.Count; i++) {
+             if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
+
                 questionText = question.GetComponent<Text>();
-                questionText.text = QuizManager.quizzes[0].questionContent;
+                questionText.text = "<b>" + QuizManager.quizzes[i].questionContent + "</b>";
 
                 button1Text = button1.GetComponentInChildren<Text>();
-                button1Text.text = QuizManager.quizzes[0].answerOptions[0];
+                button1Text.text = QuizManager.quizzes[i].answerOptions[0];
 
                 button2Text = button2.GetComponentInChildren<Text>();
-                button2Text.text = QuizManager.quizzes[0].answerOptions[1];
+                button2Text.text = QuizManager.quizzes[i].answerOptions[1];
 
                 button3Text = button3.GetComponentInChildren<Text>();
-                button3Text.text = QuizManager.quizzes[0].answerOptions[2];
-        //     }
-        // }
-        
+                button3Text.text = QuizManager.quizzes[i].answerOptions[2];
+             }
+        }
     }
 
     public void checkResponse() {
         //if this button clicked has the same index number as the 
         //correct index in the correct answer of json mark as correct in json
         //mark as completed in json regardless
-        //for (int i = 0; i < QuizManager.quizzes.Count; i++) {
-        //    if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
+        for (int i = 0; i < QuizManager.quizzes.Count; i++) {
+            if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
                 int buttonName = int.Parse(EventSystem.current.currentSelectedGameObject.name);
                 Vector4 buttonColor = EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color;
-                //Vector4 button1Color = button1.GetComponent<Image>().color;
-                Debug.Log(buttonColor);
-                //button1.GetComponent<Image>().color = buttonColor;
-                //Vector4 button1Color = button1.GetComponent<Image>().color;
-                //Debug.Log(buttonName);
-                if (buttonName == QuizManager.quizzes[0].correctAnswer) {
-                    QuizManager.quizzes[0].answeredCorrectly = true;
+                if (buttonName == QuizManager.quizzes[i].correctAnswer) {
+                    QuizManager.quizzes[i].answeredCorrectly = true;
                     buttonColor[0] = 0;
                     buttonColor[2] = 0;
                     EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color = buttonColor;
@@ -77,13 +71,7 @@ int button3Index = 2;
                 //TODO: prevent quiz interaction unless reset
                 //Debug.Log(QuizManager.quizzes[i].answeredCorrectly);
                 //Debug.Log(QuizManager.quizzes[i].isCompleted);
-        //    }
-        //}
-
-    }
-
-    void Update()
-    {
-        
+            }
+        }
     }
 }
