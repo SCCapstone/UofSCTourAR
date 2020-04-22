@@ -5,7 +5,7 @@
         "iscompleted": "false",
         "answeredCorrectly": "false",
         "questionContent": "This is a sample question?",
-        "correctAnswer": 1,
+        "correctAnswer": 0,
         "answerOptions": [
                 "Answer1",
                 "Answer2",
@@ -17,7 +17,7 @@
         "iscompleted": "false",
         "answeredCorrectly": "false",
         "questionContent": "This is a sample question?",
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "answerOptions": [
                 "Answer1",
                 "Answer2",
@@ -30,7 +30,7 @@
         "iscompleted": "false",
         "answeredCorrectly": "false",
         "questionContent": "This is a sample question?",
-        "correctAnswer": 3,
+        "correctAnswer": 2,
         "answerOptions": [
                 "Answer1",
                 "Answer2",

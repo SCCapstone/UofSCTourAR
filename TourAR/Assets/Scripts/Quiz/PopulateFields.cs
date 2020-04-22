@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PopulateFields : MonoBehaviour
 {
@@ -20,34 +21,67 @@ Text button1Text;
 Text button2Text;
 Text button3Text;
 
-    // Start is called before the first frame update
+int button1Index = 0;
+int button2Index = 1;
+int button3Index = 2;
+
     void Start()
     {
-        //questionText = question.GetComponent<Text>();
-        //button1Text = button1.GetComponentInChildren<Text>();
-        //Debug.Log(questionText.text);
-        //Debug.Log(button1Text.text);
-        //questionText.GetComponent<Text>().SetText(QuizManager.quiz[i].question);
-        //button1.GetComponentInChildren<Text>().SetText(QuizManager.quiz[i].answer1);
-       //set from JSON 
-       //repeat for others 
        populateQandA();
+
     }
 
-    public void populateQandA () {
-        questionText = question.GetComponent<Text>();
-        questionText.text = QuizManager.quizzes[1].questionContent;
-        Debug.Log(questionText.text);
-        //button1.GetComponentInChildren<Text>();
-        //button1Text.text = QuizManager.quizzes[0].answerOptions[0];
-        button1.GetComponent<ButtonQuiz>().SetText(QuizManager.quizzes[0].answerOptions[0]);
-        Debug.Log(button1Text.text);
-        //button2.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[1]);
-        //button3.GetComponentInChildren<Text>.SetText(QuizManager.quizzes[0].AnswerOptions[2]);
+    public void populateQandA() {
+        // for (int i = 0; i < QuizManager.quizzes.Count; i++) {
+        //     if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
+                questionText = question.GetComponent<Text>();
+                questionText.text = QuizManager.quizzes[0].questionContent;
+
+                button1Text = button1.GetComponentInChildren<Text>();
+                button1Text.text = QuizManager.quizzes[0].answerOptions[0];
+
+                button2Text = button2.GetComponentInChildren<Text>();
+                button2Text.text = QuizManager.quizzes[0].answerOptions[1];
+
+                button3Text = button3.GetComponentInChildren<Text>();
+                button3Text.text = QuizManager.quizzes[0].answerOptions[2];
+        //     }
+        // }
+        
     }
 
+    public void checkResponse() {
+        //if this button clicked has the same index number as the 
+        //correct index in the correct answer of json mark as correct in json
+        //mark as completed in json regardless
+        //for (int i = 0; i < QuizManager.quizzes.Count; i++) {
+        //    if (QuizManager.quizzes[i].buildingID == loadTourStops.stopToLoad) {
+                int buttonName = int.Parse(EventSystem.current.currentSelectedGameObject.name);
+                Vector4 buttonColor = EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color;
+                //Vector4 button1Color = button1.GetComponent<Image>().color;
+                Debug.Log(buttonColor);
+                //button1.GetComponent<Image>().color = buttonColor;
+                //Vector4 button1Color = button1.GetComponent<Image>().color;
+                //Debug.Log(buttonName);
+                if (buttonName == QuizManager.quizzes[0].correctAnswer) {
+                    QuizManager.quizzes[0].answeredCorrectly = true;
+                    buttonColor[0] = 0;
+                    buttonColor[2] = 0;
+                    EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color = buttonColor;
+                } else {
+                    buttonColor[1] = 0;
+                    buttonColor[2] = 0;
+                    EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color = buttonColor;
+                }
+                QuizManager.quizzes[0].isCompleted = true;
+                //TODO: prevent quiz interaction unless reset
+                //Debug.Log(QuizManager.quizzes[i].answeredCorrectly);
+                //Debug.Log(QuizManager.quizzes[i].isCompleted);
+        //    }
+        //}
 
-    // Update is called once per frame
+    }
+
     void Update()
     {
         
