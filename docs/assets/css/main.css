@@ -2866,6 +2866,8 @@ input, select, textarea {
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
+
+			background-position: center center;
 			background-attachment: fixed,							fixed;
 			background-image: url("https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/assets/css/images/overlay1.png"), url("https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/gates.jpg");
 			background-size: auto,							cover;
