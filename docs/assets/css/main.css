@@ -2415,6 +2415,12 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			border: thin;
+			border-width: 3px;
+			border-color: black;
+			border-style: solid;
+			border-image: none;
+			border-radius: 10px;
 		}
 
 			.image.fit img {
