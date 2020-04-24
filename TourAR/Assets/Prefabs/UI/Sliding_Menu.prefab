@@ -647,7 +647,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4ddafd17e9d0a41249742462b7cf4210, type: 3}
-    m_FontSize: 85
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -724,7 +724,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4ddafd17e9d0a41249742462b7cf4210, type: 3}
-    m_FontSize: 85
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontInitialize: 0
-  slidingMenu: {fileID: 0}
+  slidingMenu: {fileID: 4484442572917306268}
   menuStart: {fileID: 9100000, guid: ae0813a586e184cd9b57736aeb20fdcb, type: 2}
   menuNoStart: {fileID: 9100000, guid: 714c97406057a4592876e2f16d590600, type: 2}
 --- !u!1 &4855825655197843724
@@ -1262,7 +1262,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4ddafd17e9d0a41249742462b7cf4210, type: 3}
-    m_FontSize: 85
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -1469,7 +1469,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4ddafd17e9d0a41249742462b7cf4210, type: 3}
-    m_FontSize: 85
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 7948927307037817070}
   - component: {fileID: 2364622523743273086}
   - component: {fileID: 8718574810114730612}
-  - component: {fileID: 4855825654061116705}
+  - component: {fileID: 179738167}
   m_Layer: 5
   m_Name: Search_Button (1)
   m_TagString: Untagged
@@ -1730,6 +1730,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 179738167}
+        m_MethodName: setNoMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
       - m_Target: {fileID: 8718574810114730612}
         m_MethodName: SceneChange
         m_Mode: 5
@@ -1753,7 +1764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f554cc0d4a0104456a08a3e488f321a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4855825654061116705
+--- !u!114 &179738167
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

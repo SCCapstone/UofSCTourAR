@@ -2221,16 +2221,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 675339667}
     m_Modifications:
-    - target: {fileID: 4855825654116738007, guid: 8035d5a43910744f694fd29815fb542d,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 4855825654280740914, guid: 8035d5a43910744f694fd29815fb542d,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 4855825655044429768, guid: 8035d5a43910744f694fd29815fb542d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2340,16 +2330,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sliding_Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4855825655197843722, guid: 8035d5a43910744f694fd29815fb542d,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 4855825655743580945, guid: 8035d5a43910744f694fd29815fb542d,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8035d5a43910744f694fd29815fb542d, type: 3}

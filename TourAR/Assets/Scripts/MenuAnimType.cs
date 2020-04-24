@@ -37,10 +37,9 @@ public class MenuAnimType : MonoBehaviour
     }
 
     public void setNoMenu() {
-
-        if (!dontInitialize) {
+        if (dontInitialize) {
             if (slidingMenu.GetBool("Pressed")) {
-            noMenu=false;
+                noMenu=false;
             } else {
                 noMenu = true;
             }
