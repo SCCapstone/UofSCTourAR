@@ -53,14 +53,9 @@ public class manageTourHistory : MonoBehaviour
 
     public static void loadTourHistory()
     {
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n CURRENTLY IN LOAD TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");
         if (File.Exists(Application.persistentDataPath + "/tourHistory.json"))
         {
-            Debug
-                .Log("\n\n\n\n ****************** \n\n\n\n FOUND TOURHISTORY.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
-            string filePath =
-                Application.persistentDataPath + "/tourHistory.json";
+            string filePath = Application.persistentDataPath + "/tourHistory.json";
             using (StreamReader r = new StreamReader(filePath))
             {
                 string json = r.ReadToEnd();
@@ -70,8 +65,6 @@ public class manageTourHistory : MonoBehaviour
         }
         else
         {
-            Debug
-                .Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND TOURHISTORY.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
             string json = Resources.Load<TextAsset>("JSON/tourHistory").text;
             tourHistory =
                 JsonConvert.DeserializeObject<List<tourStopVisited>>(json);
@@ -107,8 +100,6 @@ public class manageTourHistory : MonoBehaviour
         }
         tourHistory.Insert(0, newItem);
         saveTourHistory();
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n STOP ADDED TO MANAGE TOUR HISTORY \n\n\n\n ****************** \n\n\n\n");
     }
 
     public void clearTourHistory()
@@ -119,8 +110,6 @@ public class manageTourHistory : MonoBehaviour
 
     private static void saveTourHistory()
     {
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n SAVING TOUR HISTORY NOW \n\n\n\n ****************** \n\n\n\n");
         string filePath = Application.persistentDataPath + "/tourHistory.json";
         File.WriteAllText(filePath, JsonConvert.SerializeObject(tourHistory));
     }

@@ -27,28 +27,19 @@ public class manageAchievements : MonoBehaviour
 
     public void loadAchievements()
     {
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n LOADING ACHIEVEMENTS \n\n\n\n ****************** \n\n\n\n");
         if (File.Exists(Application.persistentDataPath + "/achievements.json"))
         {
-            Debug
-                .Log("\n\n\n\n ****************** \n\n\n\n FOUND achievements.json IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
-            string filePath =
-                Application.persistentDataPath + "/achievements.json";
+            string filePath = Application.persistentDataPath + "/achievements.json";
             using (StreamReader r = new StreamReader(filePath))
             {
                 string json = r.ReadToEnd();
-                achievements =
-                    JsonConvert.DeserializeObject<List<Achievement>>(json);
+                achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
             }
         }
         else
         {
-            Debug
-                .Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND achievements.JSON IN PERSISTENT STORAGE \n\n\n\n ****************** \n\n\n\n");
             string json = Resources.Load<TextAsset>("JSON/achievements").text;
-            achievements =
-                JsonConvert.DeserializeObject<List<Achievement>>(json);
+            achievements = JsonConvert.DeserializeObject<List<Achievement>>(json);
         }
     }
 
@@ -93,8 +84,6 @@ public class manageAchievements : MonoBehaviour
 
     public void saveAchievements()
     {
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n SAVING ACHIEVEMENTS NOW \n\n\n\n ****************** \n\n\n\n");
         string filePath = Application.persistentDataPath + "/achievements.json";
         File.WriteAllText(filePath, JsonConvert.SerializeObject(achievements));
     }

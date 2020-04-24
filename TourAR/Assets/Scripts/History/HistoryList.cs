@@ -31,12 +31,8 @@ public class HistoryList : MonoBehaviour
 
     public static void addToTourHistory(string bID)
     {
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n ADD TO TOUR HISTORY CALLED \n\n\n\n ****************** \n\n\n\n");
         var mTH = new manageTourHistory();
         mTH.addStopToHistory (bID);
-        Debug
-            .Log("\n\n\n\n ****************** \n\n\n\n ADDED TO MANAGE TOUR HISTORY. NOW UPDATING LIST HISTORY IN HISTORY LIST. \n\n\n\n ****************** \n\n\n\n");
         listHistory = manageTourHistory.getTourHistoryAsString();
     }
 }

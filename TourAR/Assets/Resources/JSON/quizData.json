@@ -7,11 +7,12 @@
         "questionContent": "What letter is the Horseshoe in the shape of?",
         "correctAnswer": 0,
         "answerOptions": [
-                "U-shape",
-                "X-shape",
-                "M-shape"
+            "U-shape",
+            "X-shape",
+            "M-shape"
         ]
-    },    {
+    },
+    {
         "name": "Rutledge College",
         "buildingID": "rutledgeCollege",
         "iscompleted": "false",
@@ -19,9 +20,9 @@
         "questionContent": "In 1855, a ____ severly destroyed the original chapel of the building.",
         "correctAnswer": 1,
         "answerOptions": [
-                "Flood",
-                "Fire",
-                "Earthquake"
+            "Flood",
+            "Fire",
+            "Earthquake"
         ]
     },
     {
@@ -32,9 +33,9 @@
         "questionContent": "McKissick functioned as the university's main ______ until 1959.",
         "correctAnswer": 2,
         "answerOptions": [
-                "Dormitory",
-                "Student Union",
-                "Library"
+            "Dormitory",
+            "Student Union",
+            "Library"
         ]
     },
     {
@@ -45,9 +46,9 @@
         "questionContent": "Which of the following has not previously been a main purpose of DeSaussure College?",
         "correctAnswer": 1,
         "answerOptions": [
-                "Prison",
-                "Cafeteria", 
-                "Hospital"
+            "Prison",
+            "Cafeteria",
+            "Hospital"
         ]
     },
     {
@@ -58,9 +59,9 @@
         "questionContent": "What year was the President's House demolished?",
         "correctAnswer": 2,
         "answerOptions": [
-                "1865",
-                "1977",
-                "1940"
+            "1865",
+            "1977",
+            "1940"
         ]
     },
     {
@@ -71,9 +72,9 @@
         "questionContent": "George McCutchen, who McCutchen House is named for, taught _____ at USC.",
         "correctAnswer": 0,
         "answerOptions": [
-                "Economics",
-                "Biology",
-                "Mathematics"
+            "Economics",
+            "Biology",
+            "Mathematics"
         ]
     },
     {
@@ -84,9 +85,9 @@
         "questionContent": "Harper College was constructed at the same time as what other campus building?",
         "correctAnswer": 2,
         "answerOptions": [
-                "Russell House",
-                "Swearingen",
-                "Rutledge College"
+            "Russell House",
+            "Swearingen",
+            "Rutledge College"
         ]
     },
     {
@@ -97,9 +98,9 @@
         "questionContent": "Leiber College is named for ______?",
         "correctAnswer": 1,
         "answerOptions": [
-                "Geoffrey Leiber",
-                "Francis Leiber",
-                "Arthur Leiber"
+            "Geoffrey Leiber",
+            "Francis Leiber",
+            "Arthur Leiber"
         ]
     },
     {
@@ -110,9 +111,9 @@
         "questionContent": "South Caroliniana Library contains a replica of which famous reading room?",
         "correctAnswer": 2,
         "answerOptions": [
-                "White House",
-                "Library of Alexandria",
-                "Library of Congress"
+            "White House",
+            "Library of Alexandria",
+            "Library of Congress"
         ]
     },
     {
@@ -123,9 +124,9 @@
         "questionContent": "The Storey Innovation Center is located on two floors out of how many total floors in the building?",
         "correctAnswer": 0,
         "answerOptions": [
-                "Five",
-                "Six",
-                "Two"
+            "Five",
+            "Six",
+            "Two"
         ]
     },
     {
@@ -136,9 +137,9 @@
         "questionContent": "Swearingen is home to which academic college at UofSC?",
         "correctAnswer": 1,
         "answerOptions": [
-                "College of Computing",
-                "College of Engineering and Computing",
-                "College of Engineering Sciences"
+            "College of Computing",
+            "College of Engineering and Computing",
+            "College of Engineering Sciences"
         ]
     },
     {
@@ -149,9 +150,9 @@
         "questionContent": "What year was Thomas Cooper Library constructed?",
         "correctAnswer": 0,
         "answerOptions": [
-                "1976",
-                "1796",
-                "1697"
+            "1976",
+            "1796",
+            "1697"
         ]
     },
     {
@@ -162,9 +163,9 @@
         "questionContent": "What is one campus resource that you can find housed in Russell House!",
         "correctAnswer": 2,
         "answerOptions": [
-                "Student Health Services",
-                "University Housing",
-                "Leadership and Service Center"
+            "Student Health Services",
+            "University Housing",
+            "Leadership and Service Center"
         ]
     },
     {
@@ -175,9 +176,9 @@
         "questionContent": "How many times has the stadium been renovated?",
         "correctAnswer": 0,
         "answerOptions": [
-                "4",
-                "1",
-                "6"
+            "4",
+            "1",
+            "6"
         ]
     },
     {
@@ -188,9 +189,9 @@
         "questionContent": "Eugene Stone made the building of what portion of the stadium possible?",
         "correctAnswer": 1,
         "answerOptions": [
-                "goals",
-                "grandstand",
-                "turf"
+            "goals",
+            "grandstand",
+            "turf"
         ]
     },
     {
@@ -201,9 +202,9 @@
         "questionContent": "What is the capacity of Founders Park?",
         "correctAnswer": 2,
         "answerOptions": [
-                "12,534",
-                "6,981",
-                "8,242"
+            "12,534",
+            "6,981",
+            "8,242"
         ]
     },
     {
@@ -214,9 +215,9 @@
         "questionContent": "What sports team primarily uses Colonial Life Arena?",
         "correctAnswer": 0,
         "answerOptions": [
-                "Basketball",
-                "Hockey",
-                "Gymnastics"
+            "Basketball",
+            "Hockey",
+            "Gymnastics"
         ]
     },
     {
@@ -227,9 +228,9 @@
         "questionContent": "The architect of the Maxcy Monument designed what other famous structure?",
         "correctAnswer": 1,
         "answerOptions": [
-                "White House",
-                "Washington Monument",
-                "Golden Gate Bridge"
+            "White House",
+            "Washington Monument",
+            "Golden Gate Bridge"
         ]
     }
 ]
