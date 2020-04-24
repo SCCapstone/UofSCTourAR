@@ -218,5 +218,18 @@
                 "Hockey",
                 "Gymnastics"
         ]
+    },
+    {
+        "name": "Maxcy Monument",
+        "buildingID": "maxcyMonument",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "The architect of the Maxcy Monument designed what other famous structure?",
+        "correctAnswer": 1,
+        "answerOptions": [
+                "White House",
+                "Washington Monument",
+                "Golden Gate Bridge"
+        ]
     }
 ]
