@@ -41,7 +41,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND countbids.JSON IN PERSISTENT STORAGE. LOADING FROM RESOURCES \n\n\n\n ****************** \n\n\n\n");
+            Debug.Log("\n\n\n\n ****************** \n\n\n\n DID NOT FIND quizzes.JSON IN PERSISTENT STORAGE. LOADING FROM RESOURCES \n\n\n\n ****************** \n\n\n\n");
             string json = Resources.Load<TextAsset>("JSON/quizData").text;
             quizzes = JsonConvert.DeserializeObject<List<Quiz>>(json);
         }
