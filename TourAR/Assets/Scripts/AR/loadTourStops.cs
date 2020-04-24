@@ -13,7 +13,7 @@ public class loadTourStops : MonoBehaviour
 
     public Text data;
 
-    public static string stopToLoad = "Horseshoe";
+    public static string stopToLoad = "yes";
 
     public static List<string> imageNames = new List<string>(); //public static List<string> imageNames = new List<string>();
 
