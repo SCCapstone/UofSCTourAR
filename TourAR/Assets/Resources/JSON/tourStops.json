@@ -3,7 +3,7 @@
         "name": "Horseshoe",
         "description": "The U-shaped formation of the original campus has seen more than two centuries of history unfold, earning a position on the National Register of Historic Places. For decades (and even centuries), the buildings have stood resolutely, bearing witness to the atrocities of war, fire and riots. They've also been proud hosts, welcoming esteemed guests such as President William Howard Taft and Pope John Paul II. Painstakingly preserved, the structures on the Horseshoe tell a colorful tale, not only of the university's history, but of events that shaped South Carolina as a whole.",
         "year": "1801",
-        "buildingID": "Horseshoe",
+        "buildingID": "horseshoe",
         "location": "The Horseshoe Columbia, SC 29208",
         "closestPOI": "n/a",
         "photos": [
@@ -132,7 +132,7 @@
     {
         "name": "Edward Storey Innovation Center",
         "description": "The Storey Engineering and Innovation Center is housed in the first two floors of five for Applied Innovation building at Blossom and Assembly streets. The 44,000-square-feet of space will house research and teaching activity related to cyber security, robotics, computer information systems and integrated information technology. The goal is to create a space where students and researchers from different disciplines can interact and collaborate on projects.",
-        "year": "",
+        "year": "2017",
         "buildingID": "innovCenter",
         "location": "550 Assembly St, Columbia, SC 29201",
         "closestPOI": "n/a",
@@ -158,7 +158,7 @@
     {
         "name": "Thomas Cooper Library",
         "description": "Thomas Cooper Library, constructed in 1976, is the home of the University Libraries. Here, students can rent books, reserve study space, and browse special collections of maps, art, music, manuscripts and more.",
-        "year": "",
+        "year": "1959",
         "buildingID": "thomasCooper",
         "location": "1322 Greene St, Columbia, SC 29208",
         "closestPOI": "n/a",
@@ -171,7 +171,7 @@
     {
         "name": "Russell House Student Union",
         "description": "The Russell House is the home of the majority of our dining locations on campus. You can also find the leadership and service center here, the home of Student Government and over 500 on campus student organizations. Gamecock Entertainment hosts free movie showings every weekend in the Russell House theater located on the second floor.",
-        "year": "",
+        "year": "1954",
         "buildingID": "russellHouse",
         "location": "",
         "closestPOI": "n/a",
@@ -184,7 +184,7 @@
     {
         "name": "williams-Brice Stadium",
         "description": "Williams-Brice Stadium is the home of the South Carolina Gamecocks football team. Built in 1934, the stadium has been renovated 4 times since then, and currently has a capacity of over 80,000.",
-        "year": "",
+        "year": "1934",
         "buildingID": "williamsBrice",
         "location": "1174 George Rogers Boulevard",
         "closestPOI": "n/a",
@@ -197,7 +197,7 @@
     {
         "name": "Stone Stadium",
         "description": "Stone Stadium hosts the Gamecock mens and womens soccer teams. The stadium can seat 5000 fans and was built in 1981. It is named after Eugene E. Stone, the donor who made the construction of the current grandstand possible.",
-        "year": "",
+        "year": "1981",
         "buildingID": "stoneStadium",
         "location": "1313 Heyward Street",
         "closestPOI": "n/a",
@@ -210,7 +210,7 @@
     {
         "name": "Founders Park",
         "description": "The Founders Park baseball stadium opened in 2009 under its original name, Carolina Stadium. With a capacity of 8,242, it is home to the South Carolina Gamecocks baseball team.",
-        "year": "",
+        "year": "2009",
         "buildingID": "foundersPark",
         "location": "1313 Heyward Street",
         "closestPOI": "n/a",
@@ -223,7 +223,7 @@
     {
         "name": "Colonial Life Arena",
         "description": "Colonial Life Arena is a multi purpose facility in Columbia, hosting concerts, rallies, competitions, and sports game. Its primary purpose is as the home of the South Carolina mens and womens basketball teams.",
-        "year": "",
+        "year": "2002",
         "buildingID": "colonialLife",
         "location": "801 Lincoln St",
         "closestPOI": "n/a",
@@ -234,27 +234,16 @@
         ]
     },
     {
-        "name": "Wade's House",
-        "description": "This is a test POI, located in Maryland.",
-        "year": "",
-        "buildingID": "wadesHouse",
-        "location": "Somewhere north of SC",
+        "name": "Maxcy Monument",
+        "description": "The Maxcy Monument was commissioned to be built in 1827 by the Clariosophic Literary Society. The monument stands on the Horseshoe and was built in honor of Jonathon Maxcy, the first president of the college. The architect that designed the Maxcy Monument, Robert Mills, was also the architect that designed the Washington Monument.",
+        "year": "1827",
+        "buildingID": "maxcyMonument",
+        "location": "The Horseshoe, Columbia 29208",
         "closestPOI": "n/a",
         "photos": [
-            "CLA1",
-            "CLA2",
-            "CLA3"
-        ] 
-    },
-    {
-        "name": "Joe's Columbia House",
-        "description": "This is Joe's house on Hamrick st added for testing purposes",
-        "year": "",
-        "buildingID": "joesHouse",
-        "location": "Hamrick St",
-        "closestPOI": "n/a",
-        "photos": [
-            "pepe"
+            "Maxcy1",
+            "Maxcy2",
+            "Maxcy3"
         ]
     }
     
