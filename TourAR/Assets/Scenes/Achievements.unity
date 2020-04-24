@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonTemplate: {fileID: 1378240566}
   iconSprites:
-  - {fileID: 21300000, guid: 3ef73172473224c7e9ce41e07eb14515, type: 3}
+  - {fileID: 21300000, guid: 290ce0df71da24cb7a6685b39df31779, type: 3}
   - {fileID: 21300000, guid: 3ef73172473224c7e9ce41e07eb14515, type: 3}
 --- !u!114 &296385135
 MonoBehaviour:
@@ -1418,7 +1418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1378240567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1435,10 +1435,10 @@ RectTransform:
   m_Father: {fileID: 1181676996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 310, y: 310}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1378240568
 MonoBehaviour:
@@ -1559,7 +1559,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1842978472}
   iconObj: {fileID: 693509628}
-  lockSprite: {fileID: 21300000, guid: 290ce0df71da24cb7a6685b39df31779, type: 3}
 --- !u!222 &1594253202
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1659,7 +1658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1842978472}
   iconObj: {fileID: 0}
-  lockSprite: {fileID: 0}
 --- !u!114 &1684153062
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 2752403570818394502}
   - component: {fileID: 3203060596653690519}
   - component: {fileID: 5988384398777706910}
+  - component: {fileID: 1653564401}
   m_Layer: 5
   m_Name: Top_Panel (1)
   m_TagString: Untagged
@@ -423,6 +424,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &1653564401
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2467540735146775454}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4095935814321458018
 GameObject:
   m_ObjectHideFlags: 0
