@@ -659,6 +659,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontInitialize: 1
+  home: 1
+  slidingMenu: {fileID: 0}
   menuStart: {fileID: 0}
   menuNoStart: {fileID: 0}
 --- !u!1 &769432846

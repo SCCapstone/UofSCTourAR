@@ -8,6 +8,9 @@ public class MenuAnimType : MonoBehaviour
 
     public static bool noMenu=true;
     [SerializeField] bool dontInitialize = false;
+    [SerializeField] bool home = false;
+
+
 
     [SerializeField] Animator slidingMenu;
     Animator menu;
@@ -37,7 +40,10 @@ public class MenuAnimType : MonoBehaviour
     }
 
     public void setNoMenu() {
-        if (dontInitialize) {
+        if(home) {
+            noMenu=true;
+        }
+        else if (dontInitialize) {
             if (slidingMenu.GetBool("Pressed")) {
                 noMenu=false;
             } else {
