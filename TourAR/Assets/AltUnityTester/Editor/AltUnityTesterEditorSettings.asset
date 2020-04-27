@@ -26,35 +26,34 @@ MonoBehaviour:
     _status: 0
     _isSuite: 1
     _parentName: 
-    _testCaseCount: 114
+    _testCaseCount: 129
     _foldOut: 1
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-  - _selected: 1
-    _testName: AchPageLoad
-    _status: -1
+  - _selected: 0
+    _testName: AchToSearch
+    _status: 0
     _isSuite: 1
     _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
-  - _selected: 1
-    _testName: AchPageLoad.Test
-    _status: -1
+  - _selected: 0
+    _testName: AchToSearch.TestAchSearch
+    _status: 0
     _isSuite: 0
-    _parentName: AchPageLoad
+    _parentName: AchToSearch
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
-      refused'
+    _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
-    path: Assets/UITests/Editor/AchPageLoad.cs
+    path: Assets/Editor/AchToSearch.cs
   - _selected: 0
     _testName: Mapbox
     _status: 0
@@ -2326,17 +2325,405 @@ MonoBehaviour:
     _testStackTrace: 
     _testDuration: 0.0003236
     path: Assets/Mapbox
-  - _selected: 0
-    _testName: sceneLoaderTest
-    _status: -1
+  - _selected: 1
+    _testName: MenuTest
+    _status: 1
     _isSuite: 1
     _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-    _testCaseCount: 6
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: MenuTest.TestAchHome
+    _status: 1
+    _isSuite: 0
+    _parentName: MenuTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.6797308
+    path: 
+  - _selected: 1
+    _testName: MenuToCredits
+    _status: 1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
     _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
+  - _selected: 1
+    _testName: MenuToCredits.TestAchCredits
+    _status: 1
+    _isSuite: 0
+    _parentName: MenuToCredits
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.4595165
+    path: Assets/Editor/MenuToCredits.cs
+  - _selected: 1
+    _testName: MenuToHist
+    _status: 1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: MenuToHist.TestAchHist
+    _status: 1
+    _isSuite: 0
+    _parentName: MenuToHist
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.4498993
+    path: Assets/Editor/MenuToHist.cs
+  - _selected: 1
+    _testName: OpenAchTest
+    _status: 1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 1
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: OpenAchTest.Test
+    _status: 1
+    _isSuite: 0
+    _parentName: OpenAchTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.3083524
+    path: Assets/Editor/OpenAchTest.cs
+  - _selected: 1
+    _testName: OpenHist
+    _status: 1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: OpenHist.Test
+    _status: 1
+    _isSuite: 0
+    _parentName: OpenHist
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.2915795
+    path: Assets/Editor/OpenHist.cs
+  - _selected: 0
+    _testName: sceneLoaderTest
+    _status: -1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+    _testCaseCount: 16
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 0
+    _testName: sceneLoaderTest.AddToTourHistory
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_persistentDataPath can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_persistentDataPath()\n 
+      at manageTourHistory.loadTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:56
+      \n  at manageTourHistory..ctor () [0x00008] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:22
+      \n  at sceneLoaderTest.AddToTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:66
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0086188
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.clearAchievements
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.clearAchievements () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:96
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0020333
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.ClearTourHistory
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_persistentDataPath can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_persistentDataPath()\n 
+      at manageTourHistory.loadTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:56
+      \n  at manageTourHistory..ctor () [0x00008] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:22
+      \n  at sceneLoaderTest.ClearTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:55
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0025544
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.createLoadTourStops
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.createLoadTourStops () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:107
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0015185
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.createManageAchievements
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.createManageAchievements () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:77
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.001322
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.CreateTourHistory
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : get_persistentDataPath can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_persistentDataPath()\n 
+      at manageTourHistory.loadTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:56
+      \n  at manageTourHistory..ctor () [0x00008] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:22
+      \n  at sceneLoaderTest.CreateTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:49
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0025829
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.getInvalidTourStopDescription
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.getInvalidTourStopDescription () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:162
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0007671
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.getNameOfTourStopWithID
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.getNameOfTourStopWithID () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:114
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0011137
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.getTitleOfInvalidStopWithID
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.getTitleOfInvalidStopWithID () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:125
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0012581
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.getTourStopDescription
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.getTourStopDescription () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:151
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0017465
+    path: Assets/Editor/sceneLoaderTest.cs
+  - _selected: 0
+    _testName: sceneLoaderTest.getTourStopMeta
+    _status: -1
+    _isSuite: 0
+    _parentName: sceneLoaderTest
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
+
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
+
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.getTourStopMeta () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:136
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 0.0033344
+    path: Assets/Editor/sceneLoaderTest.cs
   - _selected: 0
     _testName: sceneLoaderTest.searchCaseInsensitive_Test
     _status: -1
@@ -2354,13 +2741,13 @@ MonoBehaviour:
       use this function in the constructor or field initializers, instead move initialization
       code to the Awake or Start function.'
     _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
-      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:29
       \n  at sceneLoaderTest.searchCaseInsensitive_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:42
       \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
-    _testDuration: 0.0023896
+    _testDuration: 0.0048477
     path: Assets/Editor/sceneLoaderTest.cs
   - _selected: 0
     _testName: sceneLoaderTest.searchForMapScene_Test
@@ -2379,13 +2766,13 @@ MonoBehaviour:
       use this function in the constructor or field initializers, instead move initialization
       code to the Awake or Start function.'
     _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
-      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:29
       \n  at sceneLoaderTest.searchForMapScene_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:24
       \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
-    _testDuration: 0.0139498
+    _testDuration: 0.0043384
     path: Assets/Editor/sceneLoaderTest.cs
   - _selected: 0
     _testName: sceneLoaderTest.searchForTourHistoryScene_Test
@@ -2404,13 +2791,13 @@ MonoBehaviour:
       use this function in the constructor or field initializers, instead move initialization
       code to the Awake or Start function.'
     _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
-      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:29
       \n  at sceneLoaderTest.searchForTourHistoryScene_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:16
       \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
-    _testDuration: 0.0029895
+    _testDuration: 0.0045919
     path: Assets/Editor/sceneLoaderTest.cs
   - _selected: 0
     _testName: sceneLoaderTest.searchInvalidScene_Test
@@ -2429,110 +2816,91 @@ MonoBehaviour:
       use this function in the constructor or field initializers, instead move initialization
       code to the Awake or Start function.'
     _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.get_sceneCountInBuildSettings()\n 
-      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:27
+      at SearchSceneLoader.SceneExists (System.String name) [0x00053] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/SearchSceneLoader.cs:29
       \n  at sceneLoaderTest.searchInvalidScene_Test () [0x00007] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:33
       \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
-    _testDuration: 0.0027983
+    _testDuration: 0.0025333
     path: Assets/Editor/sceneLoaderTest.cs
   - _selected: 0
-    _testName: sceneLoaderTest.testManageAchievements
+    _testName: sceneLoaderTest.toggleStatusOfAchievement
     _status: -1
     _isSuite: 0
     _parentName: sceneLoaderTest
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'UnityEngine.UnityException : get_dataPath can only be called
-      from the main thread.
+    _testResultMessage: 'UnityEngine.UnityException : Internal_CreateGameObject can
+      only be called from the main thread.
 
-      Constructors and field initializers will be executed
-      from the loading thread when loading a scene.
+      Constructors and field initializers
+      will be executed from the loading thread when loading a scene.
 
-      Don''t use this function
-      in the constructor or field initializers, instead move initialization code
-      to the Awake or Start function.'
-    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n 
-      at manageAchievements..ctor () [0x00000] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageAchievements.cs:11
-      \n  at sceneLoaderTest.testManageAchievements () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:112
+      Don''t
+      use this function in the constructor or field initializers, instead move initialization
+      code to the Awake or Start function.'
+    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.GameObject.Internal_CreateGameObject(UnityEngine.GameObject,string)\n 
+      at UnityEngine.GameObject..ctor (System.String name) [0x00008] in /Users/builduser/buildslave/unity/build/Runtime/Export/Scripting/GameObject.bindings.cs:354
+      \n  at sceneLoaderTest.toggleStatusOfAchievement () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:84
       \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
       at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
-    _testDuration: 0.0007442
+    _testDuration: 0.001402
     path: Assets/Editor/sceneLoaderTest.cs
-  - _selected: 0
-    _testName: sceneLoaderTest.testManageTourHistory
-    _status: -1
-    _isSuite: 0
-    _parentName: sceneLoaderTest
+  - _selected: 1
+    _testName: StartTour
+    _status: 1
+    _isSuite: 1
+    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'UnityEngine.UnityException : get_dataPath can only be called
-      from the main thread.
-
-      Constructors and field initializers will be executed
-      from the loading thread when loading a scene.
-
-      Don''t use this function
-      in the constructor or field initializers, instead move initialization code
-      to the Awake or Start function.'
-    _testStackTrace: "  at (wrapper managed-to-native) UnityEngine.Application.get_dataPath()\n 
-      at manageTourHistory..ctor () [0x00008] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Scripts/manageTourHistory.cs:11
-      \n  at sceneLoaderTest.testManageTourHistory () [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/sceneLoaderTest.cs:98
-      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
-      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
-      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
-      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
-    _testDuration: 0.0006447
-    path: Assets/Editor/sceneLoaderTest.cs
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0
+    path: 
+  - _selected: 1
+    _testName: StartTour.Test
+    _status: 1
+    _isSuite: 0
+    _parentName: StartTour
+    _testCaseCount: 1
+    _foldOut: 0
+    _testResultMessage: 
+    _testStackTrace: 
+    _testDuration: 0.8134336
+    path: Assets/Editor/StartTourTest.cs
   - _selected: 0
-    _testName: TestARView
+    _testName: TestSearchOpen
     _status: -1
     _isSuite: 1
     _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
     _testCaseCount: 1
-    _foldOut: 1
+    _foldOut: 0
     _testResultMessage: 
     _testStackTrace: 
     _testDuration: 0
     path: 
   - _selected: 0
-    _testName: TestARView.Test
+    _testName: TestSearchOpen.Test
     _status: -1
     _isSuite: 0
-    _parentName: TestARView
+    _parentName: TestSearchOpen
     _testCaseCount: 1
     _foldOut: 0
-    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
-      refused'
-    _testStackTrace: 
-    _testDuration: 0
-    path: Assets/UITests/Editor/TestARView.cs
-  - _selected: 0
-    _testName: TestSearch
-    _status: -1
-    _isSuite: 1
-    _parentName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-    _testCaseCount: 1
-    _foldOut: 1
-    _testResultMessage: 
-    _testStackTrace: 
-    _testDuration: 0
-    path: 
-  - _selected: 0
-    _testName: TestSearch.Test
-    _status: -1
-    _isSuite: 0
-    _parentName: TestSearch
-    _testCaseCount: 1
-    _foldOut: 0
-    _testResultMessage: 'OneTimeSetUp: System.Net.Sockets.SocketException : Connection
-      refused'
-    _testStackTrace: 
-    _testDuration: 0
-    path: Assets/UITests/Editor/TestSearch.cs
+    _testResultMessage: 'Assets.AltUnityTester.AltUnityDriver.WaitTimeOutException
+      : Scene Search not loaded after 10 seconds'
+    _testStackTrace: "  at WaitForCurrentSceneToBe.Execute () [0x000a3] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/AltUnityTester/AltUnityDriver/Commands/UnityCommands/WaitForCurrentSceneToBe.cs:33
+      \n  at AltUnityDriver.WaitForCurrentSceneToBe (System.String sceneName, System.Double
+      timeout, System.Double interval) [0x00001] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/AltUnityTester/AltUnityDriver/AltUnityDriver.cs:190
+      \n  at TestSearchOpen.Test () [0x0002e] in /Users/aylanickerson/UofSCTourAR/TourAR/Assets/Editor/TestSearchOpen.cs:25
+      \n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <437ba245d8404784b9fbab9b439ac908>:0 "
+    _testDuration: 10.8593837
+    path: Assets/Editor/TestSearchOpen.cs
   - _selected: 0
     _testName: /Users/aylanickerson/UofSCTourAR/TourAR/Library/ScriptAssemblies/Unity.Rider.Editor.dll
     _status: 0
@@ -2550,22 +2918,25 @@ MonoBehaviour:
     _buildIndex: 0
   - _toBeBuilt: 1
     _path: Assets/Scenes/Map.unity
-    _buildIndex: 0
+    _buildIndex: 1
   - _toBeBuilt: 1
     _path: Assets/Scenes/Achievements.unity
-    _buildIndex: 0
+    _buildIndex: 2
   - _toBeBuilt: 1
     _path: Assets/Scenes/TourHistory.unity
-    _buildIndex: 0
+    _buildIndex: 3
   - _toBeBuilt: 1
     _path: Assets/Scenes/Search.unity
-    _buildIndex: 0
+    _buildIndex: 4
   - _toBeBuilt: 1
     _path: Assets/Scenes/ARView.unity
-    _buildIndex: 0
-  platform: 1
+    _buildIndex: 5
+  - _toBeBuilt: 1
+    _path: Assets/Scenes/Credits.unity
+    _buildIndex: 6
+  platform: 2
   standaloneTarget: 2
-  ranInEditor: 0
+  ranInEditor: 1
   requestSeparator: ;
   requestEnding: '&'
   serverPort: 13000
