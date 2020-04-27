@@ -60,7 +60,7 @@ public class Button_Toggle : MonoBehaviour
       if (!boxTopAnimator.GetBool("isOpen")) {
         boxTopAnimator.SetBool("isOpen", true);
         appTitleAnimator.SetBool("Pressed", true);
-        //yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(0.25f);
       } else {
         Debug.Log("Toggle: Box is already open - "+ boxTopAnimator.GetBool("isOpen"));
       }
