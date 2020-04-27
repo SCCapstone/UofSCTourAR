@@ -12,10 +12,9 @@ This repository contains the files for our Capstone Senior Design project pertai
  - You may need to add text in the "Allow Camera Access" and "Allow Location Access" fields that are marked with an *
  
  
-
 ## Technologies
   - Unity
-  - iOS: 12.1.2 or iOS 13.4
+  - iOS: 12.1.2 or iOS 13.4.1
 
 Unity: 
   - Version 2019.3.0f6
@@ -28,14 +27,7 @@ Packages:
   - ARKit XR Plugin: 3.0.1
   - XR Interaction Tookit: (preview) 0.9.6
   - XR Management: 3.0.6
- 
- 
-## Setup
- > Currently there are no one-time setup instructions for this app
- 
-## Project Settings: TODO
 
- 
 
 ## Running
  1. First, connect a compatible iOS device running the version(s) specified above.
@@ -46,10 +38,6 @@ Packages:
     - Your connected iOS device, under Unity-iPhone -> *Your connected device*
  5. XCode will build the project and auto-run the application on your connect iOS device.
     - If the project is not able to build correctly in XCode, click the "Play" button to restart the build and run the application
- 
-## Deployment
- 
-## Testing
 
 ### Unit Tests
 In order to run the Unit Tests for our project you will need to download and fully set up the project first. After that:
