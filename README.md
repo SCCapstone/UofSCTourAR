@@ -60,11 +60,15 @@ The Unit Tests are located here: TourAR/Assets/Editor/SceneLoaderTest.
  
 ### Behavioral Tests
 To run the UI tests on our project, begin by downloading and configuring the project according to the instructions above. 
-UI Tests are located here: TourAR/Assets/UITests
+UI Tests are located here: TourAR/Assets/Editor
  1. In the Unity Editor, navigate to the Windows tab>AltUnityTester to open the AltUnityTester Editor. 
  2. Within the Editor, expand the Assembly-CSharp-Editor.dll folder. 
  3. Expand the Unity folder and select the tests you wish to run. 
- 4. To test within the Unity editor, select the Editor radio button, and click "Run Selected Tests".
+ 4. Make sure the server port is 13000.
+ 5. Select "Play in Editor". YOU MUST SELECT THIS FROM THE ALTUNITYTESTER WINDOW, otherwise you will get a socket connection error and the tests will fail.
+ 6. Once the editor loads, reopen the AltUnityTester window, make sure the tests you want to run are selected, and click "run selected tests'. The tests will run in the editor and display the amount passed or failed. You can see details in the console after closing the editor.
+ 
+ Video detailing how to run Behavioral Tests from the Unity editor: https://www.youtube.com/watch?v=1_ZcGvITnes 
  
 ## Authors
  
