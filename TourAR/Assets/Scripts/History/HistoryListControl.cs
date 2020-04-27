@@ -32,7 +32,7 @@ public class HistoryListControl : MonoBehaviour
         {
             string bID="";
             //find buildingID
-            for (int i=0; i<tourStops.Count-1; i++) {
+            for (int i=0; i<tourStops.Count; i++) {
                 if (tourStops[i].name.Equals(name)) {
                     bID = tourStops[i].buildingID;
                 }
