@@ -17,14 +17,17 @@ public class loadTourStops : MonoBehaviour
 
     public static List<string> imageNames = new List<string>(); //public static List<string> imageNames = new List<string>();
 
-    //ChangeStop change;
-    //public Dropdown selection; Dropdown did not work as intended
-    //private int prevDropVal=-1;
+    [SerializeField] bool search = false;
+
     void Start()
     {
         loadTheTourStops();
-        sendToAR();
 
+        if (!search) {
+            sendToAR();
+        }
+        
+        /*
         Debug.Log("loadourstops: " + imageNames);
         int counter = 0;
         foreach (var name in imageNames)
@@ -32,17 +35,7 @@ public class loadTourStops : MonoBehaviour
             Debug.Log("loadourstops: " + counter + " " + name);
             counter++;
         }
-    }
-
-    void Update()
-    {
-        //if (prevDropVal != selection.value)
-        //sendToAR();
-        if (ChangeStop.hasChanged)
-        {
-            sendToAR();
-            ChangeStop.hasChanged = false;
-        }
+        */
     }
 
     public class TourStop
@@ -73,7 +66,7 @@ public class loadTourStops : MonoBehaviour
         setPhotosForTourStop (stopToLoad);
     }
 
-    private void sendToSearch(string stopToLoad)
+    public void sendToSearch()
     {
         Debug.Log("sendToSearch: " + stopToLoad);
         stopTitle.text = this.getTitleForTourStop(stopToLoad);

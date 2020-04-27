@@ -15,6 +15,17 @@ public class SceneLoader : MonoBehaviour
 
     public void SceneChangeAR(string currScene) {
         previousScene = currScene;
+
+        if (
+                    !achievementScore
+                        .countbids
+                        .Contains(loadTourStops.stopToLoad) )
+            {
+
+            achievementScore.addToCountBIDS(loadTourStops.stopToLoad);
+        }
+        HistoryList.addToTourHistory(loadTourStops.stopToLoad);
+
         SceneManager.LoadScene("ARView");
     }
     public void BackFromAR() {
