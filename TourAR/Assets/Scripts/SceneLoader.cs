@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
 
-    void Start()
-    {
-        
-    }
+    public static string previousScene = "Map";
 
     public void SceneChange(string sceneName)
     {   
-        
-        SceneManager.LoadScene (sceneName);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void SceneChangeAR(string currScene) {
+        previousScene = currScene;
+        SceneManager.LoadScene("ARView");
+    }
+    public void BackFromAR() {
+        SceneManager.LoadScene(previousScene);
     }
 }
