@@ -2,7 +2,7 @@
 # UofSCTourAR
 This repository contains the files for our Capstone Senior Design project pertaining to CSCE 490 & 492.
 
-![Home Screen](https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/homescreen.PNG)
+<img src="https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/homescreen.PNG" width="49%"> <img src="https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/arstop.PNG" width="49%">
 
 ## Build Settings
  - File > Build Settings > Player Settings 
