@@ -42,7 +42,15 @@ public class PopUp : MonoBehaviour
     }
 
     public void setSearchPopup() {
+        Debug.Log(loadTourStops.stopToLoad);
+        Debug.Log(gameObject.GetComponent<SearchButton>().buildingID);
         loadTourStops.stopToLoad = gameObject.GetComponent<SearchButton>().buildingID;
+        Panel.SetActive(true);
+    }
+    public void setHistoryPopup() {
+        Debug.Log(loadTourStops.stopToLoad);
+        Debug.Log(gameObject.GetComponent<HistoryListButton>().buildingID);
+        loadTourStops.stopToLoad = gameObject.GetComponent<HistoryListButton>().buildingID;
         Panel.SetActive(true);
     }
 }

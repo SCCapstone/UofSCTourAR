@@ -26,11 +26,21 @@ public class HistoryListControl : MonoBehaviour
             buttons.Clear();
         }
 
+        List<loadTourStops.TourStop> tourStops = loadTourStops.tourStops;
+
         foreach (string name in HistoryList.listHistory)
         {
+            string bID="";
+            //find buildingID
+            for (int i=0; i<tourStops.Count-1; i++) {
+                if (tourStops[i].name.Equals(name)) {
+                    bID = tourStops[i].buildingID;
+                }
+            }
+
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
-            button.GetComponent<HistoryListButton>().SetText(name);
+            button.GetComponent<HistoryListButton>().setInfo(name, bID);
             button.transform.SetParent(buttonTemplate.transform.parent, false);
         }
     }
