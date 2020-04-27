@@ -8,7 +8,6 @@ public class MenuAnimType : MonoBehaviour
 
     public static bool noMenu=true;
     [SerializeField] bool dontInitialize = false;
-    [SerializeField] bool home = false;
 
 
 
@@ -33,17 +32,8 @@ public class MenuAnimType : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void setNoMenu() {
-        if(home) {
-            noMenu=true;
-        }
-        else if (dontInitialize) {
+        if (!dontInitialize) {
             if (slidingMenu.GetBool("Pressed")) {
                 noMenu=false;
             } else {
@@ -52,7 +42,5 @@ public class MenuAnimType : MonoBehaviour
         } else {
             noMenu = true;
         }
-        
-        
     }
 }
