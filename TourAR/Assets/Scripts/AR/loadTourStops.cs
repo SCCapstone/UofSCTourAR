@@ -17,13 +17,13 @@ public class loadTourStops : MonoBehaviour
 
     public static List<string> imageNames = new List<string>(); //public static List<string> imageNames = new List<string>();
 
-    [SerializeField] bool search = false;
+    [SerializeField] bool notAR = false;
 
     void Start()
     {
         loadTheTourStops();
 
-        if (!search) {
+        if (!notAR) {
             sendToAR();
         }
         
@@ -57,18 +57,13 @@ public class loadTourStops : MonoBehaviour
 
     private void sendToAR()
     {
-        Debug.Log("sendToAR: " + stopToLoad);
-
-        //Debug.Log(selection.options[selection.value].text);
-        //Debug.Log(selection.captionText.text);
         stopTitle.text = this.getTitleForTourStop(stopToLoad);
         data.text = this.getMetadataForTourStop(stopToLoad);
         setPhotosForTourStop (stopToLoad);
     }
 
-    public void sendToSearch()
+    public void sendToPopUp()
     {
-        Debug.Log("sendToSearch: " + stopToLoad);
         stopTitle.text = this.getTitleForTourStop(stopToLoad);
         data.text = this.getMetadataForTourStop(stopToLoad);
     }

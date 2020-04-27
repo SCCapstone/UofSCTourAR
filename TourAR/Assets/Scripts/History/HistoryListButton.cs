@@ -12,11 +12,18 @@ public class HistoryListButton : MonoBehaviour
     private HistoryListControl buttonControl;
 
     private string myTextString;
+    [SerializeField] public string buildingID;
+
 
     public void SetText(string textString)
     {
         myTextString = textString;
         myText.text = textString;
+    }
+
+    public void setInfo(string name, string bID) {
+        myText.text = name;
+        buildingID = bID;
     }
 
     public void OnClick()
