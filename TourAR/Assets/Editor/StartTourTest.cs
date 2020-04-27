@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-public class AchPageLoad
+public class StartTour
 {
     public AltUnityDriver AltUnityDriver;
     //Before any test it connects with the socket
@@ -9,7 +9,7 @@ public class AchPageLoad
     {
         AltUnityDriver =new AltUnityDriver();
     }
-  
+
     //At the end of the test closes the connection with the socket
     [OneTimeTearDown]
     public void TearDown()
@@ -17,11 +17,12 @@ public class AchPageLoad
         AltUnityDriver.Stop();
     }
 
-  [Test]
+    [Test]
     public void Test()
     {
-        //AltUnityDriver.LoadScene("HomePage");
-        Assert.Pass();
+        AltUnityDriver.LoadScene("HomePage");
+        AltUnityDriver.FindElement("StartTour").ClickEvent();
+        AltUnityDriver.WaitForCurrentSceneToBe("Map"); 
     }
 
 }

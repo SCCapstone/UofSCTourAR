@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-public class TestARView
+public class MenuToCredits
 {
     public AltUnityDriver AltUnityDriver;
     //Before any test it connects with the socket
@@ -18,11 +18,14 @@ public class TestARView
     }
 
     [Test]
-    public void Test()
+    public void TestAchCredits()
     {
-        AltUnityDriver.LoadScene("HomePage");
-        AltUnityDriver.FindElement("StartTour").ClickEvent();
-        AltUnityDriver.WaitForCurrentSceneToBe("ARView");
+	    //open menu and open credits page
+        AltUnityDriver.LoadScene("Achievements");
+        AltUnityDriver.FindElement("Menu_Button").ClickEvent();
+        AltUnityDriver.WaitForElement("Sliding_Menu");
+        AltUnityDriver.FindElement("Nav_Credits").ClickEvent();
+        AltUnityDriver.WaitForCurrentSceneToBe("Credits");
     }
 
 }

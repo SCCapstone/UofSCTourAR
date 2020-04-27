@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-public class TestSearch
+public class OpenAchTest
 {
     public AltUnityDriver AltUnityDriver;
     //Before any test it connects with the socket
@@ -20,9 +20,9 @@ public class TestSearch
     [Test]
     public void Test()
     {
-        AltUnityDriver.LoadScene("HomePage");
-        AltUnityDriver.FindElement("Search_Button").ClickEvent();
-        AltUnityDriver.WaitForCurrentSceneToBe("Search");
+	    AltUnityDriver.LoadScene("HomePage");
+        AltUnityDriver.FindElement("Achievements").ClickEvent();
+        AltUnityDriver.WaitForCurrentSceneToBe("Achievements"); 
     }
 
 }
