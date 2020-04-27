@@ -28,6 +28,10 @@ public class SceneLoader : MonoBehaviour
 
         SceneManager.LoadScene("ARView");
     }
+    public void SceneChangeARHistory(string currScene) {
+        previousScene = currScene;
+        SceneManager.LoadScene("ARView");
+    }
     public void BackFromAR() {
         SceneManager.LoadScene(previousScene);
     }
