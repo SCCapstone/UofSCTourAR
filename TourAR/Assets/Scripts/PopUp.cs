@@ -8,7 +8,6 @@ public class PopUp : MonoBehaviour
 {
     public GameObject Panel;
 
-
     [SerializeField] Image iconObj;
 
     public void OpenPopup()
@@ -40,5 +39,10 @@ public class PopUp : MonoBehaviour
 
             Panel.SetActive(!isActive);
         }
+    }
+
+    public void setSearchPopup() {
+        loadTourStops.stopToLoad = gameObject.GetComponent<SearchButton>().buildingID;
+        Panel.SetActive(true);
     }
 }
