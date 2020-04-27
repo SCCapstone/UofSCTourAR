@@ -232,5 +232,18 @@
             "Washington Monument",
             "Golden Gate Bridge"
         ]
+    },
+    {
+        "name": "Pinckney Legare College",
+        "buildingID": "pickneyLegare",
+        "iscompleted": "false",
+        "answeredCorrectly": "false",
+        "questionContent": "Pinckney Legare was named after two men with the same name- what were their names?",
+        "correctAnswer": 2,
+        "answerOptions": [
+            "George",
+            "James",
+            "Charles"
+        ]
     }
 ]
