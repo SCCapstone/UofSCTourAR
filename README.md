@@ -57,6 +57,7 @@ The Unit Tests are located here: TourAR/Assets/Editor/SceneLoaderTest.
  1. First, in the Unity Editor: Open the Test Runner by Navigating to Window -> General -> Test Runner.
  2. From the Test Runner popup window, select the "SceneLoader" test file.
  3. Click "Run Selected" inside the Test Runner window.
+ **NOTE** : The SceneLoader script contains 16 unit tests. This script shows up as an option when you run the behavioral tests below, but if selected when running behavioral tests, all 16 unit tests will fail. Be sure to perform these tests separately to avoid conflict.
  
 ### Behavioral Tests
 To run the UI tests on our project, begin by downloading and configuring the project according to the instructions above. 
