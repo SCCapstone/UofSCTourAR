@@ -91,16 +91,16 @@
         ]
     },
     {
-        "name": "Leiber College",
-        "buildingID": "leiberCollege",
+        "name": "Lieber College",
+        "buildingID": "Lieber",
         "iscompleted": "false",
         "answeredCorrectly": "false",
-        "questionContent": "Leiber College is named for ______?",
+        "questionContent": "Lieber College is named for ______?",
         "correctAnswer": 1,
         "answerOptions": [
-            "Geoffrey Leiber",
-            "Francis Leiber",
-            "Arthur Leiber"
+            "Geoffrey Lieber",
+            "Francis Lieber",
+            "Arthur Lieber"
         ]
     },
     {
