@@ -60,13 +60,13 @@ public class Button_Toggle : MonoBehaviour
       if (!boxTopAnimator.GetBool("isOpen")) {
         boxTopAnimator.SetBool("isOpen", true);
         appTitleAnimator.SetBool("Pressed", true);
-        yield return new WaitForSeconds(1.25f);
+        //yield return new WaitForSeconds(1.25f);
       } else {
         Debug.Log("Toggle: Box is already open - "+ boxTopAnimator.GetBool("isOpen"));
       }
     
       if (objtype.Equals(ARUItype.Data)) {
-
+        yield return new WaitForSeconds(0.75f);
         //objects to make appear
         dataCanvasAnimator.SetBool("isOpen", true);
 
@@ -78,7 +78,7 @@ public class Button_Toggle : MonoBehaviour
         dataButtonAnimator.SetBool("Pressed", true);
 
       } else if (objtype.Equals(ARUItype.Photos)) {
-
+        yield return new WaitForSeconds(0.75f);
         //objects to make appear
         picsCanvasAnimator.SetBool("isOpen", true);
 
@@ -95,7 +95,7 @@ public class Button_Toggle : MonoBehaviour
     IEnumerator QuizButton()  { //will only open quiz
 
       //remember state?
-
+      yield return new WaitForSeconds(0.75f);
       //objects to close
       dataCanvasAnimator.SetBool("isOpen", false);
       picsCanvasAnimator.SetBool("isOpen", false);
@@ -112,6 +112,7 @@ public class Button_Toggle : MonoBehaviour
     }
 
     IEnumerator BackButton()  { //closes quiz
+      yield return new WaitForSeconds(0.75f);
       //objects to close
       quizCanvasAnimator.SetBool("isOpen", false);
       backButtonAnimator.SetBool("Pressed", false);
@@ -125,7 +126,8 @@ public class Button_Toggle : MonoBehaviour
     }
 
     IEnumerator ResetButton() {
-      Debug.Log("Toggle: Start Close"); 
+      Debug.Log("Toggle: Start Close");
+      yield return new WaitForSeconds(0.75f);
 
       //objects to make disappear
       dataCanvasAnimator.SetBool("isOpen", false);
