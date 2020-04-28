@@ -42,8 +42,7 @@ public class SearchButtonControl : MonoBehaviour
             GameObject button = Instantiate(buttonTemplate) as GameObject;
             button.SetActive(true);
             button.GetComponent<SearchButton>().setInfo(tourStops[i].name, tourStops[i].buildingID);
-            //button.transform.SetParent(buttonTemplate.transform.parent, false);
-            button.transform.SetParent(buttonTemplate.transform.parent);
+            button.transform.SetParent(buttonTemplate.transform.parent, false);
         }
     }
 
