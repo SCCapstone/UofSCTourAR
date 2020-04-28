@@ -62,6 +62,10 @@ UI Tests are located here: TourAR/Assets/Editor
  
  Video detailing how to run Behavioral Tests from the Unity editor: https://www.youtube.com/watch?v=1_ZcGvITnes 
  
+## Website 
+
+ Visit https://sccapstone.github.io/UofSCTourAR/ to view our teams website, an informational video about the app, and more details! 
+ 
 ## Authors
  
   Prithvi Tippabhatla - prithvi@email.sc.edu
