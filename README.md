@@ -5,6 +5,7 @@ This repository contains the files for our Capstone Senior Design project pertai
 <img src="https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/homescreen.PNG" width="49%"> <img src="https://media.githubusercontent.com/media/SCCapstone/UofSCTourAR/master/docs/img/arstop.PNG" width="49%">
 
 ## Build Settings
+ - From the Unity Editor, please select these build settings before building and running the app locally.
  - File > Build Settings > Player Settings 
  - Make sure Company Name is UofSCTourAR
  - Update version if needed
@@ -28,6 +29,7 @@ Packages:
   - ARKit XR Plugin: 3.0.1
   - XR Interaction Tookit: (preview) 0.9.6
   - XR Management: 3.0.6
+  -AltUnityTester: 1.5.4
 
 
 ## Running
